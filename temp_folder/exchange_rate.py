@@ -8,6 +8,7 @@ api_key = 'YOUR_API_KEY'
 # 요청할 통화 설정
 base_currency = 'KRW'  # 한국 원을 기준으로 설정
 currencies = ['USD', 'EUR', 'JPY', 'GBP', 'CNY']  # 비교할 다른 통화들을 추가하세요
+# currencies = ['TRY', 'RUB', 'DKK', 'NOK', 'EZP']  # 비교할 다른 통화들을 추가하세요
 
 # 서브플롯 생성
 fig, axes = plt.subplots(nrows=len(currencies), ncols=1, figsize=(12, 8), sharex=True)

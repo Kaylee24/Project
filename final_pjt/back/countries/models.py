@@ -6,7 +6,6 @@ class Country(models.Model):
     name = models.CharField(max_length=50)
     burger = models.FloatField()
     coffee = models.FloatField()
-    baguette = models.FloatField()
     area = models.CharField(max_length=50)
 
 class Exchange(models.Model):

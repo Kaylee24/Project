@@ -7,7 +7,7 @@ from accounts.serializers import UserSerializer
 class MainCountryPictureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Country
-        fields = ('image', 'name')
+        fields = ('image1', 'name')
 
 
 # Country에서 역참조로 찾을 환율정보
@@ -26,7 +26,7 @@ class ComparisonCountrySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Country
-        fields = ['name', 'burger', 'coffee', 'area', 'image', 'exchange_set']
+        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'exchange_set']
 
 
 # detail_page에 들어갈 serializer
@@ -44,7 +44,7 @@ class DetailCountrySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Country
-        fields = ['name', 'burger', 'coffee', 'area', 'image', 'info', 'exchange_set', 'comment_set']
+        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'image2', 'image3', 'exchange_set', 'comment_set']
 
 ## nav바를 따로 serializer로 만들 필요는 없긴함
 # 로그인 정보는 accounts에 있을듯?

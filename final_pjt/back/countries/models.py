@@ -7,8 +7,9 @@ class Country(models.Model):
     burger = models.FloatField()
     coffee = models.FloatField()
     area = models.CharField(max_length=50)
-    image = models.ImageField(blank=True)
-    info = models.TextField()
+    image1 = models.ImageField(blank=True)
+    image2 = models.ImageField(blank=True)
+    image3 = models.ImageField(blank=True)
 
 class Exchange(models.Model):
     country_e = models.ForeignKey(Country, on_delete=models.CASCADE)

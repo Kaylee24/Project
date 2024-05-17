@@ -3,12 +3,27 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 from .models import Comment, Country, Exchange, Travel
-from .serializers import CountrySerializer, CountryPictureSerializer
+from .serializers import ComparisonCountrySerializer, MainCountryPictureSerializer
 
 @api_view(['GET'])
 def main_country_picture(request):
     countries = Country.objects.all()
     # many=True는 Serialize 대상이 QuerySet인 경우 입력
-    serializer = CountryPictureSerializer(countries, many=True)
+    serializer = MainCountryPictureSerializer(countries, many=True)
     # data : Serialized data 객체에서 실제 데이터를 추출
     return Response(serializer.data)
+
+@api_view(['GET'])
+def comparison_page(request):
+    countries = Country.objects.all()
+    serializer = ComparisonCountrySerializer(countries, many=True)
+    return Response(serializer.data)
+
+# 여기서 댓글을 달게 할거라서 POST도 필요할듯?
+# 수정필요 -> POST관련, 분기 나누기 등
+@api_view(['GET', 'POST'])
+def detail_page(request):
+    countries = Country.objects.all()
+    serializer = ComparisonCountrySerializer(countries, many=True)
+    return Response(serializer.data)
+

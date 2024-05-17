@@ -7,6 +7,9 @@ export const useCounterStore = defineStore('counter', () => {
   const articles = ref([])
   const API_URL = 'http://127.0.0.1:8000'
   const token = ref(null)
+
+  const pictures = ref([])
+
   const isLogin = computed(() => {
     if (token.value === null) {
       return false
@@ -15,6 +18,22 @@ export const useCounterStore = defineStore('counter', () => {
     }
   })
   const router = useRouter()
+
+  const getMainCountryPictures = () => {
+    axios({
+      method: 'get',
+      url: `${API_URL}/countries/main_country_picture/`,
+      // headers: {
+      //   Authorization: `Token ${token.value}`
+      // }
+    })
+      .then(response => {
+        pictures.value = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
 
   const getArticles = function () {
     axios({

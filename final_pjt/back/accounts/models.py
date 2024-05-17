@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
+from countries.models import Country
 
 # Create your models here.
 class User(AbstractUser):
@@ -10,3 +10,7 @@ class User(AbstractUser):
     )
     name = models.CharField(max_length=50)
     gender = models.CharField(max_length=50, choices=GENDER_CHOICES)
+    age = models.IntegerField()
+    visited = models.ManyToManyField(Country, related_name='visited_users')
+    interested = models.ManyToManyField(Country, related_name='interested_users')
+    

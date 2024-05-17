@@ -7,6 +7,7 @@ class Country(models.Model):
     burger = models.FloatField()
     coffee = models.FloatField()
     area = models.CharField(max_length=50)
+    image = models.ImageField(blank=True)
 
 class Exchange(models.Model):
     country_e = models.ForeignKey(Country, on_delete=models.CASCADE)
@@ -15,6 +16,10 @@ class Exchange(models.Model):
     graph = models.ImageField(blank=True)
 
 class Comment(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE
+    )
+    country_c = models.ForeignKey(Country, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

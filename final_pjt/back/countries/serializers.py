@@ -14,4 +14,3 @@ class CommentSerializer(serializers.ModelSerializer):
 class ExchangeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exchange
-        

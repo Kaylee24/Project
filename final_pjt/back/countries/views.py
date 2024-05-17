@@ -12,3 +12,4 @@ def main_page(request):
     serializer = CountrySerializer(countries, many=True)
     # data : Serialized data 객체에서 실제 데이터를 추출
     return Response(serializer.data)
+

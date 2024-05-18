@@ -34,6 +34,12 @@ class DetailCountrySerializer(serializers.ModelSerializer):
         model = Country
         fields = ['name', 'burger', 'coffee', 'area', 'image1', 'image2', 'image3', 'code', 'rate', 'graph', 'comment_set']
 
+class CommentCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
+        fields = ('content',)
+        read_only_fields = ('user', 'country_c')
+
 # profile page에 들어갈 serializer
 
 class ProfileSerializer(serializers.ModelSerializer):

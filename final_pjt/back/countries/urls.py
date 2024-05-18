@@ -12,4 +12,6 @@ urlpatterns = [
     # detail page
     path('detail_page/', views.detail_page),
 
+    # profile page
+    path('profile_page/<int:user_pk>', views.profile_page),
 ]

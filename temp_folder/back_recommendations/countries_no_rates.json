@@ -1,0 +1,392 @@
+[
+    {
+        "model": "countries.country",
+        "pk": 1,
+        "fields": {
+            "name": "일본",
+            "burger": 580.0,
+            "coffee": 445.0,
+            "area": "East Asia",
+            "image1": "01_jpn/01.jpg",
+            "image2": "01_jpn/02.jpg",
+            "image3": "01_jpn/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 2,
+        "fields": {
+            "name": "중국",
+            "burger": 25.0,
+            "coffee": 30.0,
+            "area": "East Asia",
+            "image1": "02_chn/01.jpg",
+            "image2": "02_chn/02.jpg",
+            "image3": "02_chn/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 3,
+        "fields": {
+            "name": "미국",
+            "burger": 5.69,
+            "coffee": 4.45,
+            "area": "America",
+            "image1": "03_usa/01.jpg",
+            "image2": "03_usa/02.jpg",
+            "image3": "03_usa/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 4,
+        "fields": {
+            "name": "대만",
+            "burger": 75.0,
+            "coffee": 95.0,
+            "area": "East Asia",
+            "image1": "04_twn/01.jpg",
+            "image2": "04_twn/02.jpg",
+            "image3": "04_twn/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 5,
+        "fields": {
+            "name": "홍콩",
+            "burger": 23.0,
+            "coffee": 41.0,
+            "area": "East Asia",
+            "image1": "05_hkg/01.jpg",
+            "image2": "05_hkg/02.jpg",
+            "image3": "05_hkg/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 6,
+        "fields": {
+            "name": "유럽",
+            "burger": 5.39,
+            "coffee": 3.45,
+            "area": "Europe",
+            "image1": "06_europe/01.jpg",
+            "image2": "06_europe/02.jpg",
+            "image3": "06_europe/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 7,
+        "fields": {
+            "name": "태국",
+            "burger": 135.0,
+            "coffee": 120.0,
+            "area": "Southeast Asia",
+            "image1": "07_tha/01.jpg",
+            "image2": "07_tha/02.jpg",
+            "image3": "07_tha/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 8,
+        "fields": {
+            "name": "베트남",
+            "burger": 74000.0,
+            "coffee": 65000.0,
+            "area": "Southeast Asia",
+            "image1": "08_vnm/01.jpg",
+            "image2": "08_vnm/02.jpg",
+            "image3": "08_vnm/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 9,
+        "fields": {
+            "name": "필리핀",
+            "burger": 161.0,
+            "coffee": 150.0,
+            "area": "Southeast Asia",
+            "image1": "09_phl/01.jpg",
+            "image2": "09_phl/02.jpg",
+            "image3": "09_phl/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 10,
+        "fields": {
+            "name": "말레이시아",
+            "burger": 13.15,
+            "coffee": 8.5,
+            "area": "Southeast Asia",
+            "image1": "10_mys/01.jpg",
+            "image2": "10_mys/02.jpg",
+            "image3": "10_mys/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 11,
+        "fields": {
+            "name": "싱가포르",
+            "burger": 6.65,
+            "coffee": 6.0,
+            "area": "Southeast Asia",
+            "image1": "11_sgp/01.jpg",
+            "image2": "11_sgp/02.jpg",
+            "image3": "11_sgp/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 12,
+        "fields": {
+            "name": "호주",
+            "burger": 7.7,
+            "coffee": 5.3,
+            "area": "Oceania",
+            "image1": "12_aus/01.jpg",
+            "image2": "12_aus/02.jpg",
+            "image3": "12_aus/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 13,
+        "fields": {
+            "name": "영국",
+            "burger": 4.49,
+            "coffee": 2.85,
+            "area": "Europe",
+            "image1": "13_gbr/01.jpg",
+            "image2": "13_gbr/02.jpg",
+            "image3": "13_gbr/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 14,
+        "fields": {
+            "name": "캐나다",
+            "burger": 7.47,
+            "coffee": 4.25,
+            "area": "America",
+            "image1": "14_can/01.jpg",
+            "image2": "14_can/02.jpg",
+            "image3": "14_can/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 15,
+        "fields": {
+            "name": "인도네시아",
+            "burger": 38000.0,
+            "coffee": 49000.0,
+            "area": "Southeast Asia",
+            "image1": "15_idn/01.jpg",
+            "image2": "15_idn/02.jpg",
+            "image3": "15_idn/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 16,
+        "fields": {
+            "name": "뉴질랜드",
+            "burger": 8.2,
+            "coffee": 5.0,
+            "area": "Oceania",
+            "image1": "16_nzl/01.jpg",
+            "image2": "16_nzl/02.jpg",
+            "image3": "16_nzl/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 17,
+        "fields": {
+            "name": "인도",
+            "burger": 215.0,
+            "coffee": 250.0,
+            "area": "Southeast Asia",
+            "image1": "17_ind/01.jpg",
+            "image2": "17_ind/02.jpg",
+            "image3": "17_ind/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 18,
+        "fields": {
+            "name": "스웨덴",
+            "burger": 61.29,
+            "coffee": 40.0,
+            "area": "Europe",
+            "image1": "18_swe/01.jpg",
+            "image2": "18_swe/02.jpg",
+            "image3": "18_swe/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 19,
+        "fields": {
+            "name": "스위스",
+            "burger": 7.1,
+            "coffee": 6.2,
+            "area": "Europe",
+            "image1": "19_che/01.jpg",
+            "image2": "19_che/02.jpg",
+            "image3": "19_che/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 20,
+        "fields": {
+            "name": "브라질",
+            "burger": 23.9,
+            "coffee": 10.0,
+            "area": "America",
+            "image1": "20_bra/01.jpg",
+            "image2": "20_bra/02.jpg",
+            "image3": "20_bra/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 21,
+        "fields": {
+            "name": "사우디아라비아",
+            "burger": 19.0,
+            "coffee": 15.0,
+            "area": "West Asia",
+            "image1": "21_sau/01.jpg",
+            "image2": "21_sau/02.jpg",
+            "image3": "21_sau/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 22,
+        "fields": {
+            "name": "아랍에미리트",
+            "burger": 18.0,
+            "coffee": 18.0,
+            "area": "West Asia",
+            "image1": "22_are/01.jpg",
+            "image2": "22_are/02.jpg",
+            "image3": "22_are/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 23,
+        "fields": {
+            "name": "남아프리카공화국",
+            "burger": 51.9,
+            "coffee": 40.0,
+            "area": "Africa",
+            "image1": "23_zaf/01.jpg",
+            "image2": "23_zaf/02.jpg",
+            "image3": "23_zaf/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 24,
+        "fields": {
+            "name": "멕시코",
+            "burger": 89.0,
+            "coffee": 64.0,
+            "area": "America",
+            "image1": "24_mex/01.jpg",
+            "image2": "24_mex/02.jpg",
+            "image3": "24_mex/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 25,
+        "fields": {
+            "name": "폴란드",
+            "burger": 19.9,
+            "coffee": 14.9,
+            "area": "Europe",
+            "image1": "25_pol/01.jpg",
+            "image2": "25_pol/02.jpg",
+            "image3": "25_pol/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 26,
+        "fields": {
+            "name": "터키",
+            "burger": 120.0,
+            "coffee": 58.0,
+            "area": "West Asia",
+            "image1": "26_tur/01.jpg",
+            "image2": "26_tur/02.jpg",
+            "image3": "26_tur/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 27,
+        "fields": {
+            "name": "러시아",
+            "burger": 420.0,
+            "coffee": 270.0,
+            "area": "East Asia",
+            "image1": "27_rus/01.jpg",
+            "image2": "27_rus/02.jpg",
+            "image3": "27_rus/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 28,
+        "fields": {
+            "name": "덴마크",
+            "burger": 39.0,
+            "coffee": 41.0,
+            "area": "Europe",
+            "image1": "28_dnk/01.jpg",
+            "image2": "28_dnk/02.jpg",
+            "image3": "28_dnk/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 29,
+        "fields": {
+            "name": "노르웨이",
+            "burger": 75.0,
+            "coffee": 48.0,
+            "area": "Europe",
+            "image1": "29_nor/01.jpg",
+            "image2": "29_nor/02.jpg",
+            "image3": "29_nor/03.jpg"
+        }
+    },
+    {
+        "model": "countries.country",
+        "pk": 30,
+        "fields": {
+            "name": "이집트",
+            "burger": 85.0,
+            "coffee": 40.0,
+            "area": "Africa",
+            "image1": "30_egy/01.jpg",
+            "image2": "30_egy/02.jpg",
+            "image3": "30_egy/03.jpg"
+        }
+    }
+]

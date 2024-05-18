@@ -1,0 +1,13 @@
+[
+{
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "title": "tt",
+        "content": "11",
+        "created_at": "2024-05-17T06:42:38.998Z",
+        "updated_at": "2024-05-17T06:42:38.998Z"
+    }
+}
+]

@@ -1,0 +1,13 @@
+[
+{
+    "model": "countries.country",
+    "pk": 1,
+    "fields": {
+        "name": "일본",
+        "burger": 123.1,
+        "coffee": 12.1,
+        "area": "동아시아",
+        "image": "tokyo.jpg"
+    }
+}
+]

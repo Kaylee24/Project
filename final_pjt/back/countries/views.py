@@ -57,3 +57,44 @@ def index(request, pk):
         'countries' : countries,
     }
     return render(request, 'index.html', context)
+
+
+@api_view(['POST', 'GET'])
+def travel_recommendations(request):
+    if request.method == 'POST':
+        desired_country = request.POST.get('country')
+        budget = float(request.POST.get('budget'))
+        days = int(request.POST.get('days'))
+
+        try:
+            country = Country.objects.get(name=desired_country)
+        except Country.DoesNotExist:
+            return Response({'error': 'Country not found'}, status=404)
+
+        area_countries = Country.objects.filter(area=country.area)
+        recommendations = []
+
+        daily_budget = budget / days
+
+        for c in area_countries:
+            total_cost_per_day = (c.burger + c.coffee) * c.rate
+            daily_cost_index = daily_budget / total_cost_per_day
+
+            if daily_cost_index < 3:
+                style = 'Not recommended'
+            elif 3 <= daily_cost_index < 6:
+                style = 'Backpacker'
+            elif 6 <= daily_cost_index < 10:
+                style = 'Mid-range'
+            else:
+                style = 'Luxury'
+
+            recommendations.append({
+                'country': c.name,
+                'travel_style': style,
+                'cost_index': daily_cost_index
+            })
+
+        return render(request, 'recommendations.html', {'recommendations': recommendations})
+
+    return render(request, 'recommendations.html')

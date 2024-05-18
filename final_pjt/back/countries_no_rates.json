@@ -9,10 +9,7 @@
             "area": "East Asia",
             "image1": "01_jpn/01.jpg",
             "image2": "01_jpn/02.jpg",
-            "image3": "01_jpn/03.jpg",
-            "code": "JPY 100",
-            "rate": 870.56,
-            "graph": "graphs/01_JPY_exchange_rate.png"
+            "image3": "01_jpn/03.jpg"
         }
     },
     {
@@ -25,10 +22,7 @@
             "area": "East Asia",
             "image1": "02_chn/01.jpg",
             "image2": "02_chn/02.jpg",
-            "image3": "02_chn/03.jpg",
-            "code": "CNY",
-            "rate": 187.38,
-            "graph": "graphs/02_CNY_exchange_rate.png"
+            "image3": "02_chn/03.jpg"
         }
     },
     {
@@ -41,10 +35,7 @@
             "area": "America",
             "image1": "03_usa/01.jpg",
             "image2": "03_usa/02.jpg",
-            "image3": "03_usa/03.jpg",
-            "code": "USD",
-            "rate": 1355.5,
-            "graph": "graphs/03_USD_exchange_rate.png"
+            "image3": "03_usa/03.jpg"
         }
     },
     {
@@ -57,10 +48,7 @@
             "area": "East Asia",
             "image1": "04_twn/01.jpg",
             "image2": "04_twn/02.jpg",
-            "image3": "04_twn/03.jpg",
-            "code": "TWD",
-            "rate": 42.13,
-            "graph": "graphs/04_TWD_exchange_rate.png"
+            "image3": "04_twn/03.jpg"
         }
     },
     {
@@ -73,10 +61,7 @@
             "area": "East Asia",
             "image1": "05_hkg/01.jpg",
             "image2": "05_hkg/02.jpg",
-            "image3": "05_hkg/03.jpg",
-            "code": "HKD",
-            "rate": 173.74,
-            "graph": "graphs/05_HKD_exchange_rate.png"
+            "image3": "05_hkg/03.jpg"
         }
     },
     {
@@ -89,10 +74,7 @@
             "area": "Europe",
             "image1": "06_europe/01.jpg",
             "image2": "06_europe/02.jpg",
-            "image3": "06_europe/03.jpg",
-            "code": "EUR",
-            "rate": 1473.29,
-            "graph": "graphs/06_EUR_exchange_rate.png"
+            "image3": "06_europe/03.jpg"
         }
     },
     {
@@ -105,10 +87,7 @@
             "area": "Southeast Asia",
             "image1": "07_tha/01.jpg",
             "image2": "07_tha/02.jpg",
-            "image3": "07_tha/03.jpg",
-            "code": "THB",
-            "rate": 37.55,
-            "graph": "graphs/07_THB_exchange_rate.png"
+            "image3": "07_tha/03.jpg"
         }
     },
     {
@@ -121,10 +100,7 @@
             "area": "Southeast Asia",
             "image1": "08_vnm/01.jpg",
             "image2": "08_vnm/02.jpg",
-            "image3": "08_vnm/03.jpg",
-            "code": "VND 100",
-            "rate": 5.33,
-            "graph": "graphs/08_VND_exchange_rate.png"
+            "image3": "08_vnm/03.jpg"
         }
     },
     {
@@ -137,10 +113,7 @@
             "area": "Southeast Asia",
             "image1": "09_phl/01.jpg",
             "image2": "09_phl/02.jpg",
-            "image3": "09_phl/03.jpg",
-            "code": "PHP",
-            "rate": 23.5,
-            "graph": "graphs/09_PHP_exchange_rate.png"
+            "image3": "09_phl/03.jpg"
         }
     },
     {
@@ -153,10 +126,7 @@
             "area": "Southeast Asia",
             "image1": "10_mys/01.jpg",
             "image2": "10_mys/02.jpg",
-            "image3": "10_mys/03.jpg",
-            "code": "MYR",
-            "rate": 289.17,
-            "graph": "graphs/10_MYR_exchange_rate.png"
+            "image3": "10_mys/03.jpg"
         }
     },
     {
@@ -169,10 +139,7 @@
             "area": "Southeast Asia",
             "image1": "11_sgp/01.jpg",
             "image2": "11_sgp/02.jpg",
-            "image3": "11_sgp/03.jpg",
-            "code": "SGD",
-            "rate": 1007.84,
-            "graph": "graphs/11_SGD_exchange_rate.png"
+            "image3": "11_sgp/03.jpg"
         }
     },
     {
@@ -185,10 +152,7 @@
             "area": "Oceania",
             "image1": "12_aus/01.jpg",
             "image2": "12_aus/02.jpg",
-            "image3": "12_aus/03.jpg",
-            "code": "AUD",
-            "rate": 907.37,
-            "graph": "graphs/12_AUD_exchange_rate.png"
+            "image3": "12_aus/03.jpg"
         }
     },
     {
@@ -201,10 +165,7 @@
             "area": "Europe",
             "image1": "13_gbr/01.jpg",
             "image2": "13_gbr/02.jpg",
-            "image3": "13_gbr/03.jpg",
-            "code": "GBP",
-            "rate": 1721.76,
-            "graph": "graphs/13_GBP_exchange_rate.png"
+            "image3": "13_gbr/03.jpg"
         }
     },
     {
@@ -217,10 +178,7 @@
             "area": "America",
             "image1": "14_can/01.jpg",
             "image2": "14_can/02.jpg",
-            "image3": "14_can/03.jpg",
-            "code": "CAD",
-            "rate": 995.81,
-            "graph": "graphs/14_CAD_exchange_rate.png"
+            "image3": "14_can/03.jpg"
         }
     },
     {
@@ -233,10 +191,7 @@
             "area": "Southeast Asia",
             "image1": "15_idn/01.jpg",
             "image2": "15_idn/02.jpg",
-            "image3": "15_idn/03.jpg",
-            "code": "IDR",
-            "rate": 8.51,
-            "graph": "graphs/15_IDR_exchange_rate.png"
+            "image3": "15_idn/03.jpg"
         }
     },
     {
@@ -249,10 +204,7 @@
             "area": "Oceania",
             "image1": "16_nzl/01.jpg",
             "image2": "16_nzl/02.jpg",
-            "image3": "16_nzl/03.jpg",
-            "code": "NZD",
-            "rate": 831.67,
-            "graph": "graphs/16_NZD_exchange_rate.png"
+            "image3": "16_nzl/03.jpg"
         }
     },
     {
@@ -265,10 +217,7 @@
             "area": "Southeast Asia",
             "image1": "17_ind/01.jpg",
             "image2": "17_ind/02.jpg",
-            "image3": "17_ind/03.jpg",
-            "code": "INR",
-            "rate": 16.27,
-            "graph": "graphs/17_INR_exchange_rate.png"
+            "image3": "17_ind/03.jpg"
         }
     },
     {
@@ -281,10 +230,7 @@
             "area": "Europe",
             "image1": "18_swe/01.jpg",
             "image2": "18_swe/02.jpg",
-            "image3": "18_swe/03.jpg",
-            "code": "SEK",
-            "rate": 126.54,
-            "graph": "graphs/18_SEK_exchange_rate.png"
+            "image3": "18_swe/03.jpg"
         }
     },
     {
@@ -297,10 +243,7 @@
             "area": "Europe",
             "image1": "19_che/01.jpg",
             "image2": "19_che/02.jpg",
-            "image3": "19_che/03.jpg",
-            "code": "CHF",
-            "rate": 1491.61,
-            "graph": "graphs/19_CHF_exchange_rate.png"
+            "image3": "19_che/03.jpg"
         }
     },
     {
@@ -313,10 +256,7 @@
             "area": "America",
             "image1": "20_bra/01.jpg",
             "image2": "20_bra/02.jpg",
-            "image3": "20_bra/03.jpg",
-            "code": "BRL",
-            "rate": 265.54,
-            "graph": "graphs/20_BRL_exchange_rate.png"
+            "image3": "20_bra/03.jpg"
         }
     },
     {
@@ -329,10 +269,7 @@
             "area": "West Asia",
             "image1": "21_sau/01.jpg",
             "image2": "21_sau/02.jpg",
-            "image3": "21_sau/03.jpg",
-            "code": "SAR",
-            "rate": 361.43,
-            "graph": "graphs/21_SAR_exchange_rate.png"
+            "image3": "21_sau/03.jpg"
         }
     },
     {
@@ -345,10 +282,7 @@
             "area": "West Asia",
             "image1": "22_are/01.jpg",
             "image2": "22_are/02.jpg",
-            "image3": "22_are/03.jpg",
-            "code": "AED",
-            "rate": 369.04,
-            "graph": "graphs/22_AED_exchange_rate.png"
+            "image3": "22_are/03.jpg"
         }
     },
     {
@@ -361,10 +295,7 @@
             "area": "Africa",
             "image1": "23_zaf/01.jpg",
             "image2": "23_zaf/02.jpg",
-            "image3": "23_zaf/03.jpg",
-            "code": "ZAR",
-            "rate": 74.61,
-            "graph": "graphs/23_ZAR_exchange_rate.png"
+            "image3": "23_zaf/03.jpg"
         }
     },
     {
@@ -377,10 +308,7 @@
             "area": "America",
             "image1": "24_mex/01.jpg",
             "image2": "24_mex/02.jpg",
-            "image3": "24_mex/03.jpg",
-            "code": "MXN",
-            "rate": 81.62,
-            "graph": "graphs/24_MXN_exchange_rate.png"
+            "image3": "24_mex/03.jpg"
         }
     },
     {
@@ -393,10 +321,7 @@
             "area": "Europe",
             "image1": "25_pol/01.jpg",
             "image2": "25_pol/02.jpg",
-            "image3": "25_pol/03.jpg",
-            "code": "PLN",
-            "rate": 345.8,
-            "graph": "graphs/25_PLN_exchange_rate.png"
+            "image3": "25_pol/03.jpg"
         }
     },
     {
@@ -409,10 +334,7 @@
             "area": "West Asia",
             "image1": "26_tur/01.jpg",
             "image2": "26_tur/02.jpg",
-            "image3": "26_tur/03.jpg",
-            "code": "TRY",
-            "rate": 42.05,
-            "graph": "graphs/26_TRY_exchange_rate.png"
+            "image3": "26_tur/03.jpg"
         }
     },
     {
@@ -425,10 +347,7 @@
             "area": "East Asia",
             "image1": "27_rus/01.jpg",
             "image2": "27_rus/02.jpg",
-            "image3": "27_rus/03.jpg",
-            "code": "RUB",
-            "rate": 14.9,
-            "graph": "graphs/27_RUB_exchange_rate.png"
+            "image3": "27_rus/03.jpg"
         }
     },
     {
@@ -441,10 +360,7 @@
             "area": "Europe",
             "image1": "28_dnk/01.jpg",
             "image2": "28_dnk/02.jpg",
-            "image3": "28_dnk/03.jpg",
-            "code": "DKK",
-            "rate": 197.47,
-            "graph": "graphs/28_DKK_exchange_rate.png"
+            "image3": "28_dnk/03.jpg"
         }
     },
     {
@@ -457,10 +373,7 @@
             "area": "Europe",
             "image1": "29_nor/01.jpg",
             "image2": "29_nor/02.jpg",
-            "image3": "29_nor/03.jpg",
-            "code": "NOK",
-            "rate": 126.93,
-            "graph": "graphs/29_NOK_exchange_rate.png"
+            "image3": "29_nor/03.jpg"
         }
     },
     {
@@ -473,10 +386,7 @@
             "area": "Africa",
             "image1": "30_egy/01.jpg",
             "image2": "30_egy/02.jpg",
-            "image3": "30_egy/03.jpg",
-            "code": "EGP",
-            "rate": 28.9,
-            "graph": "graphs/30_EGP_exchange_rate.png"
+            "image3": "30_egy/03.jpg"
         }
     }
 ]

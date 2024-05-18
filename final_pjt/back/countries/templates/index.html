@@ -8,9 +8,9 @@
 <body>
     {% load static %}
     <h1>Hello</h1>
-    <p>{{ countries.name }}</p>
+    {% comment %} <p>{{ countries.name }}</p>
     <img src="{% static countries.image1 %}" alt="img">
     <img src="{% static countries.image2 %}" alt="img">
-    <img src="{% static countries.image3 %}" alt="img">
+    <img src="{% static countries.image3 %}" alt="img"> {% endcomment %}
 </body>
 </html>

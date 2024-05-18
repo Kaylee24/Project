@@ -10,12 +10,9 @@ class Country(models.Model):
     image1 = models.ImageField(blank=True)
     image2 = models.ImageField(blank=True)
     image3 = models.ImageField(blank=True)
-
-class Exchange(models.Model):
-    country_e = models.ForeignKey(Country, on_delete=models.CASCADE)
     code = models.CharField(max_length=50)
     rate = models.FloatField()
-    graph = models.ImageField(blank=True)
+    graph = models.ImageField()
 
 class Comment(models.Model):
     user = models.ForeignKey(

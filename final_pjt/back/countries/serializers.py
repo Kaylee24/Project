@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Country, Exchange, Comment, Travel
+from .models import Country, Comment, Travel
 from accounts.models import User
 from accounts.serializers import UserSerializer
 
@@ -10,24 +10,13 @@ class MainCountryPictureSerializer(serializers.ModelSerializer):
         model = Country
         fields = ('image1', 'name')
 
-
-# Country에서 역참조로 찾을 환율정보
-class ExchangeGraphSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Exchange
-        fields = ('code', 'rate', 'graph')
-
 # comparison_page에 들어갈 serializer
-
 # 나라에 대한 정보
 class ComparisonCountrySerializer(serializers.ModelSerializer):
 
-    
-    exchange_set = ExchangeGraphSerializer(many=True, read_only=True)
-
     class Meta:
         model = Country
-        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'exchange_set']
+        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'code', 'rate', 'graph']
 
 
 # detail_page에 들어갈 serializer
@@ -41,11 +30,9 @@ class DetailCountrySerializer(serializers.ModelSerializer):
 
     comment_set = CommentSerializer(many=True, read_only=True)
 
-    exchange_set = ExchangeGraphSerializer(many=True, read_only=True)
-
     class Meta:
         model = Country
-        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'image2', 'image3', 'exchange_set', 'comment_set']
+        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'image2', 'image3', 'code', 'rate', 'graph', 'comment_set']
 
 # profile page에 들어갈 serializer
 

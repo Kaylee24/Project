@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-
 from accounts.models import User
 from .models import Comment, Country, Exchange, Travel
 from .serializers import ComparisonCountrySerializer, MainCountryPictureSerializer, ProfileSerializer
@@ -33,3 +32,10 @@ def profile_page(request, user_pk):
     profile = User.objects.get(pk=user_pk)
     serializer = ProfileSerializer(profile, many=True)
     return Response(serializer.data)
+
+def index(request, pk):
+    countries = Country.objects.get(pk=pk)
+    context = {
+        'countries' : countries,
+    }
+    return render(request, 'index.html', context)

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from accounts.models import User
@@ -24,7 +24,8 @@ def comparison_page(request):
 # 수정필요 -> POST관련, 분기 나누기 등
 @api_view(['GET', 'POST'])
 def detail_page(request, country_pk, user_pk):
-    country = Country.objects.get(pk=country_pk)
+    # country = Country.objects.get(pk=country_pk)
+    country = get_object_or_404(Country, pk=country_pk)
     if request.method == 'GET':
         serializer = ComparisonCountrySerializer(country, many=True)
         return Response(serializer.data)
@@ -37,22 +38,25 @@ def detail_page(request, country_pk, user_pk):
         
 @api_view(['DELETE'])
 def comment_delete(request, comment_pk):
-    comment = Comment.objects.get(pk=comment_pk)
-    if request.method == 'DELETE':
-        comment.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+    # comment = Comment.objects.get(pk=comment_pk)
+    comment = get_object_or_404(Comment, pk=comment_pk)
+    # if request.method == 'DELETE':
+    comment.delete()
+    return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 
 @api_view(['GET'])
 def profile_page(request, user_pk):
-    profile = User.objects.get(pk=user_pk)
+    # profile = User.objects.get(pk=user_pk)
+    profile = get_object_or_404(User, pk=user_pk)
     serializer = ProfileSerializer(profile, many=True)
     return Response(serializer.data)
 
 # 데이터 나오는지 확인용
 def index(request, pk):
-    countries = Country.objects.get(pk=pk)
+    # countries = Country.objects.get(pk=pk)
+    countries = get_object_or_404(Country, pk=pk)
     context = {
         'countries' : countries,
     }

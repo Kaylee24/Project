@@ -64,4 +64,4 @@ class ProfileSerializer(serializers.ModelSerializer):
 
 ## nav바를 따로 serializer로 만들 필요는 없긴함
 # 로그인 정보는 accounts에 있을듯?
-# 그걸 가지ㅗㄱ 할듯
+# 그걸 가지고 할듯

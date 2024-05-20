@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainView from '@/views/MainView.vue'
 import TestView from '@/views/TestView.vue'
+import ComparisonPageView from '@/views/ComparisonPageView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,12 @@ const router = createRouter({
       name: 'TestView',
       component: TestView
     },
+    {
+      path: '/comparison_page',
+      name: 'ComparisonPageView',
+      component: ComparisonPageView
+    },
+    
   ]
 })
 

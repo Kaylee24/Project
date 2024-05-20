@@ -6,7 +6,7 @@
     :key="picture.id"  
     >
       <li>
-        그림 : {{ picture.image1 }}
+        나라 : {{ picture.name }}
       </li>
       <li>
         그림 : <img :src="getImageUrl(picture.image1)" alt="img">
@@ -17,7 +17,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import { onMounted } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 

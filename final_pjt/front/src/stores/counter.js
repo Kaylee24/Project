@@ -8,6 +8,11 @@ export const useCounterStore = defineStore('counter', () => {
   const token = ref(null)
 
   const pictures = ref([])
+  const comparisonPageDatas = ref([])
+
+  const getImageUrl = (imagePath) => {
+    return `http://127.0.0.1:8000${imagePath}`
+  }
 
   const isLogin = computed(() => {
     if (token.value === null) {
@@ -34,6 +39,25 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
+  const comparisonPage = () => {
+    axios({
+      method: 'get',
+      url: `${API_URL}/countries/comparison_page/`,
+    })
+      .then(response => {
+        comparisonPageDatas.value = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
+
+
+
+
+
+  // 회원가입
   const signUp = function (payload) {
     // 1. 사용자 입력 데이터를 받아
     // const username = payload.username
@@ -61,6 +85,7 @@ export const useCounterStore = defineStore('counter', () => {
      })
   }
 
+  // 로그인
   const logIn = function (payload) {
     // 1. 사용자 입력 데이터를 받아
     const { username, password } = payload
@@ -84,7 +109,7 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
-  return { API_URL, token, isLogin, pictures,
-    signUp, logIn, getMainCountryPictures,
+  return { API_URL, token, isLogin, pictures, comparisonPageDatas,
+    signUp, logIn, getMainCountryPictures, comparisonPage, getImageUrl,
     }
 }, { persist: true })

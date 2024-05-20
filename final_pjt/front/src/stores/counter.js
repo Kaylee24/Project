@@ -103,5 +103,7 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
-  return { articles, API_URL, getArticles, signUp, logIn, token, isLogin }
+  return { articles, API_URL, token, isLogin, pictures,
+    getArticles, signUp, logIn, getMainCountryPictures,
+    }
 }, { persist: true })

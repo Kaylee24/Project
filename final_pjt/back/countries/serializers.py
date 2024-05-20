@@ -16,7 +16,7 @@ class ComparisonCountrySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Country
-        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'code', 'rate', 'graph']
+        fields = ['id', 'name', 'burger', 'coffee', 'area', 'image1', 'code', 'rate', 'graph']
 
 
 # detail_page에 들어갈 serializer
@@ -33,7 +33,7 @@ class DetailCountrySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Country
-        fields = ['name', 'burger', 'coffee', 'area', 'image1', 'image2', 'image3', 'code', 'rate', 'graph', 'comment_set']
+        fields = ['id', 'name', 'burger', 'coffee', 'area', 'image1', 'image2', 'image3', 'code', 'rate', 'graph', 'comment_set']
 
 class CommentCreateSerializer(serializers.ModelSerializer):
     class Meta:

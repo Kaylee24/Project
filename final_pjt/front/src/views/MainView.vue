@@ -7,14 +7,14 @@
   </div>
     
   <div class="main">
-    <PhotoGallery />
+    <Gallery />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import { useCounterStore } from '@/stores/counter';
-import PhotoGallery from '@/components/PhotoGallery.vue';
+import Gallery from '@/components/MainView/Gallery.vue';
 
 const query = ref('');
 const store = useCounterStore();

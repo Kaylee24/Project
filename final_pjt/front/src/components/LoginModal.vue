@@ -1,19 +1,19 @@
 <template>
-  <div v-if="isVisible" class="modal-overlay" @click="closeModal">
-    <div class="modal" @click.stop>
+  <div v-if="isVisible" class="custom-modal-overlay" @click="closeModal">
+    <div class="custom-modal" @click.stop>
       <h2>Login</h2>
       <form @submit.prevent="login">
-        <div>
-          <label for="username">Username:</label>
-          <input v-model="username" id="username" type="text" required />
+        <div class="mb-3">
+          <label for="username" class="form-label">Username:</label>
+          <input v-model="username" id="username" type="text" class="form-control" required />
         </div>
-        <div>
-          <label for="password">Password:</label>
-          <input v-model="password" id="password" type="password" required />
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input v-model="password" id="password" type="password" class="form-control" required />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" class="btn btn-primary">Login</button>
       </form>
-      <button @click="closeModal">Close</button>
+      <button @click="closeModal" class="btn btn-secondary mt-2">Close</button>
     </div>
   </div>
 </template>
@@ -45,8 +45,8 @@ export default {
 };
 </script>
 
-<style>
-.modal-overlay {
+<style scoped>
+.custom-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -56,12 +56,15 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1050; /* Bootstrap 모달 z-index와 맞추기 */
 }
-.modal {
+
+.custom-modal {
   background: white;
   padding: 20px;
   border-radius: 8px;
   width: 300px;
   max-width: 100%;
+  z-index: 1060; /* Bootstrap 모달 z-index와 맞추기 */
 }
 </style>

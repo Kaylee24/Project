@@ -7,7 +7,11 @@
         class="carousel-item" 
         :class="{ active: index === 0 }">
         <div class="img-container">
-          <img :src="getImageUrl(photo.image1)" class="d-block w-100" alt="Photo">
+          <img 
+            :src="store.getImageUrl(photo.image1)" 
+            class="d-block w-100" 
+            alt="Photo"
+            @click="goToDetail(photo.id)">
         </div>
       </div>
     </div>
@@ -26,31 +30,31 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed } from 'vue'
 import { useCounterStore } from '@/stores/counter'
+import { useRouter } from 'vue-router'
 
 const store = useCounterStore()
+const router = useRouter()
 const photos = computed(() => store.pictures)
 
-onMounted(() => {
-  store.getMainCountryPictures()
-})
-
-const getImageUrl = (imagePath) => {
-  return `http://127.0.0.1:8000${imagePath}`
+const goToDetail = (countryId) => {
+  router.push({ name: 'DetailView', params: { countryId } })
 }
+
 </script>
 
 <style>
 .carousel-item .img-container {
   width: 100%;
-  height: 500px; /* 원하는 높이 설정 */
-  overflow: hidden; /* 이미지가 넘치는 부분을 숨김 */
+  height: 500px;
+  overflow: hidden;
 }
 
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+  object-fit: cover;
+  cursor: pointer;
 }
 </style>

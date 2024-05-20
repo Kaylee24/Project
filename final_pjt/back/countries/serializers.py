@@ -8,7 +8,7 @@ from accounts.serializers import UserSerializer
 class MainCountryPictureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Country
-        fields = ('image1', 'name')
+        fields = ('id', 'image1', 'name')
 
 # comparison_page에 들어갈 serializer
 # 나라에 대한 정보

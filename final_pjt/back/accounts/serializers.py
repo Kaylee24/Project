@@ -23,3 +23,64 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'name', 'gender', 'age', 'visited', 'interested']
+
+# class SignUpUserSerializer(serializers.ModelSerializer):
+#     password1 = serializers.CharField(write_only=True)
+#     password2 = serializers.CharField(write_only=True)
+
+#     class Meta:
+#         model = User
+#         fields = ['username', 'password1', 'password2', 'name', 'gender', 'age']
+
+#     def validate(self, data):
+#         if data['password1'] != data['password2']:
+#             raise serializers.ValidationError("Passwords do not match")
+#         return data
+
+#     def create(self, validated_data):
+#         user = User(
+#             username=validated_data['username'],
+#             name=validated_data['name'],
+#             gender=validated_data['gender'],
+#             age=validated_data['age']
+#         )
+#         user.set_password(validated_data['password1'])
+#         user.save()
+#         return user
+
+from rest_framework import serializers
+from dj_rest_auth.registration.serializers import RegisterSerializer
+from .models import User
+
+
+class CustomRegisterSerializer(RegisterSerializer):
+    name = serializers.CharField(
+      required=False,
+      allow_blank=True,
+      max_length=255
+    )
+    gender = serializers.CharField(
+      required=False,
+      allow_blank=True,
+      max_length=255
+    )
+    age = serializers.CharField(
+      required=False,
+      allow_blank=True,
+      max_length=255
+    )
+    email = serializers.CharField(
+        required=False,
+      allow_blank=True,
+      max_length=255
+    )
+
+    def get_cleaned_data(self):
+        return {
+            'username': self.validated_data.get('username', ''),
+            'password1': self.validated_data.get('password1', ''),
+            'name': self.validated_data.get('name', ''),
+            'gender': self.validated_data.get('gender', ''),
+            'age': self.validated_data.get('age', ''),
+            'email' : self.validated_data.get('email', '')
+        }

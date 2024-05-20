@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
-    'articles',
     'accounts',
     'countries',
     'rest_framework',
@@ -84,6 +83,12 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
 ]
 
+REST_AUTH = {
+    'REGISTER_SERIALIZER': 'accounts.serializers.CustomRegisterSerializer',
+    'USER_DETAILS_SERIALIZER': 'dj_rest_auth.serializers.UserDetailsSerializer',
+ }
+
+ACCOUNT_ADAPTER  = 'accounts.models.CustomAccountAdapter'
 
 ROOT_URLCONF = 'my_api.urls'
 

@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from accounts.models import User
 from .models import Comment, Country, Travel
 from .serializers import ComparisonCountrySerializer, MainCountryPictureSerializer, ProfileSerializer, CommentCreateSerializer
@@ -23,6 +24,7 @@ def comparison_page(request):
 # 여기서 댓글을 달게 할거라서 POST도 필요할듯?
 # 수정필요 -> POST관련, 분기 나누기 등
 @api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
 def detail_page(request, country_pk, user_pk):
     # country = Country.objects.get(pk=country_pk)
     country = get_object_or_404(Country, pk=country_pk)
@@ -37,6 +39,7 @@ def detail_page(request, country_pk, user_pk):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         
 @api_view(['DELETE'])
+@permission_classes([IsAuthenticated])
 def comment_delete(request, comment_pk):
     # comment = Comment.objects.get(pk=comment_pk)
     comment = get_object_or_404(Comment, pk=comment_pk)

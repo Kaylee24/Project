@@ -29,7 +29,7 @@ onMounted(() => {
 })
 
 const getImageUrl = (imagePath) => {
-  return `http://127.0.0.1:8000/static${imagePath}`
+  return `http://127.0.0.1:8000${imagePath}`
 }
 
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="detail-view">
     <div class="detail-content">
-      <DetailCountry :data="data" />
+      <DetailGallery :data="data" />
       <DetailGraph :data="data" />
     </div>
   </div>
@@ -10,8 +10,8 @@
 <script setup>
 import { ref, onMounted, defineProps } from 'vue'
 import { useCounterStore } from '@/stores/counter'
-import DetailCountry from '@/components/DetailView/DetailCountry.vue'
 import DetailGraph from '@/components/DetailView/DetailGraph.vue'
+import DetailGallery from '@/components/DetailView/DetailGallery.vue';
 
 const store = useCounterStore()
 const countryId = ref(null)

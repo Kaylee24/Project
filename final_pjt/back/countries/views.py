@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from accounts.models import User
 from .models import Comment, Country, Travel
-from .serializers import ComparisonCountrySerializer, MainCountryPictureSerializer, ProfileSerializer, CommentCreateSerializer
+from .serializers import ComparisonCountrySerializer, MainCountryPictureSerializer, ProfileSerializer, CommentCreateSerializer, DetailCountrySerializer
 from rest_framework import status
 
 @api_view(['GET'])
@@ -29,7 +29,7 @@ def detail_page(request, country_pk):
     # country = Country.objects.get(pk=country_pk)
     country = get_object_or_404(Country, pk=country_pk)
     if request.method == 'GET':
-        serializer = ComparisonCountrySerializer(country)
+        serializer = DetailCountrySerializer(country)
         return Response(serializer.data)
     
     elif request.method == 'POST':

@@ -20,6 +20,8 @@ onMounted(() => {
   console.log(store.comparisonPageDatas)
 })
 
+
+
 </script>
 
 <style scoped>

@@ -87,6 +87,7 @@ export const useCounterStore = defineStore('counter', () => {
         console.log(error)
       })
   }
+  
 
   // 회원가입
   const signUp = function (payload) {
@@ -158,6 +159,7 @@ export const useCounterStore = defineStore('counter', () => {
     pictures, 
     comparisonPageDatas,
     detailContryData,
+
     signUp, 
     logIn, 
     getMainCountryPictures, 
@@ -166,5 +168,6 @@ export const useCounterStore = defineStore('counter', () => {
     getTravelRecommendations, // 추가된 메서드
     searchCountry,
     detailCountry,
+
   }
 }, { persist: true })

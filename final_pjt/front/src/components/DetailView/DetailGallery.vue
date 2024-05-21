@@ -43,7 +43,7 @@ const props = defineProps({
 
 const photos = [props.data.image1, props.data.image2, props.data.image3]
 
-console.log(photos)
+// console.log(photos)
 
 </script>
 

@@ -29,6 +29,8 @@ const props = defineProps({
 const burger = (Math.round(props.data.burger * props.data.rate / 10)) * 10
 const coffee = (Math.round(props.data.coffee * props.data.rate / 10)) * 10
 
+console.log(props)
+
 </script>
 
 <style scoped>

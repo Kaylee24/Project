@@ -11,6 +11,9 @@
       <div class="col-lg-6 col-12">
         <Gallery />
       </div>
+      <div class="col-lg-6 col-12">
+        <Recommendation />
+      </div>
     </div>
   </div>
 </template>
@@ -19,6 +22,7 @@
 import { ref } from 'vue';
 import { useCounterStore } from '@/stores/counter';
 import Gallery from '@/components/MainView/Gallery.vue';
+import Recommendation from '@/components/MainView/Recommendation.vue';
 
 const query = ref('');
 const store = useCounterStore();

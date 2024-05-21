@@ -11,10 +11,12 @@ export const useCounterStore = defineStore('counter', () => {
   const comparisonPageDatas = ref([])
   const detailContryData = ref([])
 
+  // 이미지 URL 생성
   const getImageUrl = (imagePath) => {
     return `http://127.0.0.1:8000${imagePath}`
   }
 
+  // 로그인 상태 확인
   const isLogin = computed(() => {
     if (token.value === null) {
       return false
@@ -22,8 +24,10 @@ export const useCounterStore = defineStore('counter', () => {
       return true
     }
   })
+
   const router = useRouter()
 
+  // 메인 국가 사진 가져오기
   const getMainCountryPictures = () => {
     axios({
       method: 'get',
@@ -40,6 +44,7 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
+  // 비교 페이지 데이터 가져오기
   const comparisonPage = () => {
     axios({
       method: 'get',
@@ -53,22 +58,24 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
-  // const detailCountry = () => {
-  //   axios({
-  //     method: 'get',
-  //     url: `${API_URL}/countries/comparison_page/`,
-  //   })
-  // }
-
-
-
+  // 여행 추천 데이터 가져오기
+  const getTravelRecommendations = async ({ country, budget, days }) => {
+    try {
+      const response = await axios.post(`${API_URL}/countries/recommendations/`, {
+        country,
+        budget,
+        days,
+      });
+      return response.data.recommendations;
+    } catch (error) {
+      console.error(error);
+      return [];
+    }
+  };
 
   // 회원가입
   const signUp = function (payload) {
     // 1. 사용자 입력 데이터를 받아
-    // const username = payload.username
-    // const password1 = payload.password1
-    // const password2 = payload.password2
     const { username, password1, password2, name, gender, age } = payload
 
     // 2. axios로 django에 요청을 보냄
@@ -115,7 +122,17 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
-  return { API_URL, token, isLogin, pictures, comparisonPageDatas,
-    signUp, logIn, getMainCountryPictures, comparisonPage, getImageUrl,
-    }
+  return { 
+    API_URL, 
+    token, 
+    isLogin, 
+    pictures, 
+    comparisonPageDatas,
+    signUp, 
+    logIn, 
+    getMainCountryPictures, 
+    comparisonPage, 
+    getImageUrl,
+    getTravelRecommendations, // 추가된 메서드
+  }
 }, { persist: true })

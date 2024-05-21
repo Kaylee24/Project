@@ -30,13 +30,17 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 import { useRouter } from 'vue-router'
 
 const store = useCounterStore()
 const router = useRouter()
 const photos = computed(() => store.pictures)
+
+onMounted(() => {
+  store.getMainCountryPictures()
+})
 
 const goToDetail = (countryId) => {
   router.push({ name: 'DetailView', params: { countryId } })

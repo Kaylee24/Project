@@ -1,6 +1,9 @@
 <template>
   <div class="card">
-    <img :src="imgUrl(data.image1)" alt="" class="resized-image">
+    <img
+    :src="imgUrl(data.image1)" alt="" class="resized-image"
+    @click="goToDetailView(data.id)"
+    >
     <div class="image-info">
       <div class="info">
         <h5>{{ data.name }}</h5>
@@ -20,8 +23,10 @@
 
 <script setup>
 import { useCounterStore } from '@/stores/counter'
+import { useRouter } from 'vue-router';
 
 const store = useCounterStore()
+const router = useRouter()
 
 const imgUrl = store.getImageUrl
 
@@ -31,6 +36,11 @@ const props = defineProps({
 
 const burger = (Math.round(props.data.burger * props.data.rate / 10)) * 10
 const coffee = (Math.round(props.data.coffee * props.data.rate / 10)) * 10
+
+const goToDetailView = (countryId) => {
+  router.push({ name: 'DetailView', params: { countryId } })
+}
+
 </script>
 
 <style scoped>

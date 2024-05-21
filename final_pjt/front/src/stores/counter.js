@@ -73,6 +73,21 @@ export const useCounterStore = defineStore('counter', () => {
     }
   };
 
+  // detail의 나라 정보들
+  const detailCountry = (countryId) => {
+    axios({
+      method: 'get',
+      url: `${API_URL}/countries/detail_page/${countryId}`,
+    })
+      .then(response => {
+        detailContryData.value = response.data
+        // console.log(response.data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
   // 회원가입
   const signUp = function (payload) {
     // 1. 사용자 입력 데이터를 받아
@@ -128,11 +143,13 @@ export const useCounterStore = defineStore('counter', () => {
     isLogin, 
     pictures, 
     comparisonPageDatas,
+    detailContryData,
     signUp, 
     logIn, 
     getMainCountryPictures, 
     comparisonPage, 
     getImageUrl,
     getTravelRecommendations, // 추가된 메서드
+    detailCountry,
   }
 }, { persist: true })

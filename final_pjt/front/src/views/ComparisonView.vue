@@ -4,7 +4,6 @@
       v-for="data in store.comparisonPageDatas"
       :key="data.id"
       :data="data"
-      @click="goToDetailView(data.id)"
     />
   </div>
 </template>
@@ -13,14 +12,8 @@
 import { onMounted } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 import Card from '@/components/ComparisonView/Card.vue'
-import { useRouter } from 'vue-router';
 
 const store = useCounterStore()
-const router = useRouter()
-
-const goToDetailView = (countryId) => {
-  router.push({ name: 'DetailView', params: { countryId } })
-}
 
 onMounted(() => {
   store.comparisonPage()

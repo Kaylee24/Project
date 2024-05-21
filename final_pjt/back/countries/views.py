@@ -24,20 +24,20 @@ def comparison_page(request):
 # 여기서 댓글을 달게 할거라서 POST도 필요할듯?
 # 수정필요 -> POST관련, 분기 나누기 등
 @api_view(['GET', 'POST'])
-@permission_classes([IsAuthenticated])
 # def detail_page(request, country_pk, user_pk):
 def detail_page(request, country_pk):
     # country = Country.objects.get(pk=country_pk)
     country = get_object_or_404(Country, pk=country_pk)
     if request.method == 'GET':
-        serializer = ComparisonCountrySerializer(country, many=True)
+        serializer = ComparisonCountrySerializer(country)
         return Response(serializer.data)
     
     elif request.method == 'POST':
-        serializer = CommentCreateSerializer(data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            serializer.save(country_c=country, user=request.user)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        if request.user.is_authenticated:
+            serializer = CommentCreateSerializer(data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save(country_c=country, user=request.user)
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
         
 @api_view(['DELETE'])
 @permission_classes([IsAuthenticated])

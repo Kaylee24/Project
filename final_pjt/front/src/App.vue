@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link active" :to="{ name: 'ComparisonPageView' }">Easy World Tour</RouterLink>
+              <RouterLink class="nav-link active" :to="{ name: 'ComparisonView' }">Easy World Tour</RouterLink>
             </li>
           </ul>
         </div>

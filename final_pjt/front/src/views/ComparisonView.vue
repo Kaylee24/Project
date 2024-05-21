@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ComparisonPage
+    <Card
     v-for="data in store.comparisonPageDatas"
     :key="data.id"
     :data="data"
@@ -11,7 +11,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useCounterStore } from '@/stores/counter'
-import ComparisonPage from '@/components/ComparisonPage.vue'
+import Card from '@/components/ComparisonView/Card.vue'
 
 const store = useCounterStore()
 

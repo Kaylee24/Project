@@ -7,7 +7,11 @@
   </div>
     
   <div class="main">
-    <Gallery />
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <Gallery />
+      </div>
+    </div>
   </div>
 </template>
 

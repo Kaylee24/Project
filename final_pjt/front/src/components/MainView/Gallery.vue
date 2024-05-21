@@ -6,10 +6,10 @@
         :key="index" 
         class="carousel-item" 
         :class="{ active: index === 0 }">
-        <div class="img-container">
+        <div class="fixed-img-container">
           <img 
             :src="store.getImageUrl(photo.image1)" 
-            class="d-block" 
+            class="fixed-img" 
             alt="Photo"
             @click="goToDetail(photo.id)">
         </div>
@@ -30,39 +30,49 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
-import { useCounterStore } from '@/stores/counter'
-import { useRouter } from 'vue-router'
+import { computed, onMounted } from 'vue';
+import { useCounterStore } from '@/stores/counter';
+import { useRouter } from 'vue-router';
 
-const store = useCounterStore()
-const router = useRouter()
-const photos = computed(() => store.pictures)
+const store = useCounterStore();
+const router = useRouter();
+const photos = computed(() => store.pictures);
 
 onMounted(() => {
-  store.getMainCountryPictures()
-})
+  store.getMainCountryPictures();
+});
 
 const goToDetail = (countryId) => {
-  router.push({ name: 'DetailView', params: { countryId } })
-}
+  router.push({ name: 'DetailView', params: { countryId } });
+};
 </script>
 
 <style>
-.carousel-item .img-container {
-  width: 100%;
-  padding-top: 56.25%; /* 9:16 비율을 유지 */
-  background-color: transparent;
-  position: relative;
+.fixed-img-container {
+  width: 850px;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel-item img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
+.fixed-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .fixed-img-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .fixed-img {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>

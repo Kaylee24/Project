@@ -122,6 +122,20 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
+
+  const searchCountry = async (query) => {
+    try {
+      const response = await axios.get(`${API_URL}/countries/search_country/`, {
+        params: { q: query },
+      });
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      return null;
+    }
+  };
+
+
   return { 
     API_URL, 
     token, 
@@ -134,5 +148,6 @@ export const useCounterStore = defineStore('counter', () => {
     comparisonPage, 
     getImageUrl,
     getTravelRecommendations, // 추가된 메서드
+    searchCountry,
   }
 }, { persist: true })

@@ -1,6 +1,6 @@
 <template>
   <div class="recommendation-container">
-    <h2>Travel Recommendations</h2>
+    <h2 class="recommendation-title">Travel Recommendations</h2>
     <form @submit.prevent="getRecommendations">
       <div class="mb-3">
         <label for="country" class="form-label">Desired Country</label>
@@ -46,12 +46,16 @@ const getRecommendations = async () => {
 
 <style scoped>
 .recommendation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .recommendation-container {
-    padding: 0 15px;
-  }
+.recommendation-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 </style>

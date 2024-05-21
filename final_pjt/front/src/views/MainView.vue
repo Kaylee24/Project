@@ -6,12 +6,12 @@
     </form>
   </div>
     
-  <div class="main d-flex flex-column align-items-center">
-    <div class="row main-content w-100">
-      <div class="col-lg-6 col-12 gallery-container">
+  <div class="main">
+    <div class="main-content">
+      <div class="gallery-container">
         <Gallery />
       </div>
-      <div class="col-lg-6 col-12 recommendation-container">
+      <div class="recommendation-container">
         <Recommendation />
       </div>
     </div>
@@ -21,47 +21,89 @@
 <script setup>
 import { ref } from 'vue';
 import { useCounterStore } from '@/stores/counter';
+import { useRouter } from 'vue-router';
 import Gallery from '@/components/MainView/Gallery.vue';
 import Recommendation from '@/components/MainView/Recommendation.vue';
 
 const query = ref('');
 const store = useCounterStore();
+const router = useRouter();
 
-const search = () => {
-  // Implement search functionality if needed
+const search = async () => {
+  try {
+    const country = await store.searchCountry(query.value);
+    if (country && country.id) {
+      router.push({ name: 'DetailView', params: { countryId: country.id } });
+    } else {
+      alert('Country not found');
+    }
+  } catch (error) {
+    console.error(error);
+    alert('Error occurred while searching');
+  }
 };
 </script>
 
 <style>
 .search-box {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin: 80px 200px 60px;
 }
 
 .main {
-  background-color: rgba(130, 206, 219, 0.63);
+  background-color: #B3E5Fc;
   margin-top: 50px;
-  height: 530px;
+  height: 600px;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main-content {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-container, .recommendation-container {
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .gallery-container, .recommendation-container {
-    flex: 0 0 100%;
-    max-width: 100%;
+.gallery-container {
+  width: 297px;
+  margin-left: 150px;
+}
+
+.recommendation-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1150px) {
+  .gallery-container {
+    margin: 0 auto;
   }
-  .main {
+}
+
+@media (max-width: 850px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .gallery-container {
+    width: 100%;
+  }
+
+  .fixed-img-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .fixed-img {
+    width: 100%;
     height: auto;
   }
 }

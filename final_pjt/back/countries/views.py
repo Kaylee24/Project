@@ -144,3 +144,14 @@ def travel_recommendations(request):
         })
 
     return Response({'recommendations': recommendations})
+
+
+@api_view(['GET'])
+def search_country(request):
+    query = request.query_params.get('q', '')
+    try:
+        country = Country.objects.get(name__icontains=query)
+        serializer = ComparisonCountrySerializer(country)
+        return Response(serializer.data)
+    except Country.DoesNotExist:
+        return Response({'error': 'Country not found'}, status=status.HTTP_404_NOT_FOUND)

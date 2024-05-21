@@ -25,5 +25,7 @@ urlpatterns = [
     # 여행 추천을 위한 URL 추가
     path('recommendations/', views.travel_recommendations, name='travel_recommendations'),
 
+    # detail page 검색을 위한 URL 추가
+    path('search_country/', views.search_country, name='search_country'),
 
 ]

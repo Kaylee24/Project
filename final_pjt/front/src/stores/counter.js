@@ -9,6 +9,7 @@ export const useCounterStore = defineStore('counter', () => {
 
   const pictures = ref([])
   const comparisonPageDatas = ref([])
+  const detailContryData = ref([])
 
   const getImageUrl = (imagePath) => {
     return `http://127.0.0.1:8000${imagePath}`
@@ -52,7 +53,12 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
-
+  // const detailCountry = () => {
+  //   axios({
+  //     method: 'get',
+  //     url: `${API_URL}/countries/comparison_page/`,
+  //   })
+  // }
 
 
 

@@ -4,23 +4,30 @@
   <h5>{{ data.name }}</h5>
   <p>{{ data.code }}</p>
   <p>{{ data.rate }}</p>
-  <p>{{ data.burger }}</p>
-  <p>{{ data.coffee }}</p>
+  <p>{{ burger }}\</p>
+  <p>{{ coffee }}\</p>
   <img :src="imgUrl(data.graph)" alt="" class="resized-image">
 </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 
 const store = useCounterStore()
 
 const imgUrl = store.getImageUrl
 
-defineProps({
+
+const props = defineProps({
   data: Object,
 })
+
+const burger = (Math.round(props.data.burger * props.data.rate / 10)) * 10
+const coffee = (Math.round(props.data.coffee * props.data.rate / 10)) * 10
+
+// console.log((Math.round(props.data.burger * props.data.rate / 10)) * 10)
+
 </script>
 
 <style scoped>

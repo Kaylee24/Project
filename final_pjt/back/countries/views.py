@@ -25,7 +25,8 @@ def comparison_page(request):
 # 수정필요 -> POST관련, 분기 나누기 등
 @api_view(['GET', 'POST'])
 @permission_classes([IsAuthenticated])
-def detail_page(request, country_pk, user_pk):
+# def detail_page(request, country_pk, user_pk):
+def detail_page(request, country_pk):
     # country = Country.objects.get(pk=country_pk)
     country = get_object_or_404(Country, pk=country_pk)
     if request.method == 'GET':

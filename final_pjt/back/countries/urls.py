@@ -13,7 +13,8 @@ urlpatterns = [
     path('comparison_page/', views.comparison_page),
 
     # detail page
-    path('detail_page/<int:country_pk>/<int:user_pk>', views.detail_page),
+    # path('detail_page/<int:country_pk>/<int:user_pk>', views.detail_page),
+    path('detail_page/<int:country_pk>', views.detail_page),
 
     # detail page의 댓글 삭제 url
     path('detail_page/delete/<int:comment_pk>', views.comment_delete),

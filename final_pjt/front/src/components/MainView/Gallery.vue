@@ -9,7 +9,7 @@
         <div class="img-container">
           <img 
             :src="store.getImageUrl(photo.image1)" 
-            class="d-block w-100" 
+            class="d-block" 
             alt="Photo"
             @click="goToDetail(photo.id)">
         </div>
@@ -45,19 +45,23 @@ onMounted(() => {
 const goToDetail = (countryId) => {
   router.push({ name: 'DetailView', params: { countryId } })
 }
-
 </script>
 
 <style>
 .carousel-item .img-container {
   width: 100%;
-  height: 500px;
-  overflow: hidden;
+  padding-top: 56.25%; /* 9:16 비율을 유지 */
+  background-color: transparent;
+  position: relative;
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   cursor: pointer;
 }

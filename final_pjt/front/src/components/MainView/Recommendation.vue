@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="recommendation-container">
     <h2>Travel Recommendations</h2>
     <form @submit.prevent="getRecommendations">
       <div class="mb-3">
@@ -45,5 +45,13 @@ const getRecommendations = async () => {
 </script>
 
 <style scoped>
-/* Add your styles here if needed */
+.recommendation-container {
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .recommendation-container {
+    padding: 0 15px;
+  }
+}
 </style>

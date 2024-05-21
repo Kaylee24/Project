@@ -2,6 +2,7 @@
 <div>
   <h5>{{ data.name }}</h5>
   <img :src="imgUrl(data.image1)" alt="" class="resized-image">
+  
 </div>
 </template>
 

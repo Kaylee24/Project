@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import { useCounterStore } from '@/stores/counter';
+
 export default {
   props: {
     isVisible: {
@@ -32,14 +34,26 @@ export default {
       password: ''
     };
   },
+  setup() {
+    const store = useCounterStore()
+    return { store }
+  },
   methods: {
     closeModal() {
       this.$emit('close');
     },
-    login() {
-      // 로그인 처리 로직
-      console.log('Logging in with', this.username, this.password);
-      this.closeModal();
+    async login() {
+      try {
+        await this.store.logIn({
+          username: this.username,
+          password: this.password
+        });
+        console.log('Logging in with', this.username, this.password);
+        this.closeModal(); // 로그인 성공 시 모달 닫기
+      } catch (error) {
+        console.error('Login failed:', error);
+        // 로그인 실패 시 적절한 오류 처리
+      }
     }
   }
 };

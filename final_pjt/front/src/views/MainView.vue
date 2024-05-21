@@ -6,12 +6,12 @@
     </form>
   </div>
     
-  <div class="main">
-    <div class="row">
-      <div class="col-lg-6 col-12">
+  <div class="main d-flex flex-column align-items-center">
+    <div class="row main-content w-100">
+      <div class="col-lg-6 col-12 gallery-container">
         <Gallery />
       </div>
-      <div class="col-lg-6 col-12">
+      <div class="col-lg-6 col-12 recommendation-container">
         <Recommendation />
       </div>
     </div>
@@ -30,7 +30,6 @@ const store = useCounterStore();
 const search = () => {
   // Implement search functionality if needed
 };
-
 </script>
 
 <style>
@@ -42,8 +41,28 @@ const search = () => {
 }
 
 .main {
-  height: 500px;
   background-color: rgba(130, 206, 219, 0.63);
   margin-top: 50px;
+  height: 530px;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-container, .recommendation-container {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .gallery-container, .recommendation-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .main {
+    height: auto;
+  }
 }
 </style>

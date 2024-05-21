@@ -3,6 +3,7 @@
     <div class="detail-content">
       <DetailGallery :data="data" />
       <DetailGraph :data="data" />
+      <DetailComment :data="data" /> <!-- 댓글 컴포넌트 추가 -->
     </div>
   </div>
 </template>
@@ -12,6 +13,7 @@ import { ref, onMounted, defineProps } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 import DetailGraph from '@/components/DetailView/DetailGraph.vue'
 import DetailGallery from '@/components/DetailView/DetailGallery.vue';
+import DetailComment from '@/components/DetailView/DetailComment.vue';
 
 const store = useCounterStore()
 const countryId = ref(null)
@@ -32,6 +34,7 @@ onMounted(() => {
 
 .detail-content {
   display: flex;
+  flex-direction: column;
 }
 
 /* 아래 스타일은 DetailCountry와 DetailGraph에도 적용되어야 합니다. */

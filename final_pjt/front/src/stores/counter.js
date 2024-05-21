@@ -18,11 +18,7 @@ export const useCounterStore = defineStore('counter', () => {
 
   // 로그인 상태 확인
   const isLogin = computed(() => {
-    if (token.value === null) {
-      return false
-    } else {
-      return true
-    }
+    return token.value !== null;
   })
 
   const router = useRouter()
@@ -32,9 +28,6 @@ export const useCounterStore = defineStore('counter', () => {
     axios({
       method: 'get',
       url: `${API_URL}/countries/main_country_picture/`,
-      // headers: {
-      //   Authorization: `Token ${token.value}`
-      // }
     })
       .then(response => {
         pictures.value = response.data
@@ -81,20 +74,48 @@ export const useCounterStore = defineStore('counter', () => {
     })
       .then(response => {
         detailContryData.value = response.data
-        // console.log(response.data)
       })
       .catch(error => {
         console.log(error)
       })
   }
-  
+
+  // 댓글 가져오기
+  const fetchComments = (countryId) => {
+    axios({
+      method: 'get',
+      url: `${API_URL}/countries/detail_page/${countryId}`,
+    })
+      .then(response => {
+        detailContryData.value.comment_set = response.data.comment_set
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
+  // 댓글 추가하기
+  const addComment = (payload) => {
+    axios({
+      method: 'post',
+      url: `${API_URL}/countries/detail_page/${payload.countryId}`,
+      data: { content: payload.content },
+      headers: {
+        Authorization: `Token ${token.value}`
+      }
+    })
+      .then(response => {
+        detailContryData.value.comment_set.push(response.data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
 
   // 회원가입
   const signUp = function (payload) {
-    // 1. 사용자 입력 데이터를 받아
     const { username, password1, password2, name, gender, age } = payload
 
-    // 2. axios로 django에 요청을 보냄
     axios({
       method: 'post',
       url: `${API_URL}/accounts/signup/`,
@@ -116,9 +137,7 @@ export const useCounterStore = defineStore('counter', () => {
 
   // 로그인
   const logIn = function (payload) {
-    // 1. 사용자 입력 데이터를 받아
     const { username, password } = payload
-    // 2. axios로 django에 요청을 보냄
     axios({
       method: 'post',
       url: `${API_URL}/accounts/login/`,
@@ -127,17 +146,12 @@ export const useCounterStore = defineStore('counter', () => {
       }
     })
       .then((response) => {
-        // console.log('로그인 성공!')
-        // console.log(response)
-        // console.log(response.data.key)
-        // 3. 로그인 성공 후 응답 받은 토큰을 저장
         token.value = response.data.key
       })
       .catch((error) => {
         console.log(error)
       })
   }
-
 
   const searchCountry = async (query) => {
     try {
@@ -151,7 +165,6 @@ export const useCounterStore = defineStore('counter', () => {
     }
   };
 
-
   return { 
     API_URL, 
     token, 
@@ -159,15 +172,15 @@ export const useCounterStore = defineStore('counter', () => {
     pictures, 
     comparisonPageDatas,
     detailContryData,
-
     signUp, 
     logIn, 
     getMainCountryPictures, 
     comparisonPage, 
     getImageUrl,
-    getTravelRecommendations, // 추가된 메서드
+    getTravelRecommendations,
     searchCountry,
     detailCountry,
-
+    fetchComments, // 댓글 가져오기 메서드 추가
+    addComment,    // 댓글 추가하기 메서드 추가
   }
 }, { persist: true })

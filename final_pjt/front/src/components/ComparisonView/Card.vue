@@ -1,8 +1,12 @@
 <template>
 <div>
-  <h5>{{ data.name }}</h5>
   <img :src="imgUrl(data.image1)" alt="" class="resized-image">
-  
+  <h5>{{ data.name }}</h5>
+  <p>{{ data.code }}</p>
+  <p>{{ data.rate }}</p>
+  <p>{{ data.burger }}</p>
+  <p>{{ data.coffee }}</p>
+  <img :src="imgUrl(data.graph)" alt="" class="resized-image">
 </div>
 </template>
 

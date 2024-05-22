@@ -1,15 +1,31 @@
 <template>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  </head>
+
   <div class="modal fade show" tabindex="-1" style="display: block;" aria-labelledby="profileModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="profileModalLabel">{{ profileData.name }}님</h5>
+          <!-- <h5 class="modal-title" id="profileModalLabel">{{ profileData.name }}님</h5> -->
+          <h5>My Profile</h5>
           <button type="button" class="btn-close" aria-label="Close" @click="closeModal"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="margin-right: auto;">
           <div class="text-center">
-            <img v-if="profileData.image" :src="getImageUrl(profileData.image)" class="rounded-circle" alt="Profile Image" width="100" height="100">
-            <h6>{{ profileData.age }}세</h6>
+            <div v-if="profileData.gender === 'female'" style="display: flex;">
+              <h5 class="modal-title" id="profileModalLabel">{{ profileData.name }}님</h5>
+              <h5>🙋‍♀️</h5>
+              <p>{{ profileData.age }}세</p>
+            </div>
+            <div v-else style="display: flex;">
+              <h5 class="modal-title" id="profileModalLabel">{{ profileData.name }}님</h5>
+              <h5>🙋‍♂️</h5>
+              <p>{{ profileData.age }}세</p>
+            </div>
+
           </div>
           <div class="mt-3">
             <h6>방문한 나라</h6>

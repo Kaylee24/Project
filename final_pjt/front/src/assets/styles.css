@@ -1,0 +1,8 @@
+body {
+  font-family: 'Poetsen One', 'Jua', sans-serif;
+}
+
+/* Bootstrap 재정의 */
+:root {
+  --bs-font-sans-serif: 'Poetsen One', 'Jua', sans-serif;
+}

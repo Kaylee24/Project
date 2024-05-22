@@ -1,15 +1,12 @@
 <template>
   <div class="detail-comments">
     <h3>댓글</h3>
-    <div v-if="comments.length">
+    <div>
       <div v-for="comment in comments" :key="comment.id" class="comment">
-        <strong>{{ comment.user ? comment.user.username : 'Unknown User' }}</strong>
+        <p>username : {{ comment.user.name }}</p>
         <p>{{ comment.content }}</p>
         <small>{{ comment.created_at }}</small>
       </div>
-    </div>
-    <div v-else>
-      아직 작성된 댓글이 없습니다. 첫번째 댓글을 남겨보세요!
     </div>
     <div v-if="isLogin">
       <form @submit.prevent="submitComment">
@@ -34,9 +31,14 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const store = useCounterStore()
 const newComment = ref('')
-const comments = computed(() => store.detailContryData.comment_set)
+const comments = computed(() => {
+  return store.detailContryData.comment_set
+})
 const isLogin = computed(() => store.isLogin)
 
+console.log('DetailComment의 store.detailCountryData', store.detailContryData)
+console.log('comments', comments)
+// console.log(comments)
 
 const submitComment = async () => {
   await store.addComment({
@@ -58,7 +60,7 @@ const submitComment = async () => {
 
 const goToDetailView = (countryId) => {
   console.log('push되기 전')
-  router.push({ name: 'DetailView', params: { countryId } })
+  router.replace({ name: 'DetailView', params: { countryId } })
   console.log('push가 됨')
 }
 onMounted(() => {

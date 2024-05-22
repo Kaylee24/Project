@@ -30,6 +30,7 @@ def detail_page(request, country_pk):
             serializer = CommentCreateSerializer(data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save(country_c=country, user=request.user)
+                print(serializer.data)
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             return Response({'detail': 'Authentication credentials were not provided.'}, status=status.HTTP_401_UNAUTHORIZED)

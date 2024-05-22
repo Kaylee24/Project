@@ -23,9 +23,15 @@ class ComparisonCountrySerializer(serializers.ModelSerializer):
 
 # 이거는 나중에 profile_page에서도 쓸거임
 class CommentSerializer(serializers.ModelSerializer):
+    class CommentUserSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ('name',)
+
+    user = CommentUserSerializer(read_only=True)
     class Meta:
         model = Comment
-        fields = ('user', 'content', 'created_at')
+        fields = ('user', 'content', 'created_at',)
 
 class DetailCountrySerializer(serializers.ModelSerializer):
 
@@ -35,10 +41,12 @@ class DetailCountrySerializer(serializers.ModelSerializer):
         model = Country
         fields = ['id', 'name', 'burger', 'coffee', 'area', 'image1', 'image2', 'image3', 'code', 'rate', 'graph', 'comment_set']
 
+
 class CommentCreateSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Comment
-        fields = ('content',)
+        fields = ('content', 'created_at', 'user')
         read_only_fields = ('user', 'country_c')
 
 # profile page에 들어갈 serializer

@@ -3,7 +3,7 @@
     <div class="detail-content">
       <DetailGallery :data="data" />
       <DetailGraph :data="data" />
-      <DetailComment :data="data" /> <!-- 댓글 컴포넌트 추가 -->
+      <!-- <DetailComment :data="data" /> -->
     </div>
   </div>
 </template>

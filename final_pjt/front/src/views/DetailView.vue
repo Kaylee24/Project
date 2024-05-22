@@ -1,13 +1,16 @@
 <template>
   <div class="detail-view">
     <div class="detail-content">
-      <DetailGallery :data="data" />
+      <div>
+        <DetailGallery :data="data" />
+        <div class="button-container">
+          <button class="styled-button" @click="selectVisited(data.id)">Visited</button>
+          <button class="styled-button" @click="selectInterested(data.id)">Interested</button>
+        </div>
+      </div>
       <DetailGraph :data="data" />
     </div>
-    <div class="button-container">
-      <button class="styled-button" @click="selectVisited(data.id)">Visited</button>
-      <button class="styled-button" @click="selectInterested(data.id)">Interested</button>
-    </div>
+
   </div>
 </template>
 

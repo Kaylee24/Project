@@ -4,9 +4,9 @@
       <DetailGallery :data="data" />
       <DetailGraph :data="data" />
     </div>
-    <div>
-      <button @click="selectVisited(data.id)">Visited</button>
-      <button @click="selectInterested(data.id)">Interested</button>
+    <div class="button-container">
+      <button class="styled-button" @click="selectVisited(data.id)">Visited</button>
+      <button class="styled-button" @click="selectInterested(data.id)">Interested</button>
     </div>
   </div>
 </template>
@@ -47,17 +47,40 @@ onMounted(() => {
 <style scoped>
 .detail-view {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .detail-content {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
-/* 아래 스타일은 DetailCountry와 DetailGraph에도 적용되어야 합니다. */
 .detail-content > * {
   flex: 1;
   margin: 0 10px; 
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 버튼 사이의 간격 */
+}
+
+.styled-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #0056b3;
 }
 </style>

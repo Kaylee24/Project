@@ -2,8 +2,10 @@
   <div class="wrap">
     <div class="detail-content">
       <img :src="imgUrl(data.graph)" alt="" class="resized-image">
-      <div>
+      <div class="icon-container">
+        <img src="/burger.png" alt="Burger" class="icon">
         <p>{{ burger }}</p>
+        <img src="/coffee.png" alt="Coffee" class="icon">
         <p>{{ coffee }}</p>
       </div>
     </div>
@@ -49,4 +51,16 @@ console.log('DetailGraph의 props', props)
   display: flex;
   flex-direction: column;
 }
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 50px; /* 이미지 너비를 50px로 설정 */
+  height: auto; /* 높이는 비율에 맞게 자동 조절 */
+}
+
 </style>

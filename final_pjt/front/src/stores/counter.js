@@ -10,6 +10,7 @@ export const useCounterStore = defineStore('counter', () => {
   const pictures = ref([])
   const comparisonPageDatas = ref([])
   const detailContryData = ref([])
+  const profileData = ref([])
 
   // 이미지 URL 생성
   const getImageUrl = (imagePath) => {
@@ -148,6 +149,7 @@ export const useCounterStore = defineStore('counter', () => {
     })
       .then((response) => {
         token.value = response.data.key
+        console.log(response.data.user_id)
       })
       .catch((error) => {
         console.log(error)
@@ -166,19 +168,18 @@ export const useCounterStore = defineStore('counter', () => {
     }
   };
 
-  const profilePage = async (token) => {
-    try {
-      const response = await axios.get(`${API_URL}/countries/profile_page/${token}`, {
-        headers: {
-          Authorization: `Token ${token}`,
-        },
-      });
-      return response.data;
-    } catch (error) {
-      console.error(error);
-      return null;
-    }
-  };
+  const profilePage = (userId) => {
+    axios({
+      method: 'get',
+      url: `${API_URL}/countries/profile_page/${userId}`,
+    })
+      .then(response => {
+        profileData.value = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
 
 
   return { 

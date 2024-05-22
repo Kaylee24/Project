@@ -61,6 +61,7 @@ onMounted(() => {
       userProfile.value = data;
     });
   }
+  console.log(store)
 });
 </script>
 

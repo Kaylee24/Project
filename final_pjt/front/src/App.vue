@@ -37,7 +37,7 @@
     <!-- 조건부 렌더링을 통해 모달을 표시 -->
     <LoginModal v-if="showLoginModal" :isVisible="showLoginModal" @close="closeLoginModal" />
     <SignUpModal v-if="showSignUpModal" :isVisible="showSignUpModal" @close="closeSignUpModal" />
-    <SignUpModal v-if="showProfileModal" :isVisible="showProfileModal" @close="closeProfileModal" />
+    <ProfileModal v-if="showProfileModal" :isVisible="showProfileModal" @close="closeProfileModal" />
   </div>
 </template>
 

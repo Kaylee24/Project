@@ -28,8 +28,8 @@
           <div class="mt-3">
             <h6>방문한 나라</h6>
             <ul class="list-inline">
-              <li class="list-inline-item" v-for="country in profileData.visited" :key="country.name" @click="goToDetail(country.id)">
-                <img :src="getImageUrl(country.image1)" class="rounded" alt="Visited Country" width="50" height="50">
+              <li class="list-inline-item" v-for="country in profileData.visited" :key="country.name">
+                <img :src="getImageUrl(country.image1)" class="rounded" alt="Visited Country" width="50" height="50" @click="handleClick(country.id)">
                 <span>{{ country.name }}</span>
               </li>
             </ul>
@@ -37,7 +37,7 @@
           <div class="mt-3">
             <h6>관심 있는 나라</h6>
             <ul class="list-inline">
-              <li class="list-inline-item" v-for="country in profileData.interested" :key="country.name" @click="goToDetail(country.id)">
+              <li class="list-inline-item" v-for="country in profileData.interested" :key="country.name" @click="handleClick(country.id)">
                 <img :src="getImageUrl(country.image1)" class="rounded" alt="Interested Country" width="50" height="50">
                 <span>{{ country.name }}</span>
               </li>
@@ -74,6 +74,11 @@ const getImageUrl = (imagePath) => {
 
 const goToDetail = (countryId) => {
   router.push({ name: 'DetailView', params: { countryId } });
+};
+
+const handleClick = (countryId) => {
+  goToDetail(countryId);
+  closeModal();
 };
 
 onMounted(() => {

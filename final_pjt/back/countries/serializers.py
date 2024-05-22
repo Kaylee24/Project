@@ -54,7 +54,7 @@ class CommentCreateSerializer(serializers.ModelSerializer):
 class ProfileCountrySerializer(serializers.ModelSerializer):
     class Meta:
         model = Country
-        fields = ('name', 'image1')
+        fields = ('id', 'name', 'image1')
 
 class ProfileSerializer(serializers.ModelSerializer):
 

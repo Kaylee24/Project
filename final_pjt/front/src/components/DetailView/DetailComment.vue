@@ -48,21 +48,21 @@ const submitComment = async () => {
   })
   newComment.value = ''
 
-  // 새로운 댓글을 포함하여 모든 댓글을 다시 가져옴
-  await store.fetchComments(store.detailContryData.id)
+  // // 새로운 댓글을 포함하여 모든 댓글을 다시 가져옴
+  // await store.fetchComments(store.detailContryData.id)
   
-  // 댓글 작성 후 DetailView로 이동
-  goToDetailView(store.detailContryData.id)
-  console.log('add는 됨')
-  console.log(comments.value)
+  // // 댓글 작성 후 DetailView로 이동
+  // goToDetailView(store.detailContryData.id)
+  // console.log('add는 됨')
+  // console.log(comments.value)
 
 }
 
-const goToDetailView = (countryId) => {
-  console.log('push되기 전')
-  router.replace({ name: 'DetailView', params: { countryId } })
-  console.log('push가 됨')
-}
+// const goToDetailView = (countryId) => {
+//   console.log('push되기 전')
+//   router.replace({ name: 'DetailView', params: { countryId } })
+//   console.log('push가 됨')
+// }
 onMounted(() => {
   // 댓글을 가져오는 API 호출
   store.fetchComments(store.detailContryData.id);

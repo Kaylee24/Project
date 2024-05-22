@@ -30,7 +30,7 @@ onMounted(() => {
 }
 
 .card-container > * {
-  flex: 1 1 calc(20% - 16px); /* 한 줄에 3개씩 배치 */
+  flex: 1 1 calc(25% - 16px); /* 한 줄에 3개씩 배치 */
   box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
 }
 </style>

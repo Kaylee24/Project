@@ -106,8 +106,8 @@ export const useCounterStore = defineStore('counter', () => {
       }
     })
       .then(response => {
-        console.log(response)
-        detailContryData.value.comment_set.push(response.data)
+        fetchComments(payload.countryId)
+        // detailContryData.value.comment_set.push(response.data)
       })
       .catch(error => {
         console.log(error)

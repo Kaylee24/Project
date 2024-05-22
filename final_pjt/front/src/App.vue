@@ -24,6 +24,7 @@
             <button class="btn btn-outline-secondary" @click="showSignUpModal = true">회원가입</button>
           </template>
           <template v-else>
+            <button class="btn btn-outline-secondary me-2" @click="showProfileModal = true">프로필</button>
             <button class="btn btn-outline-danger" @click="logoutbutton">로그아웃</button>
           </template>
         </div>
@@ -36,6 +37,7 @@
     <!-- 조건부 렌더링을 통해 모달을 표시 -->
     <LoginModal v-if="showLoginModal" :isVisible="showLoginModal" @close="closeLoginModal" />
     <SignUpModal v-if="showSignUpModal" :isVisible="showSignUpModal" @close="closeSignUpModal" />
+    <SignUpModal v-if="showProfileModal" :isVisible="showProfileModal" @close="closeProfileModal" />
   </div>
 </template>
 
@@ -44,12 +46,14 @@ import { ref } from 'vue';
 import { RouterView, RouterLink } from 'vue-router';
 import LoginModal from './components/LoginModal.vue';
 import SignUpModal from './components/SignUpModal.vue';
+import ProfileModal from './components/ProfileModal.vue';
 import { useCounterStore } from './stores/counter';
 
 const store = useCounterStore()
 
 const showLoginModal = ref(false); // 로그인 모달이 표시되는지 여부를 제어하는 변수
 const showSignUpModal = ref(false); // 회원가입 모달이 표시되는지 여부를 제어하는 변수
+const showProfileModal = ref(false); // 회원가입 모달이 표시되는지 여부를 제어하는 변수
 
 const closeLoginModal = () => {
   showLoginModal.value = false;
@@ -58,6 +62,10 @@ const closeLoginModal = () => {
 
 const closeSignUpModal = () => {
   showSignUpModal.value = false;
+};
+
+const closeProfileModal = () => {
+  showProfileModal.value = false;
 };
 
 // 사용자가 로그아웃할 때 호출되는 함수

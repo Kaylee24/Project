@@ -1,9 +1,11 @@
 <template>
   <div class="card">
-    <img
-    :src="imgUrl(data.image1)" alt="" class="resized-image"
-    @click="goToDetailView(data.id)"
-    >
+    <div class="img-box">
+      <img
+      :src="imgUrl(data.image1)" alt="" class="resized-image"
+      @click="goToDetailView(data.id)"
+      >
+    </div>
     <div class="image-info">
       <div class="info">
         <h5>{{ data.name }}</h5>
@@ -51,9 +53,17 @@ const goToDetailView = (countryId) => {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.img-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .resized-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .image-info {

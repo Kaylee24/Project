@@ -3,7 +3,6 @@
     <div class="detail-content">
       <DetailGallery :data="data" />
       <DetailGraph :data="data" />
-      <!-- <DetailComment :data="data" /> -->
     </div>
   </div>
 </template>
@@ -13,7 +12,6 @@ import { ref, onMounted, defineProps } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 import DetailGraph from '@/components/DetailView/DetailGraph.vue'
 import DetailGallery from '@/components/DetailView/DetailGallery.vue';
-import DetailComment from '@/components/DetailView/DetailComment.vue';
 
 const store = useCounterStore()
 const countryId = ref(null)

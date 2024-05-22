@@ -64,9 +64,10 @@ const search = async () => {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 20px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .gallery-container, .recommendation-container {
@@ -75,24 +76,26 @@ const search = async () => {
 }
 
 .gallery-container {
-  flex: 1 1 297px;
-  max-width: 100%;
+  flex: 1 1 70%;
+  max-width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .recommendation-container {
-  flex: 2 1 600px;
-  max-width: 100%;
+  flex: 1 1 30%;
+  max-width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 1150px) {
-  .gallery-container {
+  .gallery-container, .recommendation-container {
     margin: 0 auto;
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 }
 

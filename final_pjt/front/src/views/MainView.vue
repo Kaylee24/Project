@@ -46,13 +46,15 @@ const search = async () => {
 
 <style>
 .search-box {
-  margin: 80px 200px 60px;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 0 20px;
 }
 
 .main {
   background-color: #B3E5Fc;
   margin-top: 50px;
-  height: 600px;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,23 +62,29 @@ const search = async () => {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .gallery-container, .recommendation-container {
-  padding: 0;
-  display: flex;
-  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .gallery-container {
-  width: 297px;
-  margin-left: 150px;
+  flex: 1 1 297px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .recommendation-container {
-  flex-grow: 1;
+  flex: 2 1 600px;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,19 +100,10 @@ const search = async () => {
   .main-content {
     flex-direction: column;
   }
-  
-  .gallery-container {
-    width: 100%;
-  }
 
-  .fixed-img-container {
-    width: 100%;
-    height: auto;
-  }
-
-  .fixed-img {
-    width: 100%;
-    height: auto;
+  .gallery-container, .recommendation-container {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 </style>

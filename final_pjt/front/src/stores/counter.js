@@ -6,7 +6,7 @@ import { useRouter } from 'vue-router'
 export const useCounterStore = defineStore('counter', () => {
   const API_URL = 'http://127.0.0.1:8000'
   const token = ref(null)
-
+  const user = ref('')
   const pictures = ref([])
   const comparisonPageDatas = ref([])
   const detailContryData = ref([])
@@ -149,7 +149,7 @@ export const useCounterStore = defineStore('counter', () => {
     })
       .then((response) => {
         token.value = response.data.key
-        console.log(response.data.user_id)
+        user.value = username
       })
       .catch((error) => {
         console.log(error)
@@ -168,10 +168,10 @@ export const useCounterStore = defineStore('counter', () => {
     }
   };
 
-  const profilePage = (userId) => {
+  const profilePage = (username) => {
     axios({
       method: 'get',
-      url: `${API_URL}/countries/profile_page/${userId}`,
+      url: `${API_URL}/countries/profile_page/${username}`,
     })
       .then(response => {
         profileData.value = response.data
@@ -183,12 +183,14 @@ export const useCounterStore = defineStore('counter', () => {
 
 
   return { 
-    API_URL, 
+    API_URL,
+    user,
     token, 
     isLogin, 
     pictures, 
     comparisonPageDatas,
     detailContryData,
+    profileData,
     signUp, 
     logIn, 
     getMainCountryPictures, 

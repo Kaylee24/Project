@@ -3,18 +3,18 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="profileModalLabel">{{ userProfile.name }}님</h5>
+          <h5 class="modal-title" id="profileModalLabel">{{ profileData.name }}님</h5>
           <button type="button" class="btn-close" aria-label="Close" @click="closeModal"></button>
         </div>
         <div class="modal-body">
           <div class="text-center">
-            <img v-if="userProfile.image" :src="getImageUrl(userProfile.image)" class="rounded-circle" alt="Profile Image" width="100" height="100">
-            <h6>{{ userProfile.age }}세</h6>
+            <img v-if="profileData.image" :src="getImageUrl(profileData.image)" class="rounded-circle" alt="Profile Image" width="100" height="100">
+            <h6>{{ profileData.age }}세</h6>
           </div>
           <div class="mt-3">
             <h6>방문한 나라</h6>
             <ul class="list-inline">
-              <li class="list-inline-item" v-for="country in userProfile.visited" :key="country.name">
+              <li class="list-inline-item" v-for="country in profileData.visited" :key="country.name">
                 <img :src="getImageUrl(country.image1)" class="rounded" alt="Visited Country" width="50" height="50">
                 <span>{{ country.name }}</span>
               </li>
@@ -23,7 +23,7 @@
           <div class="mt-3">
             <h6>관심 있는 나라</h6>
             <ul class="list-inline">
-              <li class="list-inline-item" v-for="country in userProfile.interested" :key="country.name">
+              <li class="list-inline-item" v-for="country in profileData.interested" :key="country.name">
                 <img :src="getImageUrl(country.image1)" class="rounded" alt="Interested Country" width="50" height="50">
                 <span>{{ country.name }}</span>
               </li>
@@ -45,7 +45,7 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 const store = useCounterStore();
-const userProfile = ref({ visited: [], interested: [] }); // 기본값 설정
+const profileData = store.profileData
 
 const closeModal = () => {
   emit('close');
@@ -56,12 +56,8 @@ const getImageUrl = (imagePath) => {
 };
 
 onMounted(() => {
-  if (store.token) {
-    store.profilePage(store.token).then((data) => {
-      userProfile.value = data;
-    });
-  }
-  console.log(store)
+  store.profilePage(store.user)
+  console.log(profileData)
 });
 </script>
 

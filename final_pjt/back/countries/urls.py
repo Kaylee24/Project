@@ -20,7 +20,7 @@ urlpatterns = [
     path('detail_page/delete/<int:comment_pk>', views.comment_delete),
 
     # profile page
-    path('profile_page/<int:user_pk>', views.profile_page),
+    path('profile_page/<str:username>', views.profile_page),
 
     # 여행 추천을 위한 URL 추가
     path('recommendations/', views.travel_recommendations, name='travel_recommendations'),

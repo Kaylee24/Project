@@ -71,6 +71,7 @@ const closeProfileModal = () => {
 // 사용자가 로그아웃할 때 호출되는 함수
 const logoutbutton = () => {
   store.token = null
+  store.user = null
 };
 
 </script>

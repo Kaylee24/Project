@@ -43,8 +43,8 @@ def comment_delete(request, comment_pk):
     return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['GET'])
-def profile_page(request, user_pk):
-    profile = get_object_or_404(User, pk=user_pk)
+def profile_page(request, username):
+    profile = get_object_or_404(User, username=username)
     serializer = ProfileSerializer(profile)
     return Response(serializer.data)
 

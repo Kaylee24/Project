@@ -59,7 +59,8 @@ class ProfileCountrySerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
 
     # detail_page에서 썼던 CommentSerializer 가져옴
-    comment_set = CommentSerializer(source='comment_set', many=True, read_only=True)
+    comment_set = CommentSerializer(many=True, read_only=True)
+    # comment_set = CommentSerializer(source='comment_set',many=True, read_only=True)
 
     visited = ProfileCountrySerializer(many=True, read_only=True)
     interested = ProfileCountrySerializer(many=True, read_only=True)

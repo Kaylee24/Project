@@ -49,6 +49,7 @@ export default {
           password: this.password
         });
         console.log('Logging in with', this.username, this.password);
+        console.log('this', this)
         this.closeModal(); // 로그인 성공 시 모달 닫기
       } catch (error) {
         console.error('Login failed:', error);

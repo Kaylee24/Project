@@ -16,11 +16,11 @@
       </div>
       <div class="right-info">
         <div class="image-container">
-          <img :src="imgUrl(data.image1)" alt="" class="hamburger-coffee-image">
+          <img src="/burger.png" alt="" class="hamburger-coffee-image">
           <p>{{ burger }}</p>
         </div>
         <div class="image-container">
-          <img :src="imgUrl(data.image1)" alt="" class="hamburger-coffee-image">
+          <img src="/coffee.png" alt="" class="hamburger-coffee-image">
           <p>{{ coffee }}</p>
         </div>
       </div>

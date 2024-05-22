@@ -5,6 +5,8 @@
       :key="data.id"
       :data="data"
       class="card"
+      @selectVisited="selectVisited"
+      @selectInterested="selectInterested"
     />
   </div>
 </template>
@@ -15,6 +17,22 @@ import { useCounterStore } from '@/stores/counter'
 import Card from '@/components/ComparisonView/Card.vue'
 
 const store = useCounterStore()
+
+const selectVisited = (countryId) => {
+  if (store.isLogin) {
+    store.updateVisitedCountries([countryId])
+  } else {
+    alert('로그인이 필요합니다.')
+  }
+}
+
+const selectInterested = (countryId) => {
+  if (store.isLogin) {
+    store.updateInterestedCountries([countryId])
+  } else {
+    alert('로그인이 필요합니다.')
+  }
+}
 
 onMounted(() => {
   store.comparisonPage()

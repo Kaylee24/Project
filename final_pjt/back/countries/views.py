@@ -101,3 +101,29 @@ def search_country(request):
         return Response(serializer.data)
     except Country.DoesNotExist:
         return Response({'error': 'Country not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
+
+
+
+# visited, interested
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_visited_countries(request):
+    user = request.user
+    country_ids = request.data.get('country_ids', [])
+    countries = Country.objects.filter(id__in=country_ids)
+    user.visited.set(countries)
+    user.save()
+    return Response(status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_interested_countries(request):
+    user = request.user
+    country_ids = request.data.get('country_ids', [])
+    countries = Country.objects.filter(id__in=country_ids)
+    user.interested.set(countries)
+    user.save()
+    return Response(status=status.HTTP_204_NO_CONTENT)

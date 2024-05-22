@@ -182,6 +182,44 @@ export const useCounterStore = defineStore('counter', () => {
   }
 
 
+
+  // visited, interested
+
+  const updateVisitedCountries = (countryIds) => {
+    axios({
+      method: 'post',
+      url: `${API_URL}/countries/update_visited_countries/`,
+      data: { country_ids: countryIds },
+      headers: {
+        Authorization: `Token ${token.value}`
+      }
+    })
+      .then(response => {
+        console.log('Visited countries updated!')
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
+  const updateInterestedCountries = (countryIds) => {
+    axios({
+      method: 'post',
+      url: `${API_URL}/countries/update_interested_countries/`,
+      data: { country_ids: countryIds },
+      headers: {
+        Authorization: `Token ${token.value}`
+      }
+    })
+      .then(response => {
+        console.log('Interested countries updated!')
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
+
   return { 
     API_URL,
     user,
@@ -202,5 +240,7 @@ export const useCounterStore = defineStore('counter', () => {
     fetchComments, // 댓글 가져오기 메서드 추가
     addComment,    // 댓글 추가하기 메서드 추가
     profilePage,
+    updateVisitedCountries,
+    updateInterestedCountries,
   }
 }, { persist: true })

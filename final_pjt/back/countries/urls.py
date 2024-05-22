@@ -28,4 +28,10 @@ urlpatterns = [
     # detail page 검색을 위한 URL 추가
     path('search_country/', views.search_country, name='search_country'),
 
+
+
+    # visited, interested
+
+    path('update_visited_countries/', views.update_visited_countries, name='update_visited_countries'),
+    path('update_interested_countries/', views.update_interested_countries, name='update_interested_countries'),
 ]

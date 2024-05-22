@@ -4,6 +4,10 @@
       <DetailGallery :data="data" />
       <DetailGraph :data="data" />
     </div>
+    <div>
+      <button @click="selectVisited(data.id)">Visited</button>
+      <button @click="selectInterested(data.id)">Interested</button>
+    </div>
   </div>
 </template>
 
@@ -11,12 +15,28 @@
 import { ref, onMounted, defineProps } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 import DetailGraph from '@/components/DetailView/DetailGraph.vue'
-import DetailGallery from '@/components/DetailView/DetailGallery.vue';
+import DetailGallery from '@/components/DetailView/DetailGallery.vue'
 
 const store = useCounterStore()
 const countryId = ref(null)
 const props = defineProps(['countryId']) // props 정의
 const data = store.detailContryData
+
+const selectVisited = (countryId) => {
+  if (store.isLogin) {
+    store.updateVisitedCountries([countryId])
+  } else {
+    alert('로그인이 필요합니다.')
+  }
+}
+
+const selectInterested = (countryId) => {
+  if (store.isLogin) {
+    store.updateInterestedCountries([countryId])
+  } else {
+    alert('로그인이 필요합니다.')
+  }
+}
 
 onMounted(() => {
   countryId.value = props.countryId // props로 전달받은 countryId 사용

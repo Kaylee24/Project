@@ -1,15 +1,14 @@
 <template>
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
   </head>
 
   <div class="modal fade show" tabindex="-1" style="display: block;" aria-labelledby="profileModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <!-- <h5 class="modal-title" id="profileModalLabel">{{ profileData.name }}님</h5> -->
           <h5>My Profile</h5>
           <button type="button" class="btn-close" aria-label="Close" @click="closeModal"></button>
         </div>
@@ -25,12 +24,11 @@
               <h5>🙋‍♂️</h5>
               <p>{{ profileData.age }}세</p>
             </div>
-
           </div>
           <div class="mt-3">
             <h6>방문한 나라</h6>
             <ul class="list-inline">
-              <li class="list-inline-item" v-for="country in profileData.visited" :key="country.name">
+              <li class="list-inline-item" v-for="country in profileData.visited" :key="country.name" @click="goToDetail(country.id)">
                 <img :src="getImageUrl(country.image1)" class="rounded" alt="Visited Country" width="50" height="50">
                 <span>{{ country.name }}</span>
               </li>
@@ -39,7 +37,7 @@
           <div class="mt-3">
             <h6>관심 있는 나라</h6>
             <ul class="list-inline">
-              <li class="list-inline-item" v-for="country in profileData.interested" :key="country.name">
+              <li class="list-inline-item" v-for="country in profileData.interested" :key="country.name" @click="goToDetail(country.id)">
                 <img :src="getImageUrl(country.image1)" class="rounded" alt="Interested Country" width="50" height="50">
                 <span>{{ country.name }}</span>
               </li>
@@ -54,6 +52,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useCounterStore } from '@/stores/counter';
+import { useRouter } from 'vue-router';
 
 const props = defineProps({
   isVisible: Boolean,
@@ -61,7 +60,9 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 const store = useCounterStore();
-const profileData = store.profileData
+const router = useRouter();
+
+const profileData = store.profileData;
 
 const closeModal = () => {
   emit('close');
@@ -71,9 +72,13 @@ const getImageUrl = (imagePath) => {
   return store.getImageUrl(imagePath);
 };
 
+const goToDetail = (countryId) => {
+  router.push({ name: 'DetailView', params: { countryId } });
+};
+
 onMounted(() => {
-  store.profilePage(store.user)
-  console.log(profileData)
+  store.profilePage(store.user);
+  console.log(profileData);
 });
 </script>
 

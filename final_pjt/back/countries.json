@@ -4,8 +4,8 @@
         "pk": 1,
         "fields": {
             "name": "일본",
-            "burger": 580.0,
-            "coffee": 445.0,
+            "burger": 5.8,
+            "coffee": 4.45,
             "area": "East Asia",
             "image1": "01_jpn/01.jpg",
             "image2": "01_jpn/02.jpg",
@@ -116,8 +116,8 @@
         "pk": 8,
         "fields": {
             "name": "베트남",
-            "burger": 74000.0,
-            "coffee": 65000.0,
+            "burger": 740.0,
+            "coffee": 650.0,
             "area": "Southeast Asia",
             "image1": "08_vnm/01.jpg",
             "image2": "08_vnm/02.jpg",

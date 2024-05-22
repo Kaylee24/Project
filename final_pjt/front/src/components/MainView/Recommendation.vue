@@ -16,7 +16,7 @@
       </div>
       <button type="submit" class="btn btn-primary">Get Recommendations</button>
     </form>
-    <RecommendationModal v-if="showModal" :recommendations="recommendations" @close="showModal = false"/>
+    <RecommendationModal v-if="showModal" :recommendations="recommendations" :inputCountry="country" @close="showModal = false"/>
   </div>
 </template>
 

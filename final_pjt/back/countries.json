@@ -228,8 +228,8 @@
         "pk": 15,
         "fields": {
             "name": "인도네시아",
-            "burger": 38000.0,
-            "coffee": 49000.0,
+            "burger": 380.0,
+            "coffee": 490.0,
             "area": "Southeast Asia",
             "image1": "15_idn/01.jpg",
             "image2": "15_idn/02.jpg",

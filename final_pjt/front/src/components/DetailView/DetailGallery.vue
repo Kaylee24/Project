@@ -49,19 +49,33 @@ const photos = [props.data.image1, props.data.image2, props.data.image3]
 
 <style>
 .fixed-img-container {
-  width: 850px;
-  height: 600px;
+  width: 80%;
+  height: 600px; /* 일정한 높이로 고정 */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fixed-img-container:hover {
+  transform: scale(1.05);
 }
 
 .fixed-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* 이미지 자르기 */
+  object-position: center; /* 중앙 부분을 보여줌 */
   cursor: pointer;
+  border-radius: 15px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 @media (max-width: 850px) {
@@ -73,6 +87,8 @@ const photos = [props.data.image1, props.data.image2, props.data.image3]
   .fixed-img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position: center;
   }
 }
 </style>

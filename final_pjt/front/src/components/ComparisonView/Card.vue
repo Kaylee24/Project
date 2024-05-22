@@ -1,22 +1,28 @@
 <template>
-  <div class="card">
+  <div class="card" @mouseover="isHover = true" @mouseleave="isHover = false">
     <div class="img-box">
       <img
-      :src="imgUrl(data.image1)" alt="" class="resized-image"
-      @click="goToDetailView(data.id)"
+        :src="imgUrl(data.image1)"
+        alt=""
+        class="resized-image"
+        @click="goToDetailView(data.id)"
       >
     </div>
     <div class="image-info">
       <div class="info">
-        <h5>{{ data.name }}</h5>
+        <h5 class="name">{{ data.name }}</h5>
         <p>{{ data.code }}</p>
         <p>{{ data.rate }}</p>
       </div>
-      <div class="right-info"> <!-- 오른쪽에 위치할 div -->
-        <img :src="imgUrl(data.image1)" alt="" class="hamburger-coffee-image">
-        <p>{{ burger }}\</p>
-        <img :src="imgUrl(data.image1)" alt="" class="hamburger-coffee-image">
-        <p>{{ coffee }}\</p>
+      <div class="right-info">
+        <div class="image-container">
+          <img :src="imgUrl(data.image1)" alt="" class="hamburger-coffee-image">
+          <p>{{ burger }}</p>
+        </div>
+        <div class="image-container">
+          <img :src="imgUrl(data.image1)" alt="" class="hamburger-coffee-image">
+          <p>{{ coffee }}</p>
+        </div>
       </div>
     </div>
     <img :src="imgUrl(data.graph)" alt="" class="resized-image">
@@ -43,46 +49,60 @@ const goToDetailView = (countryId) => {
   router.push({ name: 'DetailView', params: { countryId } })
 }
 
+let isHover = false;
+
 </script>
 
 <style scoped>
 .card {
-  background: #e6feff;
+  background: #f3f3f3;
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .img-box {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .resized-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  border-radius: 8px;
 }
 
 .image-info {
-  display: flex; /* 내부 요소를 가로로 배치 */
-  margin-top: 20px;
+  display: flex;
 }
 
 .info {
-  flex: 1; /* 공간을 나눠 사용하도록 설정 */
-  padding: 0 16px; /* 좌우 패딩 추가 */
+  flex: 1;
+}
+
+.name {
+  text-align: center; /* h5 태그 가운데 정렬 */
 }
 
 .right-info {
-  flex: 1; /* 공간을 나눠 사용하도록 설정 */
-  justify-content: flex-end; /* 내부 요소를 오른쪽으로 정렬 */
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
 }
 
 .hamburger-coffee-image {
-  width: 20%;
-  height: 20%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
 }
 </style>

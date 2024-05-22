@@ -32,7 +32,7 @@ onMounted(() => {
 
 .detail-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /* 아래 스타일은 DetailCountry와 DetailGraph에도 적용되어야 합니다. */

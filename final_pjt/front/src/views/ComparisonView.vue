@@ -4,6 +4,7 @@
       v-for="data in store.comparisonPageDatas"
       :key="data.id"
       :data="data"
+      class="card"
     />
   </div>
 </template>
@@ -17,20 +18,36 @@ const store = useCounterStore()
 
 onMounted(() => {
   store.comparisonPage()
-  console.log(store.comparisonPageDatas)
 })
-
 </script>
 
 <style scoped>
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* 카드 간의 간격 */
+  justify-content: space-between;
+  gap: 20px; /* 카드 사이의 간격을 설정합니다. */
 }
 
-.card-container > * {
-  flex: 1 1 calc(25% - 16px); /* 한 줄에 3개씩 배치 */
-  box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
+.card {
+  width: calc(33.33% - 20px); /* 카드의 너비를 계산하고 카드 사이의 간격을 고려합니다. */
+  margin-bottom: 20px; /* 아래 여백을 설정합니다. */
+  transition: transform 0.3s ease-in-out; /* 마우스 호버 시 움직이는 효과를 추가합니다. */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* 마우스 호버 시 약간 위로 움직이도록 설정합니다. */
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: calc(50% - 20px); /* 미디어 쿼리를 사용하여 반응형으로 설정합니다. */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* 미디어 쿼리를 사용하여 반응형으로 설정합니다. */
+  }
 }
 </style>

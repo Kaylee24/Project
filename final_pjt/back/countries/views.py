@@ -108,13 +108,34 @@ def search_country(request):
 
 # visited, interested
 
+# @api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+# def update_visited_countries(request):
+#     user = request.user
+#     country_ids = request.data.get('country_ids', [])
+#     countries = Country.objects.filter(id__in=country_ids)
+#     user.visited.set(countries)
+#     user.save()
+#     return Response(status=status.HTTP_204_NO_CONTENT)
+
+# @api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+# def update_interested_countries(request):
+#     user = request.user
+#     country_ids = request.data.get('country_ids', [])
+#     countries = Country.objects.filter(id__in=country_ids)
+#     user.interested.set(countries)
+#     user.save()
+#     return Response(status=status.HTTP_204_NO_CONTENT)
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def update_visited_countries(request):
     user = request.user
     country_ids = request.data.get('country_ids', [])
     countries = Country.objects.filter(id__in=country_ids)
-    user.visited.set(countries)
+    for country in countries:
+        user.visited.add(country)
     user.save()
     return Response(status=status.HTTP_204_NO_CONTENT)
 
@@ -124,6 +145,7 @@ def update_interested_countries(request):
     user = request.user
     country_ids = request.data.get('country_ids', [])
     countries = Country.objects.filter(id__in=country_ids)
-    user.interested.set(countries)
+    for country in countries:
+        user.interested.add(country)
     user.save()
     return Response(status=status.HTTP_204_NO_CONTENT)

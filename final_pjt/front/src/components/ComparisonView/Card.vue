@@ -26,6 +26,10 @@
       </div>
     </div>
     <img :src="imgUrl(data.graph)" alt="" class="resized-image">
+    <!-- <div class="checkbox-container">
+      <input type="checkbox" @change="toggleSelect(data.id)" :checked="isSelected(data.id)">
+      <label>Select</label>
+    </div> -->
   </div>
 </template>
 
@@ -42,6 +46,9 @@ const props = defineProps({
   data: Object,
 })
 
+// const burger = computed(() => (Math.round(props.data.burger * props.data.rate / 10)) * 10)
+// const coffee = computed(() => (Math.round(props.data.coffee * props.data.rate / 10)) * 10)
+
 const burger = (Math.round(props.data.burger * props.data.rate / 10)) * 10
 const coffee = (Math.round(props.data.coffee * props.data.rate / 10)) * 10
 
@@ -51,6 +58,19 @@ const goToDetailView = (countryId) => {
 
 let isHover = false;
 
+// const emit = defineEmits(['toggleSelect'])
+
+// const isSelected = (countryId) => {
+//   return store.selectedCountries.value.includes(countryId) // 수정된 부분
+// }
+
+console.log('Card.vue')
+console.log(store.selectedCountries)
+
+
+// const toggleSelect = (countryId) => {
+//   emit('toggleSelect', countryId)
+// }
 </script>
 
 <style scoped>
@@ -104,5 +124,11 @@ let isHover = false;
   height: 40px;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 </style>

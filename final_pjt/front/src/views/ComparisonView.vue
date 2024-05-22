@@ -5,30 +5,51 @@
       :key="data.id"
       :data="data"
       class="card"
-      @selectVisited="selectVisited"
-      @selectInterested="selectInterested"
+      @toggleSelect="toggleSelect"
     />
+    <button @click="updateVisitedCountries">Update Visited Countries</button>
+    <button @click="updateInterestedCountries">Update Interested Countries</button>
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 import Card from '@/components/ComparisonView/Card.vue'
 
 const store = useCounterStore()
+const selectedCountries = ref([])
 
-const selectVisited = (countryId) => {
+// const toggleSelect = (countryId) => {
+//   const index = selectedCountries.value.indexOf(countryId)
+//   if (index > -1) {
+//     selectedCountries.value.splice(index, 1)
+//   } else {
+//     selectedCountries.value.push(countryId)
+//   }
+// }
+
+const toggleSelect = (countryId) => {
+  const index = selectedCountries.value.indexOf(countryId)
+  if (index > -1) {
+    selectedCountries.value.splice(index, 1)
+  } else {
+    selectedCountries.value.push(countryId)
+  }
+  store.selectedCountries.value = selectedCountries.value // 수정된 부분
+}
+
+const updateVisitedCountries = () => {
   if (store.isLogin) {
-    store.updateVisitedCountries([countryId])
+    store.updateVisitedCountries(selectedCountries.value)
   } else {
     alert('로그인이 필요합니다.')
   }
 }
 
-const selectInterested = (countryId) => {
+const updateInterestedCountries = () => {
   if (store.isLogin) {
-    store.updateInterestedCountries([countryId])
+    store.updateInterestedCountries(selectedCountries.value)
   } else {
     alert('로그인이 필요합니다.')
   }

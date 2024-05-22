@@ -11,6 +11,7 @@ export const useCounterStore = defineStore('counter', () => {
   const comparisonPageDatas = ref([])
   const detailContryData = ref([])
   const profileData = ref([])
+  const selectedCountries = ref([]) // 추가된 부분, 초기화
 
   // 이미지 URL 생성
   const getImageUrl = (imagePath) => {
@@ -185,6 +186,41 @@ export const useCounterStore = defineStore('counter', () => {
 
   // visited, interested
 
+  // const updateVisitedCountries = (countryIds) => {
+  //   axios({
+  //     method: 'post',
+  //     url: `${API_URL}/countries/update_visited_countries/`,
+  //     data: { country_ids: countryIds },
+  //     headers: {
+  //       Authorization: `Token ${token.value}`
+  //     }
+  //   })
+  //     .then(response => {
+  //       console.log('Visited countries updated!')
+  //     })
+  //     .catch(error => {
+  //       console.log(error)
+  //     })
+  // }
+
+  // const updateInterestedCountries = (countryIds) => {
+  //   axios({
+  //     method: 'post',
+  //     url: `${API_URL}/countries/update_interested_countries/`,
+  //     data: { country_ids: countryIds },
+  //     headers: {
+  //       Authorization: `Token ${token.value}`
+  //     }
+  //   })
+  //     .then(response => {
+  //       console.log('Interested countries updated!')
+  //     })
+  //     .catch(error => {
+  //       console.log(error)
+  //     })
+  // }
+
+
   const updateVisitedCountries = (countryIds) => {
     axios({
       method: 'post',
@@ -196,6 +232,7 @@ export const useCounterStore = defineStore('counter', () => {
     })
       .then(response => {
         console.log('Visited countries updated!')
+        // profilePage(user.value) // store 대신 profilePage 호출
       })
       .catch(error => {
         console.log(error)
@@ -213,12 +250,13 @@ export const useCounterStore = defineStore('counter', () => {
     })
       .then(response => {
         console.log('Interested countries updated!')
+        // profilePage(user.value) // store 대신 profilePage 호출
       })
       .catch(error => {
         console.log(error)
       })
   }
-
+  
 
   return { 
     API_URL,
@@ -229,6 +267,7 @@ export const useCounterStore = defineStore('counter', () => {
     comparisonPageDatas,
     detailContryData,
     profileData,
+    selectedCountries, // 추가된 부분
     signUp, 
     logIn, 
     getMainCountryPictures, 
@@ -242,5 +281,6 @@ export const useCounterStore = defineStore('counter', () => {
     profilePage,
     updateVisitedCountries,
     updateInterestedCountries,
+
   }
 }, { persist: true })

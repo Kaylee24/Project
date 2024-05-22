@@ -1,84 +1,74 @@
 <template>
-  <div v-if="isVisible" class="custom-modal-overlay" @click="closeModal">
-    <div class="custom-modal" @click.stop>
-      <h2>Login</h2>
-      <form @submit.prevent="login">
-        <div class="mb-3">
-          <label for="username" class="form-label">Username:</label>
-          <input v-model="username" id="username" type="text" class="form-control" required />
+  <div class="modal fade show" tabindex="-1" style="display: block;" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="profileModalLabel">{{ userProfile.name }}님</h5>
+          <button type="button" class="btn-close" aria-label="Close" @click="closeModal"></button>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password:</label>
-          <input v-model="password" id="password" type="password" class="form-control" required />
+        <div class="modal-body">
+          <div class="text-center">
+            <img v-if="userProfile.image" :src="getImageUrl(userProfile.image)" class="rounded-circle" alt="Profile Image" width="100" height="100">
+            <h6>{{ userProfile.age }}세</h6>
+          </div>
+          <div class="mt-3">
+            <h6>방문한 나라</h6>
+            <ul class="list-inline">
+              <li class="list-inline-item" v-for="country in userProfile.visited" :key="country.name">
+                <img :src="getImageUrl(country.image1)" class="rounded" alt="Visited Country" width="50" height="50">
+                <span>{{ country.name }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-3">
+            <h6>관심 있는 나라</h6>
+            <ul class="list-inline">
+              <li class="list-inline-item" v-for="country in userProfile.interested" :key="country.name">
+                <img :src="getImageUrl(country.image1)" class="rounded" alt="Interested Country" width="50" height="50">
+                <span>{{ country.name }}</span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-      </form>
-      <button @click="closeModal" class="btn btn-secondary mt-2">Close</button>
+      </div>
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from 'vue';
 import { useCounterStore } from '@/stores/counter';
 
-export default {
-  props: {
-    isVisible: {
-      type: Boolean,
-      required: true
-    }
-  },
-  data() {
-    return {
-      username: '',
-      password: ''
-    };
-  },
-  setup() {
-    const store = useCounterStore()
-    return { store }
-  },
-  methods: {
-    closeModal() {
-      this.$emit('close');
-    },
-    async login() {
-      try {
-        await this.store.logIn({
-          username: this.username,
-          password: this.password
-        });
-        console.log('Logging in with', this.username, this.password);
-        this.closeModal(); // 로그인 성공 시 모달 닫기
-      } catch (error) {
-        console.error('Login failed:', error);
-        // 로그인 실패 시 적절한 오류 처리
-      }
-    }
-  }
+const props = defineProps({
+  isVisible: Boolean,
+});
+
+const emit = defineEmits(['close']);
+const store = useCounterStore();
+const userProfile = ref({ visited: [], interested: [] }); // 기본값 설정
+
+const closeModal = () => {
+  emit('close');
 };
+
+const getImageUrl = (imagePath) => {
+  return store.getImageUrl(imagePath);
+};
+
+onMounted(() => {
+  if (store.token) {
+    store.profilePage(store.token).then((data) => {
+      userProfile.value = data;
+    });
+  }
+});
 </script>
 
 <style scoped>
-.custom-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1050; /* Bootstrap 모달 z-index와 맞추기 */
-}
-
-.custom-modal {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  max-width: 100%;
-  z-index: 1060; /* Bootstrap 모달 z-index와 맞추기 */
+.modal-content {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 }
 </style>

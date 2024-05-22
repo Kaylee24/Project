@@ -166,6 +166,21 @@ export const useCounterStore = defineStore('counter', () => {
     }
   };
 
+  const profilePage = async (token) => {
+    try {
+      const response = await axios.get(`${API_URL}/countries/profile_page/${token}`, {
+        headers: {
+          Authorization: `Token ${token}`,
+        },
+      });
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      return null;
+    }
+  };
+
+
   return { 
     API_URL, 
     token, 
@@ -183,5 +198,6 @@ export const useCounterStore = defineStore('counter', () => {
     detailCountry,
     fetchComments, // 댓글 가져오기 메서드 추가
     addComment,    // 댓글 추가하기 메서드 추가
+    profilePage,
   }
 }, { persist: true })

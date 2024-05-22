@@ -8,9 +8,9 @@
         @click="goToDetailView(data.id)"
       >
     </div>
+    <h5 class="name">{{ data.name }}</h5>
     <div class="image-info">
       <div class="info">
-        <h5 class="name">{{ data.name }}</h5>
         <p>{{ data.code }}</p>
         <p>{{ data.rate }}</p>
       </div>

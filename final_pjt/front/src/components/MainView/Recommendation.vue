@@ -9,7 +9,7 @@
       <div class="mb-3">
         <label for="budget" class="form-label">Budget</label>
         <input type="text" class="form-control custom-width" id="budget" v-model="formattedBudget" @input="formatBudget" required>
-        <p class="small-text">* 항공비와 숙박비를 제외한 경비를 입력해주세요!</p>
+        <p class="small-text korean-font">* 항공비와 숙박비를 제외한 경비를 입력해주세요!</p>
       </div>
       <div class="mb-3">
         <label for="days" class="form-label">Days</label>
@@ -19,6 +19,7 @@
         <button type="submit" class="btn btn-primary">Get Recommendations</button>
       </div>
     </form>
+    <p v-if="errorMessage" class="error-message korean-font">{{ errorMessage }}</p>
     <RecommendationModal v-if="showModal" :recommendations="recommendations" :inputCountry="country" @close="showModal = false"/>
     <div class="button-container">
       <button class="btn btn-outline-info help-button" @click="toggleHelpModal">Help</button>
@@ -68,6 +69,7 @@ const days = ref('');
 const showModal = ref(false);
 const recommendations = ref([]);
 const isHelpModalVisible = ref(false);
+const errorMessage = ref('');
 
 // countryInput을 감시하여 유로존 국가 및 대만 변환 확인
 watch(countryInput, (newCountry) => {
@@ -78,6 +80,7 @@ watch(countryInput, (newCountry) => {
   } else {
     country.value = newCountry;
   }
+  errorMessage.value = ''; // Clear the error message when the country input changes
 });
 
 // budget과 formattedBudget을 동기화
@@ -98,8 +101,10 @@ const getRecommendations = async () => {
   if (response && response.length) {
     recommendations.value = response;
     showModal.value = true;
+    errorMessage.value = ''; // Clear the error message if recommendations are found
   } else {
     console.error('Failed to get recommendations or no recommendations found');
+    errorMessage.value = '서비스를 준비중인 국가입니다.';
   }
 };
 
@@ -150,5 +155,16 @@ const toggleHelpModal = () => {
   font-size: 12px;
   color: #555555; /* 텍스트 색상 조정 */
   margin-top: 5px;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  margin-top: 10px;
+}
+
+.korean-font {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
 }
 </style>

@@ -7,29 +7,27 @@
         class="resized-image"
         @click="goToDetailView(data.id)"
       >
+      <h5 class="name">{{ data.name }}</h5>
     </div>
-    <h5 class="name">{{ data.name }}</h5>
-    <div class="image-info">
-      <div class="info">
-        <p>{{ data.code }}</p>
-        <p>{{ data.rate }}</p>
-      </div>
-      <div class="right-info">
-        <div class="image-container">
-          <img src="/burger.png" alt="" class="hamburger-coffee-image">
-          <p>{{ burger }}원</p>
+    <div class="content-box">
+      <img :src="imgUrl(data.graph)" alt="graph 이미지입니다." class="graph-image">
+      <div class="info-container">
+        <div class="info">
+          <p class="code">{{ data.code }}</p>
+          <p class="rate">환율: {{ data.rate }}</p>
         </div>
-        <div class="image-container">
-          <img src="/coffee.png" alt="" class="hamburger-coffee-image">
-          <p>{{ coffee }}원</p>
+        <div class="price-info">
+          <div class="image-container">
+            <img src="/burger.png" alt="햄버거 가격" class="hamburger-coffee-image">
+            <p class="price">{{ burger }}원</p>
+          </div>
+          <div class="image-container">
+            <img src="/coffee.png" alt="커피 가격" class="hamburger-coffee-image">
+            <p class="price">{{ coffee }}원</p>
+          </div>
         </div>
       </div>
     </div>
-    <img :src="imgUrl(data.graph)" alt="" class="resized-image">
-    <!-- <div class="checkbox-container">
-      <input type="checkbox" @change="toggleSelect(data.id)" :checked="isSelected(data.id)">
-      <label>Select</label>
-    </div> -->
   </div>
 </template>
 
@@ -46,9 +44,6 @@ const props = defineProps({
   data: Object,
 })
 
-// const burger = computed(() => (Math.round(props.data.burger * props.data.rate / 10)) * 10)
-// const coffee = computed(() => (Math.round(props.data.coffee * props.data.rate / 10)) * 10)
-
 const burger = (Math.round(props.data.burger * props.data.rate / 10)) * 10
 const coffee = (Math.round(props.data.coffee * props.data.rate / 10)) * 10
 
@@ -57,66 +52,99 @@ const goToDetailView = (countryId) => {
 }
 
 let isHover = false;
-
-// const emit = defineEmits(['toggleSelect'])
-
-// const isSelected = (countryId) => {
-//   return store.selectedCountries.value.includes(countryId) // 수정된 부분
-// }
-
-console.log('Card.vue')
-console.log(store.selectedCountries)
-
-
-// const toggleSelect = (countryId) => {
-//   emit('toggleSelect', countryId)
-// }
 </script>
 
 <style scoped>
 .card {
-  background: #f3f3f3;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .img-box {
   margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
 }
 
 .resized-image {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.image-info {
-  display: flex;
-}
-
-.info {
-  flex: 1;
+.resized-image:hover {
+  transform: scale(1.1);
 }
 
 .name {
-  text-align: center; /* h5 태그 가운데 정렬 */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-.right-info {
+.content-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.graph-image {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.code {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.rate {
+  font-size: 1rem;
+  color: #555;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .image-container {
   display: flex;
   align-items: center;
-  margin-left: 16px;
 }
 
 .hamburger-coffee-image {
@@ -126,9 +154,9 @@ console.log(store.selectedCountries)
   margin-right: 8px;
 }
 
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
 }
 </style>

@@ -7,8 +7,10 @@
       class="card"
       @toggleSelect="toggleSelect"
     />
-    <button @click="updateVisitedCountries">Update Visited Countries</button>
-    <button @click="updateInterestedCountries">Update Interested Countries</button>
+    <div class="button-container">
+      <button class="btn btn-primary" @click="updateVisitedCountries">Update Visited Countries</button>
+      <button class="btn btn-secondary" @click="updateInterestedCountries">Update Interested Countries</button>
+    </div>
   </div>
 </template>
 
@@ -20,15 +22,6 @@ import Card from '@/components/ComparisonView/Card.vue'
 const store = useCounterStore()
 const selectedCountries = ref([])
 
-// const toggleSelect = (countryId) => {
-//   const index = selectedCountries.value.indexOf(countryId)
-//   if (index > -1) {
-//     selectedCountries.value.splice(index, 1)
-//   } else {
-//     selectedCountries.value.push(countryId)
-//   }
-// }
-
 const toggleSelect = (countryId) => {
   const index = selectedCountries.value.indexOf(countryId)
   if (index > -1) {
@@ -36,7 +29,7 @@ const toggleSelect = (countryId) => {
   } else {
     selectedCountries.value.push(countryId)
   }
-  store.selectedCountries.value = selectedCountries.value // 수정된 부분
+  store.selectedCountries.value = selectedCountries.value
 }
 
 const updateVisitedCountries = () => {
@@ -65,28 +58,63 @@ onMounted(() => {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px; /* 카드 사이의 간격을 설정합니다. */
+  gap: 20px;
 }
 
 .card {
-  width: calc(33.33% - 20px); /* 카드의 너비를 계산하고 카드 사이의 간격을 고려합니다. */
-  margin-bottom: 20px; /* 아래 여백을 설정합니다. */
-  transition: transform 0.3s ease-in-out; /* 마우스 호버 시 움직이는 효과를 추가합니다. */
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* 마우스 호버 시 약간 위로 움직이도록 설정합니다. */
+  transform: translateY(-5px);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  color: white;
 }
 
 @media (max-width: 992px) {
   .card {
-    width: calc(50% - 20px); /* 미디어 쿼리를 사용하여 반응형으로 설정합니다. */
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 576px) {
   .card {
-    width: 100%; /* 미디어 쿼리를 사용하여 반응형으로 설정합니다. */
+    width: 100%;
   }
 }
 </style>

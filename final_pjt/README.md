@@ -5,13 +5,18 @@
 
 ## 😄 팀원 소개
 - 박재현 (팀장)
-   - Comparison Page, Detail Page 구현
+   - Models.py, Serializers.py, Views.py
+   - Comparison Page, Detail Page(comment) 구현
    - 로그인 관련 로직 구현
+   - dummy data
    - CSS
 
 - 김송희
-   - Main Page, Profile Page 구현
-   - 로그인 관련 페이지 구현
+   - countries.json
+   - 여행지 추천 알고리즘 구현
+   - Main Page, Recommendation Modal, Detail Graph Modal 구현
+   - Profile Page(visited, interested), Login/SignUp Modal 구현
+   - Detail Page 로딩 지연 문제 해결
    - CSS
 
 ## 🌎 서비스 소개

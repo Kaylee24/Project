@@ -4,11 +4,11 @@
     <form @submit.prevent="getRecommendations">
       <div class="mb-3">
         <label for="country" class="form-label">Desired Country</label>
-        <input type="text" class="form-control custom-width" id="country" v-model="country" required>
+        <input type="text" class="form-control custom-width" id="country" v-model="countryInput" required>
       </div>
       <div class="mb-3">
         <label for="budget" class="form-label">Budget</label>
-        <input type="number" class="form-control custom-width" id="budget" v-model="budget" required>
+        <input type="text" class="form-control custom-width" id="budget" v-model="formattedBudget" @input="formatBudget" required>
         <p class="small-text">* 항공비와 숙박비를 제외한 경비를 입력해주세요!</p>
       </div>
       <div class="mb-3">
@@ -28,18 +28,69 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { useCounterStore } from '@/stores/counter';
 import RecommendationModal from '@/components/RecommendationModal.vue';
 import HelpModal from '@/components/MainView/HelpModal.vue';
 
+// 유로존 국가 목록 (영어와 한글)
+const eurozoneCountries = [
+  'Austria', '오스트리아',
+  'Belgium', '벨기에',
+  'Cyprus', '키프로스',
+  'Estonia', '에스토니아',
+  'Finland', '핀란드',
+  'France', '프랑스',
+  'Germany', '독일',
+  'Greece', '그리스',
+  'Ireland', '아일랜드',
+  'Italy', '이탈리아',
+  'Latvia', '라트비아',
+  'Lithuania', '리투아니아',
+  'Luxembourg', '룩셈부르크',
+  'Malta', '몰타',
+  'Netherlands', '네덜란드',
+  'Portugal', '포르투갈',
+  'Slovakia', '슬로바키아',
+  'Slovenia', '슬로베니아',
+  'Spain', '스페인'
+];
+
+// 대만 변환 목록
+const taiwanVariants = ['타이완', '중화민국'];
+
 const store = useCounterStore();
 const country = ref('');
+const countryInput = ref('');
 const budget = ref('');
+const formattedBudget = ref('');
 const days = ref('');
 const showModal = ref(false);
 const recommendations = ref([]);
 const isHelpModalVisible = ref(false);
+
+// countryInput을 감시하여 유로존 국가 및 대만 변환 확인
+watch(countryInput, (newCountry) => {
+  if (eurozoneCountries.includes(newCountry)) {
+    country.value = '유럽';
+  } else if (taiwanVariants.includes(newCountry)) {
+    country.value = '대만';
+  } else {
+    country.value = newCountry;
+  }
+});
+
+// budget과 formattedBudget을 동기화
+watch(budget, (newBudget) => {
+  formattedBudget.value = newBudget.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+});
+
+// 숫자 형식을 포맷하는 함수
+const formatBudget = () => {
+  const numericValue = parseInt(formattedBudget.value.replace(/,/g, '')) || 0;
+  budget.value = numericValue;
+  formattedBudget.value = numericValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
 
 const getRecommendations = async () => {
   const response = await store.getTravelRecommendations({ country: country.value, budget: budget.value, days: days.value });

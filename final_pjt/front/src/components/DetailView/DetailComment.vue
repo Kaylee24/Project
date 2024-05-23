@@ -1,5 +1,5 @@
 <template>
-  <div class="detail-comments">
+  <div class="detail-comments" style="margin-top: 7%;">
     <h3>댓글</h3>
     <div v-if="comments.length">
       <div v-for="comment in comments" :key="comment.id" class="comment">

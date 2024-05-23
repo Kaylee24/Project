@@ -87,12 +87,15 @@ def travel_recommendations(request):
         else:
             style = 'Luxury'
 
+        image = c.image1.url
+
         recommendations.append({
             'country': c.name,
             'travel_style': style,
-            'cost_index': daily_cost_index
+            'cost_index': daily_cost_index,
+            'image': image,
         })
-
+    print(recommendations, '@')
     return Response({'recommendations': recommendations})
 
 @api_view(['GET'])

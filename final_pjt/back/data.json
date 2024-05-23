@@ -1,0 +1,3186 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$BrUSdc6yNCwtQmq4dxwHNL$2QZ0rQp6DBqM4O0aYuv+8YYRB7F4HA+zL9g+n7O1HpQ=",
+        "last_login": "2024-05-23T07:14:39.970Z",
+        "is_superuser": false,
+        "username": "user1",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T05:33:39.393Z",
+        "name": "재현재현",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1,
+            8
+        ],
+        "interested": [
+            1,
+            3,
+            5,
+            13,
+            14,
+            27
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$oYCYMwowqgYUQpge3bqWCW$BIyo/+f/52Oos3m3wEmNGQxkHUSTC+nMbnS50jqjLUo=",
+        "last_login": "2024-05-23T07:06:01.295Z",
+        "is_superuser": false,
+        "username": "user2",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T05:59:35.559Z",
+        "name": "송송희버섯",
+        "gender": "female",
+        "age": 27,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1,
+            3,
+            5,
+            12
+        ],
+        "interested": [
+            22,
+            30
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$wqnh74HLTG7xNwWVoMkQ7c$QgGuKSoz/3yv3CICj0M9IMUIxbGseYP8xOfSzYtadP4=",
+        "last_login": "2024-05-23T07:06:31.623Z",
+        "is_superuser": false,
+        "username": "user3",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:03:59.420Z",
+        "name": "김추태",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            11,
+            12,
+            13,
+            14,
+            19
+        ],
+        "interested": [
+            1,
+            6,
+            11,
+            13,
+            14,
+            25
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$qF61It1B8alY0uBIzZP9MN$ZcIOpAJL2witaUrBWxJd6tIFm85hD12XjJZzSrGnmsk=",
+        "last_login": "2024-05-23T06:09:22.174Z",
+        "is_superuser": false,
+        "username": "user4",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:09:21.533Z",
+        "name": "김구현우",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1,
+            5
+        ],
+        "interested": [
+            1,
+            5,
+            7,
+            9,
+            11
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$uWIoawLXAR3XypsVKVZRIZ$wI5iQkZqesCiiktjbfCM0rmbqPACUhUErqhWZ7zjnN8=",
+        "last_login": "2024-05-23T06:22:28.917Z",
+        "is_superuser": false,
+        "username": "user5",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:22:28.277Z",
+        "name": "연암 박지원",
+        "gender": "male",
+        "age": 27,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1,
+            6,
+            13
+        ],
+        "interested": [
+            1,
+            3,
+            6,
+            12,
+            13,
+            14,
+            19
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$31YFvHaK830PrnuyhpprB9$SOk4vFtDYRkZBD1ey/grLqsxD8UjsNAXJe5yt75+9xk=",
+        "last_login": "2024-05-23T06:28:04.076Z",
+        "is_superuser": false,
+        "username": "user6",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:28:03.427Z",
+        "name": "승민짱짱맨",
+        "gender": "male",
+        "age": 31,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1,
+            14
+        ],
+        "interested": [
+            1,
+            5,
+            14
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1njHsAzMfHimjLUpf3jWZx$eTTBDnS1UtiBlca4LM8Y54bMyx3IsJNgY8RRMWmQTdM=",
+        "last_login": "2024-05-23T06:33:32.262Z",
+        "is_superuser": false,
+        "username": "user7",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:33:31.603Z",
+        "name": "어질어질민",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1,
+            21
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$rKw2jSmXLdhPeovxLb1URu$inDEwRhasSlUEehwnnrpM08FRc/XyVz84gY6g256r44=",
+        "last_login": "2024-05-23T06:35:16.380Z",
+        "is_superuser": false,
+        "username": "user8",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:35:15.752Z",
+        "name": "오 정훈 자이언츠 정훈",
+        "gender": "male",
+        "age": 27,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1,
+            7
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$8qF14QmC84HVqQr2n5ghso$FWnDoTX+lCifp+/3u8uD4dE+Xumg9qw0Jj3ckRUVUGM=",
+        "last_login": "2024-05-23T06:36:55.203Z",
+        "is_superuser": false,
+        "username": "user9",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:36:54.560Z",
+        "name": "킹갓더제너럴엠페러마제스티대경태",
+        "gender": "male",
+        "age": 27,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$gQmMEIjRYOhcDkyrvXfpnm$f5SNaWbybYVPBKjOvncUy0c5/aNxzmfGjOZAENz1MKQ=",
+        "last_login": "2024-05-23T06:39:34.456Z",
+        "is_superuser": false,
+        "username": "user10",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:39:33.820Z",
+        "name": "여리예리",
+        "gender": "female",
+        "age": 27,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$tiiINkiIOHRVi0vw5fXIm5$MiP/83w9VlawUTSJ7e4/OnvV2YNvtKudpyJfYCufRlU=",
+        "last_login": "2024-05-23T06:41:19.289Z",
+        "is_superuser": false,
+        "username": "user11",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:41:18.624Z",
+        "name": "앞날이창창호",
+        "gender": "male",
+        "age": 31,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$ey9vZgwTC0dt3Asy5jjUv5$W2dcd5vdhfRJWxaTjG9OM4z1lN3TCt2mB1Y33lVnLUk=",
+        "last_login": "2024-05-23T06:42:42.427Z",
+        "is_superuser": false,
+        "username": "user12",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:42:41.775Z",
+        "name": "수빙수",
+        "gender": "female",
+        "age": 24,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$fzSrLOCtyAe6jD0yzSgNmI$gJgIW++GvM+i4CLC4Uz7ASq7AALgOU0Rm8oUWARrE98=",
+        "last_login": "2024-05-23T06:47:03.185Z",
+        "is_superuser": false,
+        "username": "user13",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:47:02.535Z",
+        "name": "강현욱성",
+        "gender": "male",
+        "age": 27,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$17Qcmd7H4ZEAPgJZZR6JPA$Q8Us2mtmp9cQgrmBBNRx6sPd/pQiDeM7RCFj4mSePpo=",
+        "last_login": "2024-05-23T06:47:59.976Z",
+        "is_superuser": false,
+        "username": "user14",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:47:59.340Z",
+        "name": "김종러버덕",
+        "gender": "male",
+        "age": 31,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$902h0khaDklkLz0d1Ibu0A$ZgqgPGmOQ88Xl5HYA4SD8S+Q0qR4lr5su5rl9Kv0HNw=",
+        "last_login": "2024-05-23T06:50:00.191Z",
+        "is_superuser": false,
+        "username": "user15",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:49:59.555Z",
+        "name": "주먹권민",
+        "gender": "male",
+        "age": 27,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1,
+            29
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$jxB0qGXk30d625v2gxTUWc$vVeBWO3ch+FDAILi9LLauYapBn+OjQTIbb02y6UniII=",
+        "last_login": "2024-05-23T06:52:22.273Z",
+        "is_superuser": false,
+        "username": "user16",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:52:21.625Z",
+        "name": "아야어여오요우유정",
+        "gender": "female",
+        "age": 30,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": [
+            10
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 17,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$j1jM6cKelnVpovsuz6GNE5$l6JxzSv7FO3XMhwVkvIZpQ0lE6+eQBQ7l/Y9UisG0d8=",
+        "last_login": "2024-05-23T06:53:38.440Z",
+        "is_superuser": false,
+        "username": "user17",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:53:37.798Z",
+        "name": "아야어여오요우유찬",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 18,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$fPvJYSvBqiOOfHo4Eilz2k$s7FCdvJy+jYdnfsO0F9pN649aqHkLwmE92oSIzNI5t4=",
+        "last_login": "2024-05-23T06:55:16.652Z",
+        "is_superuser": false,
+        "username": "user18",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:55:16.005Z",
+        "name": "나는야포켓몬마스터이다솜을 이을 지우",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 19,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$JU2sZi39rm7SHQtQm0SLA3$TW8UfK9j2IJ/Rg2UsVvngwNb2fRGdzUjUcu1KUwBYEE=",
+        "last_login": "2024-05-23T06:57:27.389Z",
+        "is_superuser": false,
+        "username": "user19",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T06:57:26.734Z",
+        "name": "김동환장하겠넹",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 20,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$qLshTa5LRWorkxiZBlQO4S$dllD+OtRseVmZ6ezHsyF1xj+PbK4MBo8WqbBDTqHVJw=",
+        "last_login": "2024-05-23T07:00:38.894Z",
+        "is_superuser": false,
+        "username": "user20",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T07:00:38.247Z",
+        "name": "승승정구지",
+        "gender": "female",
+        "age": 25,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 21,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$UTFyYVPd5dEzD66u3fyM1F$11PmRv14IwB++OhiELVpVwBYMuRQJquBbykUhkssMGE=",
+        "last_login": "2024-05-23T07:02:03.691Z",
+        "is_superuser": false,
+        "username": "user21",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T07:02:03.036Z",
+        "name": "차마인쭈",
+        "gender": "female",
+        "age": 25,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 22,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$BHEGuuTmnvgDvkJr47Bv4P$ioDAabV9KJOgWswN9NFHUoXv8RRn7pbPvmh4mFv9bsc=",
+        "last_login": "2024-05-23T07:04:09.655Z",
+        "is_superuser": false,
+        "username": "user22",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T07:04:09.008Z",
+        "name": "효승승정구지",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 23,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$8irBfK6mKdgQu0uE06NDKx$hQGokj9ZdD1SDudF0gWESJIpeCNM8NonT4OOBHMAhYA=",
+        "last_login": "2024-05-23T07:05:14.765Z",
+        "is_superuser": false,
+        "username": "user23",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T07:05:14.127Z",
+        "name": "동그리동동현",
+        "gender": "male",
+        "age": 26,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 24,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1zpseNUYZrNluz0jhse9eP$VC5qrdBYZKX49nW7MQ5hSulyjQz29skVzZ6wRl/LGC4=",
+        "last_login": "2024-05-23T07:18:06.024Z",
+        "is_superuser": false,
+        "username": "user24",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-23T07:07:30.217Z",
+        "name": "진짜김구현임",
+        "gender": "male",
+        "age": 20,
+        "email": "",
+        "groups": [],
+        "user_permissions": [],
+        "visited": [],
+        "interested": []
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 1,
+    "fields": {
+        "name": "일본",
+        "burger": 5.8,
+        "coffee": 4.45,
+        "area": "East Asia",
+        "image1": "01_jpn/01.jpg",
+        "image2": "01_jpn/02.jpg",
+        "image3": "01_jpn/03.jpg",
+        "code": "JPY 100",
+        "rate": 870.56,
+        "graph": "graphs/01_JPY_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 2,
+    "fields": {
+        "name": "중국",
+        "burger": 25.0,
+        "coffee": 30.0,
+        "area": "East Asia",
+        "image1": "02_chn/01.jpg",
+        "image2": "02_chn/02.jpg",
+        "image3": "02_chn/03.jpg",
+        "code": "CNY",
+        "rate": 187.38,
+        "graph": "graphs/02_CNY_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 3,
+    "fields": {
+        "name": "미국",
+        "burger": 5.69,
+        "coffee": 4.45,
+        "area": "America",
+        "image1": "03_usa/01.jpg",
+        "image2": "03_usa/02.jpg",
+        "image3": "03_usa/03.jpg",
+        "code": "USD",
+        "rate": 1355.5,
+        "graph": "graphs/03_USD_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 4,
+    "fields": {
+        "name": "대만",
+        "burger": 75.0,
+        "coffee": 95.0,
+        "area": "East Asia",
+        "image1": "04_twn/01.jpg",
+        "image2": "04_twn/02.jpg",
+        "image3": "04_twn/03.jpg",
+        "code": "TWD",
+        "rate": 42.13,
+        "graph": "graphs/04_TWD_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 5,
+    "fields": {
+        "name": "홍콩",
+        "burger": 23.0,
+        "coffee": 41.0,
+        "area": "East Asia",
+        "image1": "05_hkg/01.jpg",
+        "image2": "05_hkg/02.jpg",
+        "image3": "05_hkg/03.jpg",
+        "code": "HKD",
+        "rate": 173.74,
+        "graph": "graphs/05_HKD_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 6,
+    "fields": {
+        "name": "유럽",
+        "burger": 5.39,
+        "coffee": 3.45,
+        "area": "Europe",
+        "image1": "06_europe/01.jpg",
+        "image2": "06_europe/02.jpg",
+        "image3": "06_europe/03.jpg",
+        "code": "EUR",
+        "rate": 1473.29,
+        "graph": "graphs/06_EUR_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 7,
+    "fields": {
+        "name": "태국",
+        "burger": 135.0,
+        "coffee": 120.0,
+        "area": "Southeast Asia",
+        "image1": "07_tha/01.jpg",
+        "image2": "07_tha/02.jpg",
+        "image3": "07_tha/03.jpg",
+        "code": "THB",
+        "rate": 37.55,
+        "graph": "graphs/07_THB_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 8,
+    "fields": {
+        "name": "베트남",
+        "burger": 740.0,
+        "coffee": 650.0,
+        "area": "Southeast Asia",
+        "image1": "08_vnm/01.jpg",
+        "image2": "08_vnm/02.jpg",
+        "image3": "08_vnm/03.jpg",
+        "code": "VND 100",
+        "rate": 5.33,
+        "graph": "graphs/08_VND_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 9,
+    "fields": {
+        "name": "필리핀",
+        "burger": 161.0,
+        "coffee": 150.0,
+        "area": "Southeast Asia",
+        "image1": "09_phl/01.jpg",
+        "image2": "09_phl/02.jpg",
+        "image3": "09_phl/03.jpg",
+        "code": "PHP",
+        "rate": 23.5,
+        "graph": "graphs/09_PHP_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 10,
+    "fields": {
+        "name": "말레이시아",
+        "burger": 13.15,
+        "coffee": 8.5,
+        "area": "Southeast Asia",
+        "image1": "10_mys/01.jpg",
+        "image2": "10_mys/02.jpg",
+        "image3": "10_mys/03.jpg",
+        "code": "MYR",
+        "rate": 289.17,
+        "graph": "graphs/10_MYR_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 11,
+    "fields": {
+        "name": "싱가포르",
+        "burger": 6.65,
+        "coffee": 6.0,
+        "area": "Southeast Asia",
+        "image1": "11_sgp/01.jpg",
+        "image2": "11_sgp/02.jpg",
+        "image3": "11_sgp/03.jpg",
+        "code": "SGD",
+        "rate": 1007.84,
+        "graph": "graphs/11_SGD_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 12,
+    "fields": {
+        "name": "호주",
+        "burger": 7.7,
+        "coffee": 5.3,
+        "area": "Oceania",
+        "image1": "12_aus/01.jpg",
+        "image2": "12_aus/02.jpg",
+        "image3": "12_aus/03.jpg",
+        "code": "AUD",
+        "rate": 907.37,
+        "graph": "graphs/12_AUD_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 13,
+    "fields": {
+        "name": "영국",
+        "burger": 4.49,
+        "coffee": 2.85,
+        "area": "Europe",
+        "image1": "13_gbr/01.jpg",
+        "image2": "13_gbr/02.jpg",
+        "image3": "13_gbr/03.jpg",
+        "code": "GBP",
+        "rate": 1721.76,
+        "graph": "graphs/13_GBP_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 14,
+    "fields": {
+        "name": "캐나다",
+        "burger": 7.47,
+        "coffee": 4.25,
+        "area": "America",
+        "image1": "14_can/01.jpg",
+        "image2": "14_can/02.jpg",
+        "image3": "14_can/03.jpg",
+        "code": "CAD",
+        "rate": 995.81,
+        "graph": "graphs/14_CAD_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 15,
+    "fields": {
+        "name": "인도네시아",
+        "burger": 380.0,
+        "coffee": 490.0,
+        "area": "Southeast Asia",
+        "image1": "15_idn/01.jpg",
+        "image2": "15_idn/02.jpg",
+        "image3": "15_idn/03.jpg",
+        "code": "IDR",
+        "rate": 8.51,
+        "graph": "graphs/15_IDR_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 16,
+    "fields": {
+        "name": "뉴질랜드",
+        "burger": 8.2,
+        "coffee": 5.0,
+        "area": "Oceania",
+        "image1": "16_nzl/01.jpg",
+        "image2": "16_nzl/02.jpg",
+        "image3": "16_nzl/03.jpg",
+        "code": "NZD",
+        "rate": 831.67,
+        "graph": "graphs/16_NZD_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 17,
+    "fields": {
+        "name": "인도",
+        "burger": 215.0,
+        "coffee": 250.0,
+        "area": "Southeast Asia",
+        "image1": "17_ind/01.jpg",
+        "image2": "17_ind/02.jpg",
+        "image3": "17_ind/03.jpg",
+        "code": "INR",
+        "rate": 16.27,
+        "graph": "graphs/17_INR_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 18,
+    "fields": {
+        "name": "스웨덴",
+        "burger": 61.29,
+        "coffee": 40.0,
+        "area": "Europe",
+        "image1": "18_swe/01.jpg",
+        "image2": "18_swe/02.jpg",
+        "image3": "18_swe/03.jpg",
+        "code": "SEK",
+        "rate": 126.54,
+        "graph": "graphs/18_SEK_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 19,
+    "fields": {
+        "name": "스위스",
+        "burger": 7.1,
+        "coffee": 6.2,
+        "area": "Europe",
+        "image1": "19_che/01.jpg",
+        "image2": "19_che/02.jpg",
+        "image3": "19_che/03.jpg",
+        "code": "CHF",
+        "rate": 1491.61,
+        "graph": "graphs/19_CHF_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 20,
+    "fields": {
+        "name": "브라질",
+        "burger": 23.9,
+        "coffee": 10.0,
+        "area": "America",
+        "image1": "20_bra/01.jpg",
+        "image2": "20_bra/02.jpg",
+        "image3": "20_bra/03.jpg",
+        "code": "BRL",
+        "rate": 265.54,
+        "graph": "graphs/20_BRL_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 21,
+    "fields": {
+        "name": "사우디아라비아",
+        "burger": 19.0,
+        "coffee": 15.0,
+        "area": "West Asia",
+        "image1": "21_sau/01.jpg",
+        "image2": "21_sau/02.jpg",
+        "image3": "21_sau/03.jpg",
+        "code": "SAR",
+        "rate": 361.43,
+        "graph": "graphs/21_SAR_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 22,
+    "fields": {
+        "name": "아랍에미리트",
+        "burger": 18.0,
+        "coffee": 18.0,
+        "area": "West Asia",
+        "image1": "22_are/01.jpg",
+        "image2": "22_are/02.jpg",
+        "image3": "22_are/03.jpg",
+        "code": "AED",
+        "rate": 369.04,
+        "graph": "graphs/22_AED_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 23,
+    "fields": {
+        "name": "남아프리카공화국",
+        "burger": 51.9,
+        "coffee": 40.0,
+        "area": "Africa",
+        "image1": "23_zaf/01.jpg",
+        "image2": "23_zaf/02.jpg",
+        "image3": "23_zaf/03.jpg",
+        "code": "ZAR",
+        "rate": 74.61,
+        "graph": "graphs/23_ZAR_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 24,
+    "fields": {
+        "name": "멕시코",
+        "burger": 89.0,
+        "coffee": 64.0,
+        "area": "America",
+        "image1": "24_mex/01.jpg",
+        "image2": "24_mex/02.jpg",
+        "image3": "24_mex/03.jpg",
+        "code": "MXN",
+        "rate": 81.62,
+        "graph": "graphs/24_MXN_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 25,
+    "fields": {
+        "name": "폴란드",
+        "burger": 19.9,
+        "coffee": 14.9,
+        "area": "Europe",
+        "image1": "25_pol/01.jpg",
+        "image2": "25_pol/02.jpg",
+        "image3": "25_pol/03.jpg",
+        "code": "PLN",
+        "rate": 345.8,
+        "graph": "graphs/25_PLN_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 26,
+    "fields": {
+        "name": "터키",
+        "burger": 120.0,
+        "coffee": 58.0,
+        "area": "West Asia",
+        "image1": "26_tur/01.jpg",
+        "image2": "26_tur/02.jpg",
+        "image3": "26_tur/03.jpg",
+        "code": "TRY",
+        "rate": 42.05,
+        "graph": "graphs/26_TRY_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 27,
+    "fields": {
+        "name": "러시아",
+        "burger": 420.0,
+        "coffee": 270.0,
+        "area": "East Asia",
+        "image1": "27_rus/01.jpg",
+        "image2": "27_rus/02.jpg",
+        "image3": "27_rus/03.jpg",
+        "code": "RUB",
+        "rate": 14.9,
+        "graph": "graphs/27_RUB_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 28,
+    "fields": {
+        "name": "덴마크",
+        "burger": 39.0,
+        "coffee": 41.0,
+        "area": "Europe",
+        "image1": "28_dnk/01.jpg",
+        "image2": "28_dnk/02.jpg",
+        "image3": "28_dnk/03.jpg",
+        "code": "DKK",
+        "rate": 197.47,
+        "graph": "graphs/28_DKK_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 29,
+    "fields": {
+        "name": "노르웨이",
+        "burger": 75.0,
+        "coffee": 48.0,
+        "area": "Europe",
+        "image1": "29_nor/01.jpg",
+        "image2": "29_nor/02.jpg",
+        "image3": "29_nor/03.jpg",
+        "code": "NOK",
+        "rate": 126.93,
+        "graph": "graphs/29_NOK_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.country",
+    "pk": 30,
+    "fields": {
+        "name": "이집트",
+        "burger": 85.0,
+        "coffee": 40.0,
+        "area": "Africa",
+        "image1": "30_egy/01.jpg",
+        "image2": "30_egy/02.jpg",
+        "image3": "30_egy/03.jpg",
+        "code": "EGP",
+        "rate": 28.9,
+        "graph": "graphs/30_EGP_exchange_rate.png"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "country_c": 1,
+        "content": "저번에 일본 다녀왔을 때 너무 재미 있었어요!! 이번에 엔화 떨어진 김에 다시한번 가보려구요 ㅎㅎ",
+        "created_at": "2024-05-23T05:34:40.135Z",
+        "updated_at": "2024-05-23T05:34:40.135Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "country_c": 8,
+        "content": "베트남은 저번에 갔다왔는데 지금 가면 너무 더울거 같아요 ㅜㅜ",
+        "created_at": "2024-05-23T05:39:40.954Z",
+        "updated_at": "2024-05-23T05:39:40.954Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "country_c": 5,
+        "content": "제가 일본을 좋아하고 5일 시간이 남아 경비에 60만원까지 쓸 생각이었는데 Easy Travel이 홍콩 추천 해주더라구요! 다음에는 홍콩도 가봐야겠어용!!",
+        "created_at": "2024-05-23T05:43:04.007Z",
+        "updated_at": "2024-05-23T05:43:04.007Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "country_c": 13,
+        "content": "진짜 영국엔 축구보러 함 가야하는데 언제가지",
+        "created_at": "2024-05-23T05:56:08.868Z",
+        "updated_at": "2024-05-23T05:56:08.868Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "country_c": 14,
+        "content": "여기가 그 소문으로만 듣던 단풍국입니까..",
+        "created_at": "2024-05-23T05:57:34.062Z",
+        "updated_at": "2024-05-23T05:57:34.062Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 8,
+    "fields": {
+        "user": 2,
+        "country_c": 30,
+        "content": "아니 환율머야 개꿀이네 바로간다",
+        "created_at": "2024-05-23T06:01:22.851Z",
+        "updated_at": "2024-05-23T06:01:22.851Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 9,
+    "fields": {
+        "user": 2,
+        "country_c": 12,
+        "content": "여기가 진짜 이쁘긴 했지..",
+        "created_at": "2024-05-23T06:01:49.473Z",
+        "updated_at": "2024-05-23T06:01:49.473Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 10,
+    "fields": {
+        "user": 2,
+        "country_c": 3,
+        "content": "달러 환율 떨어지면 다시 가볼랬는데 이번생엔 못가겠다... ㅠ",
+        "created_at": "2024-05-23T06:02:13.716Z",
+        "updated_at": "2024-05-23T06:02:13.716Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 11,
+    "fields": {
+        "user": 2,
+        "country_c": 5,
+        "content": "여기 가봤는데 진짜 볼거 많음!! 추천합니다",
+        "created_at": "2024-05-23T06:02:51.449Z",
+        "updated_at": "2024-05-23T06:02:51.449Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 12,
+    "fields": {
+        "user": 3,
+        "country_c": 13,
+        "content": "담에 환율 떨어지는거 보고 ㄱㄱ",
+        "created_at": "2024-05-23T06:05:27.119Z",
+        "updated_at": "2024-05-23T06:05:27.119Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 15,
+    "fields": {
+        "user": 3,
+        "country_c": 11,
+        "content": "아 저번에 갔다왔는데 이번에 환율올랐네 ㅋㅋ  나이스~~",
+        "created_at": "2024-05-23T06:06:17.425Z",
+        "updated_at": "2024-05-23T06:06:17.425Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 16,
+    "fields": {
+        "user": 3,
+        "country_c": 14,
+        "content": "아 여기 이쁘지 환율떨어지면 바로 다시 간다",
+        "created_at": "2024-05-23T06:06:46.193Z",
+        "updated_at": "2024-05-23T06:06:46.193Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 17,
+    "fields": {
+        "user": 3,
+        "country_c": 25,
+        "content": "여긴 생각보다 환율 쎄네 ㄷㄷ 담에 각보고 가야겠다",
+        "created_at": "2024-05-23T06:07:44.218Z",
+        "updated_at": "2024-05-23T06:07:44.218Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 19,
+    "fields": {
+        "user": 4,
+        "country_c": 1,
+        "content": "아니 근데 지금 엔화 엄청 싸네 ㄷㄷ 코인 타야하나..",
+        "created_at": "2024-05-23T06:11:53.904Z",
+        "updated_at": "2024-05-23T06:11:53.904Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 20,
+    "fields": {
+        "user": 4,
+        "country_c": 5,
+        "content": "여긴 다음에 함 가야겠다",
+        "created_at": "2024-05-23T06:12:59.358Z",
+        "updated_at": "2024-05-23T06:12:59.358Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 21,
+    "fields": {
+        "user": 4,
+        "country_c": 11,
+        "content": "아 나도 저번에 갈껄.. 지금 갈라니깐 환율 많이 올랐네..",
+        "created_at": "2024-05-23T06:13:40.468Z",
+        "updated_at": "2024-05-23T06:13:40.468Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 22,
+    "fields": {
+        "user": 4,
+        "country_c": 26,
+        "content": "튀르키에 아이스크림",
+        "created_at": "2024-05-23T06:14:23.589Z",
+        "updated_at": "2024-05-23T06:14:23.589Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 23,
+    "fields": {
+        "user": 4,
+        "country_c": 9,
+        "content": "여기 지금 환율 많이 떨어졌네 지금 가야겠다.",
+        "created_at": "2024-05-23T06:17:29.272Z",
+        "updated_at": "2024-05-23T06:17:29.272Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 25,
+    "fields": {
+        "user": 4,
+        "country_c": 7,
+        "content": "태국 꿀팁 입니다! \n사원 방문 시 복장을 주의하세요. 어깨와 무릎을 가리는 옷을 입어야 합니다. 그리고 택시 탈 때는 미터기를 켜달라고 하세요",
+        "created_at": "2024-05-23T06:20:20.877Z",
+        "updated_at": "2024-05-23T06:20:20.877Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 26,
+    "fields": {
+        "user": 5,
+        "country_c": 1,
+        "content": "6월달에 바로 간다",
+        "created_at": "2024-05-23T06:22:55.597Z",
+        "updated_at": "2024-05-23T06:22:55.597Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 28,
+    "fields": {
+        "user": 5,
+        "country_c": 12,
+        "content": "캥거루 함 보러 가야겠다",
+        "created_at": "2024-05-23T06:25:59.764Z",
+        "updated_at": "2024-05-23T06:25:59.764Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 29,
+    "fields": {
+        "user": 5,
+        "country_c": 19,
+        "content": "아니 여긴 왤캐 비쌈??",
+        "created_at": "2024-05-23T06:26:51.085Z",
+        "updated_at": "2024-05-23T06:26:51.086Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 30,
+    "fields": {
+        "user": 6,
+        "country_c": 1,
+        "content": "일본 무조건 가야지",
+        "created_at": "2024-05-23T06:30:33.217Z",
+        "updated_at": "2024-05-23T06:30:33.217Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 31,
+    "fields": {
+        "user": 6,
+        "country_c": 18,
+        "content": "여기도 함 가고 싶다",
+        "created_at": "2024-05-23T06:32:14.145Z",
+        "updated_at": "2024-05-23T06:32:14.145Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 32,
+    "fields": {
+        "user": 6,
+        "country_c": 5,
+        "content": "언제 가보노",
+        "created_at": "2024-05-23T06:32:30.687Z",
+        "updated_at": "2024-05-23T06:32:30.687Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 33,
+    "fields": {
+        "user": 7,
+        "country_c": 1,
+        "content": "엔화 어질어질하다 진짜..",
+        "created_at": "2024-05-23T06:33:50.219Z",
+        "updated_at": "2024-05-23T06:33:50.219Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 34,
+    "fields": {
+        "user": 7,
+        "country_c": 21,
+        "content": "여기 재밋겠당",
+        "created_at": "2024-05-23T06:34:02.598Z",
+        "updated_at": "2024-05-23T06:34:02.598Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 35,
+    "fields": {
+        "user": 8,
+        "country_c": 1,
+        "content": "일본 무조건 가야지",
+        "created_at": "2024-05-23T06:35:31.452Z",
+        "updated_at": "2024-05-23T06:35:31.452Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 36,
+    "fields": {
+        "user": 8,
+        "country_c": 7,
+        "content": "여기 은근 재밋음",
+        "created_at": "2024-05-23T06:35:47.359Z",
+        "updated_at": "2024-05-23T06:35:47.359Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 37,
+    "fields": {
+        "user": 9,
+        "country_c": 1,
+        "content": "일본..? 빨리가고싶다..",
+        "created_at": "2024-05-23T06:37:09.753Z",
+        "updated_at": "2024-05-23T06:37:09.753Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 39,
+    "fields": {
+        "user": 9,
+        "country_c": 2,
+        "content": "은근 환율 괜찮네 담에 함 가야겠다",
+        "created_at": "2024-05-23T06:38:07.896Z",
+        "updated_at": "2024-05-23T06:38:07.896Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 40,
+    "fields": {
+        "user": 10,
+        "country_c": 1,
+        "content": "나도 일본 가고싶다..",
+        "created_at": "2024-05-23T06:39:44.168Z",
+        "updated_at": "2024-05-23T06:39:44.168Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 41,
+    "fields": {
+        "user": 10,
+        "country_c": 4,
+        "content": "대~만",
+        "created_at": "2024-05-23T06:39:59.115Z",
+        "updated_at": "2024-05-23T06:39:59.115Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 42,
+    "fields": {
+        "user": 10,
+        "country_c": 12,
+        "content": "쿼카 보러 갈래용~!",
+        "created_at": "2024-05-23T06:40:32.068Z",
+        "updated_at": "2024-05-23T06:40:32.068Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 43,
+    "fields": {
+        "user": 11,
+        "country_c": 1,
+        "content": "일본? 또 가야지",
+        "created_at": "2024-05-23T06:41:38.772Z",
+        "updated_at": "2024-05-23T06:41:38.772Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 44,
+    "fields": {
+        "user": 11,
+        "country_c": 27,
+        "content": "여긴좀.. 무섭긴해",
+        "created_at": "2024-05-23T06:41:54.605Z",
+        "updated_at": "2024-05-23T06:41:54.605Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 45,
+    "fields": {
+        "user": 12,
+        "country_c": 1,
+        "content": "아->니^에^요-",
+        "created_at": "2024-05-23T06:43:17.802Z",
+        "updated_at": "2024-05-23T06:43:17.802Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 46,
+    "fields": {
+        "user": 12,
+        "country_c": 20,
+        "content": "여긴 너무 무서움",
+        "created_at": "2024-05-23T06:43:35.702Z",
+        "updated_at": "2024-05-23T06:43:35.702Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 47,
+    "fields": {
+        "user": 13,
+        "country_c": 1,
+        "content": "일본에 다들 관심이 많네",
+        "created_at": "2024-05-23T06:47:17.995Z",
+        "updated_at": "2024-05-23T06:47:17.995Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 48,
+    "fields": {
+        "user": 13,
+        "country_c": 24,
+        "content": "사진 잘나왔네",
+        "created_at": "2024-05-23T06:47:31.884Z",
+        "updated_at": "2024-05-23T06:47:31.884Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 49,
+    "fields": {
+        "user": 14,
+        "country_c": 1,
+        "content": "그만큼 인기가 많잖아~",
+        "created_at": "2024-05-23T06:48:11.921Z",
+        "updated_at": "2024-05-23T06:48:11.921Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 50,
+    "fields": {
+        "user": 14,
+        "country_c": 28,
+        "content": "브리안 라우드루프",
+        "created_at": "2024-05-23T06:49:00.413Z",
+        "updated_at": "2024-05-23T06:49:00.413Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 51,
+    "fields": {
+        "user": 15,
+        "country_c": 1,
+        "content": "스쿠터 타고 가능?",
+        "created_at": "2024-05-23T06:50:52.730Z",
+        "updated_at": "2024-05-23T06:50:52.730Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 52,
+    "fields": {
+        "user": 15,
+        "country_c": 29,
+        "content": "홀란스럽네..",
+        "created_at": "2024-05-23T06:51:16.071Z",
+        "updated_at": "2024-05-23T06:51:16.071Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 53,
+    "fields": {
+        "user": 16,
+        "country_c": 1,
+        "content": "불가능..",
+        "created_at": "2024-05-23T06:52:31.270Z",
+        "updated_at": "2024-05-23T06:52:31.270Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 54,
+    "fields": {
+        "user": 16,
+        "country_c": 10,
+        "content": "말리지마",
+        "created_at": "2024-05-23T06:52:55.215Z",
+        "updated_at": "2024-05-23T06:52:55.216Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 55,
+    "fields": {
+        "user": 17,
+        "country_c": 1,
+        "content": "비행기 타고 가요오",
+        "created_at": "2024-05-23T06:53:55.937Z",
+        "updated_at": "2024-05-23T06:53:55.937Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 56,
+    "fields": {
+        "user": 17,
+        "country_c": 15,
+        "content": "인도짭임?",
+        "created_at": "2024-05-23T06:54:15.144Z",
+        "updated_at": "2024-05-23T06:54:15.144Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 57,
+    "fields": {
+        "user": 18,
+        "country_c": 1,
+        "content": "가랏 피카츄",
+        "created_at": "2024-05-23T06:55:23.987Z",
+        "updated_at": "2024-05-23T06:55:23.987Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 58,
+    "fields": {
+        "user": 18,
+        "country_c": 17,
+        "content": "피카피카",
+        "created_at": "2024-05-23T06:55:34.638Z",
+        "updated_at": "2024-05-23T06:55:34.638Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 59,
+    "fields": {
+        "user": 19,
+        "country_c": 1,
+        "content": "일본 가서 이쁜 카페 가보고 싶다..",
+        "created_at": "2024-05-23T06:57:54.862Z",
+        "updated_at": "2024-05-23T06:57:54.862Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 61,
+    "fields": {
+        "user": 19,
+        "country_c": 16,
+        "content": "뉴진스님",
+        "created_at": "2024-05-23T06:59:18.568Z",
+        "updated_at": "2024-05-23T06:59:18.568Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 62,
+    "fields": {
+        "user": 20,
+        "country_c": 1,
+        "content": "일본 괜찮다!",
+        "created_at": "2024-05-23T07:00:58.336Z",
+        "updated_at": "2024-05-23T07:00:58.336Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 64,
+    "fields": {
+        "user": 20,
+        "country_c": 22,
+        "content": "아싸라비아",
+        "created_at": "2024-05-23T07:01:19.586Z",
+        "updated_at": "2024-05-23T07:01:19.586Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 66,
+    "fields": {
+        "user": 21,
+        "country_c": 1,
+        "content": "몇명 남았지?",
+        "created_at": "2024-05-23T07:02:38.453Z",
+        "updated_at": "2024-05-23T07:02:38.453Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 67,
+    "fields": {
+        "user": 21,
+        "country_c": 23,
+        "content": "여기도 펭귄이 사냐?? 신기행",
+        "created_at": "2024-05-23T07:02:58.340Z",
+        "updated_at": "2024-05-23T07:02:58.340Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 68,
+    "fields": {
+        "user": 22,
+        "country_c": 1,
+        "content": "라스트 하나",
+        "created_at": "2024-05-23T07:04:36.569Z",
+        "updated_at": "2024-05-23T07:04:36.569Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 69,
+    "fields": {
+        "user": 23,
+        "country_c": 1,
+        "content": "끝이지롱~",
+        "created_at": "2024-05-23T07:05:24.127Z",
+        "updated_at": "2024-05-23T07:05:24.127Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 71,
+    "fields": {
+        "user": 2,
+        "country_c": 1,
+        "content": "아 두명 여기 댓글 안썼넹",
+        "created_at": "2024-05-23T07:06:24.416Z",
+        "updated_at": "2024-05-23T07:06:24.416Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 72,
+    "fields": {
+        "user": 3,
+        "country_c": 1,
+        "content": "진짜 끝!!!!!111",
+        "created_at": "2024-05-23T07:06:45.363Z",
+        "updated_at": "2024-05-23T07:06:45.363Z"
+    }
+},
+{
+    "model": "countries.comment",
+    "pk": 74,
+    "fields": {
+        "user": 24,
+        "country_c": 1,
+        "content": "여러분 댓글 다시느라 수고 많으셨습니다~ !",
+        "created_at": "2024-05-23T07:18:14.944Z",
+        "updated_at": "2024-05-23T07:18:14.944Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "00cf82f8ad6ca34ca4000655b9f5968722d7f38a",
+    "fields": {
+        "user": 7,
+        "created": "2024-05-23T06:33:32.242Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "039378e6ef3fbd2d06fd9fae8af8097ac0abf318",
+    "fields": {
+        "user": 5,
+        "created": "2024-05-23T06:22:28.900Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "0f066b409e94f11e6933491ba77f649fd5de5b75",
+    "fields": {
+        "user": 3,
+        "created": "2024-05-23T06:04:00.073Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "21529568a497cf1f2038e453547d297a2806b279",
+    "fields": {
+        "user": 20,
+        "created": "2024-05-23T07:00:38.877Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "2fec6d3219c0df0f20e15af96134dcb8c526c864",
+    "fields": {
+        "user": 4,
+        "created": "2024-05-23T06:09:22.159Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "437b5ab3fc656208bff6a30019ed0f6a5795fa56",
+    "fields": {
+        "user": 9,
+        "created": "2024-05-23T06:36:55.192Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "471102aeeadd4ad0d48ed6f89c3d5b8c4ab69f5f",
+    "fields": {
+        "user": 8,
+        "created": "2024-05-23T06:35:16.370Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "56ed63642e30cec0e1b53e1c0a92cd1003404d5a",
+    "fields": {
+        "user": 1,
+        "created": "2024-05-23T05:33:40.062Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "8edcb795590c62da876421b057403fbc363ed3be",
+    "fields": {
+        "user": 24,
+        "created": "2024-05-23T07:07:30.832Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "9606143cf24d27d7f114eed96916a2e257656d1d",
+    "fields": {
+        "user": 11,
+        "created": "2024-05-23T06:41:19.262Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "a77924e4f8f58cfec31ed68cfd76b4c4360aa975",
+    "fields": {
+        "user": 22,
+        "created": "2024-05-23T07:04:09.643Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "ac7b2c23320f2cac2d844e64d575ffa9d6a24664",
+    "fields": {
+        "user": 21,
+        "created": "2024-05-23T07:02:03.674Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "acbd1e00aaebf8134399d98d75ec435c1a45cc0a",
+    "fields": {
+        "user": 14,
+        "created": "2024-05-23T06:47:59.962Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "ae3ab3e286c537508e1b8bb5fcfaa0ab3cb5a990",
+    "fields": {
+        "user": 6,
+        "created": "2024-05-23T06:28:04.061Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "b016dc6d93941aad2b79b1a8e53835851eb623a5",
+    "fields": {
+        "user": 2,
+        "created": "2024-05-23T05:59:36.190Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "bc9c64316be9940b4797080fc46bef6ea157f003",
+    "fields": {
+        "user": 15,
+        "created": "2024-05-23T06:50:00.179Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "c1e81358845c5c61cb5b977b85729526ab7211a3",
+    "fields": {
+        "user": 13,
+        "created": "2024-05-23T06:47:03.167Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "ced9e2ea88713744ea7a5265de95234788876daa",
+    "fields": {
+        "user": 19,
+        "created": "2024-05-23T06:57:27.371Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "cffb1eaa91cf943729386f2ac6e793e3f5f77ad0",
+    "fields": {
+        "user": 12,
+        "created": "2024-05-23T06:42:42.405Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "d53e18541ff23c31ca8bee0dae5dd19e64e0ead3",
+    "fields": {
+        "user": 16,
+        "created": "2024-05-23T06:52:22.255Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "eca43a3371bfb8772ea609c9a0c196114dd14132",
+    "fields": {
+        "user": 18,
+        "created": "2024-05-23T06:55:16.640Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "f09e2a838e23140e7da0cce8dbb4b80bf92bec7d",
+    "fields": {
+        "user": 17,
+        "created": "2024-05-23T06:53:38.426Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "f72441293febb7d09d97da75ba2dc405e59a1288",
+    "fields": {
+        "user": 10,
+        "created": "2024-05-23T06:39:34.439Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "fe9d794e9c05953dab67d379d3a2e1837785fdb8",
+    "fields": {
+        "user": 23,
+        "created": "2024-05-23T07:05:14.745Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 1,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 1,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 1,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 1,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add country",
+        "content_type": 2,
+        "codename": "add_country"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change country",
+        "content_type": 2,
+        "codename": "change_country"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete country",
+        "content_type": 2,
+        "codename": "delete_country"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view country",
+        "content_type": 2,
+        "codename": "view_country"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add travel",
+        "content_type": 3,
+        "codename": "add_travel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change travel",
+        "content_type": 3,
+        "codename": "change_travel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete travel",
+        "content_type": 3,
+        "codename": "delete_travel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view travel",
+        "content_type": 3,
+        "codename": "view_travel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add comment",
+        "content_type": 4,
+        "codename": "add_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change comment",
+        "content_type": 4,
+        "codename": "change_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete comment",
+        "content_type": 4,
+        "codename": "delete_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view comment",
+        "content_type": 4,
+        "codename": "view_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 5,
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 5,
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 5,
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 5,
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add token",
+        "content_type": 6,
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change token",
+        "content_type": 6,
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete token",
+        "content_type": 6,
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view token",
+        "content_type": 6,
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add site",
+        "content_type": 7,
+        "codename": "add_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change site",
+        "content_type": 7,
+        "codename": "change_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete site",
+        "content_type": 7,
+        "codename": "delete_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view site",
+        "content_type": 7,
+        "codename": "view_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add email address",
+        "content_type": 8,
+        "codename": "add_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change email address",
+        "content_type": 8,
+        "codename": "change_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete email address",
+        "content_type": 8,
+        "codename": "delete_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view email address",
+        "content_type": 8,
+        "codename": "view_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add email confirmation",
+        "content_type": 9,
+        "codename": "add_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change email confirmation",
+        "content_type": 9,
+        "codename": "change_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete email confirmation",
+        "content_type": 9,
+        "codename": "delete_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view email confirmation",
+        "content_type": 9,
+        "codename": "view_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add social account",
+        "content_type": 10,
+        "codename": "add_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change social account",
+        "content_type": 10,
+        "codename": "change_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete social account",
+        "content_type": 10,
+        "codename": "delete_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view social account",
+        "content_type": 10,
+        "codename": "view_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add social application",
+        "content_type": 11,
+        "codename": "add_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change social application",
+        "content_type": 11,
+        "codename": "change_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete social application",
+        "content_type": 11,
+        "codename": "delete_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view social application",
+        "content_type": 11,
+        "codename": "view_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add social application token",
+        "content_type": 12,
+        "codename": "add_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change social application token",
+        "content_type": 12,
+        "codename": "change_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete social application token",
+        "content_type": 12,
+        "codename": "delete_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view social application token",
+        "content_type": 12,
+        "codename": "view_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 13,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 13,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 13,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 13,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 14,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 14,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 14,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 14,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 15,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 15,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 15,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 15,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 16,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 16,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 16,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 16,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 17,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 17,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 17,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 17,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "accounts",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "countries",
+        "model": "country"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "countries",
+        "model": "travel"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "countries",
+        "model": "comment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "sites",
+        "model": "site"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "account",
+        "model": "emailaddress"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "account",
+        "model": "emailconfirmation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialaccount"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialapp"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialtoken"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0csy2qd5g1duba7ix50m4ykxysmq4e5a",
+    "fields": {
+        "session_data": ".eJxVjzsOgzAQRO_iOrIw4B9l-pzBWnvXwQkxEpg0Ue4eI5GCdt7Mk-bDIIR5y8W9aUkxETp6QZrYkLdpujAHWxndttLiErKBCclOoYfwpLwTfEC-zzzMuSzJ873CD7ry24w0XY_uSTDCOtY1oNFSIgqlGq-9kkZHwN7EzvtGKsJgrBTCREO2krbtQkCBrY3W67qq0v-R3U25pAClvoHCBqGF6ntlreVGC2n19wfKiFIB:1sA2H1:u-UFye2T3CAyAlb76ser0_BmTan9na_aYeuzGRF3hwY",
+        "expire_date": "2024-06-06T06:49:59.871Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0kr5kya1bz8k1bz96b7nszgsugl59eg6",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGllZeb2JKek5g7UfhwSQI-VTIe4OkVJA-2bmvVzmbR3ytpQ5j-bODsidfkdhfZS6E7tzvU1ep7rOo_hd8Qdd_HWy8rwc7t_BwMvwrQkFkQw4MqQWAihqktaCNais1FKv2PWSKMROGigaTakYdIiMktz7AwPUODc:1sA2JK:3XCGazQC8471dHbkgyFc8C4r3QIOVC1eMX-GnlXb8pU",
+        "expire_date": "2024-06-06T06:52:22.279Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "139fl5cvezcvtbm9gpornjgc5y5yffw1",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgQsGl-56BzDCDVA0kpV0Z765NutDtf-_9l4iwrSVunZc4k7gILU6_G0J6cN0B3aHemkytrsuMclfkQbucGvHzerh_BwV6-dY-cAZGF8hBMAN79sZbj1qppEfkgcikZHh0Ac-EbI3T2WlI2QBZBeL9Af9rOMI:1sA15A:l7JOChGDVJKOWRS2A5wAkUDASTCQQEQvjZFE5wEDTtg",
+        "expire_date": "2024-06-06T05:33:40.079Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1c7q96i3zzi89kobwt5uiik84gr4pr65",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlnxEueHkp4zWH-xcQA5UpxUiLtDpBTQvpl5LxVxW0vcWlriJOqsDKjT70jIj1R3Inest1nzXNdlIr0r-qBNX2dJz8vh_h0UbOVbZ6TRO0xsxfAQoGdrBuuQc_DQE-XOcGabIXQSUGx2ISAAAxB5l0b1_gApgDjO:1sA2M8:MtKSxM6WARto1docw3NjJYLNH3b3n3lFW0E6PxANePA",
+        "expire_date": "2024-06-06T06:55:16.657Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1wta9aonfhwtbiajquf4ofmvpag0uvbh",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGllZ_01JnzNY67WNA8iR4qRC3J1ESgHtzLz3ZgG3tYat5yVMiV0ZCHb5hRHpmdth0gPbfeY0t3WZIj8SftrOxznl1-1s_w4q9rqviyGJjpR2NhNaTFYjReNlSTAoSAJ2VpTxUSiFNlqJg_QCQBBlp4l9vh9dOFg:1sA29y:zTbLddioq2GPIlWnThee9WSmmulgIuETD17hl6KvyRQ",
+        "expire_date": "2024-06-06T06:42:42.437Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "28ljiluh7qp4r8cyxas77k6zsgw6ueu3",
+    "fields": {
+        "session_data": ".eJxVjzsOgzAQRO_iOrL8wwbK9DmDtV4vwQkxEpg0Ue4eI5GCdt7Mk-bDAHHecvFvWtKQKHp6QZpYn7dpujAPWxn9ttLiU2Q9k4qdwgD4pLyT-IB8nznOuSwp8L3CD7ry2xxpuh7dk2CEdazrwaKGFk3TOkJwEF0DGGynhyiFkVHJmg3GdkEZAy44DUJ3SkqFSG2DVfo_srspl4RQ6hsorJdOWmNsYxUXnTVC2-8PHOtR7w:1sA29y:THB1jFrMuKfCtV-Q7nHE_dRVHUkXc3ltACcnesSxqFw",
+        "expire_date": "2024-06-06T06:42:42.097Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2ktd9l4kfsbutpxtk18jngcn6z9bfq4z",
+    "fields": {
+        "session_data": ".eJxVzLkOwjAQBNB_cY0sHxtLS0nPN0R72DiAEilHFfHvOFIKaGfezG562tbab0ue-0HN1QRnLr8hk7zyeDT6pPExWZnGdR7YHsSe7WLvk-b37bR_B5WW2tbiojgsPgdMDEELlNhxjgiqGMWjgHIEySwICRqLmLzjQtRRc-bzBRbROL4:1sA2RK:8RjI-AUy_bwvynF84P8JlZFs_gk1sDrEjhSVj6NvlZ0",
+        "expire_date": "2024-06-06T07:00:38.902Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3759u8jopq0ht70a07jikqzx17tc3ctl",
+    "fields": {
+        "session_data": ".eJxVj7FuxCAQRP-FOkLeBcPhMn2-AS3LEpM4WLJxmij_frZ0V1w7b-ZJ86eIeT1aj7-y1VIlR_mhuqipHcvypiIdfY7HLlusWU0KBvUSJuJvaRfJX9Q-V81r61tN-qroB931x5pleX90XwQz7fO5tuUGgy0-ORes8bcQfAEIGYFT8INJlhnGJCWJmIIpY8aBYEQfGB3iKX0eudzSemXq5xvqagIPzlpnvNVg0Prx_w57UlEF:1sA26w:2TUnN2uZar9Q7-Xx2f56B3renGzXYHcj-UB-NBN43vY",
+        "expire_date": "2024-06-06T06:39:34.133Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3xmtuwxlf9e85pzeuyqhm12fxly1iai4",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyEgLGU9evcbyMJSqRpISnsy_rtt0oNe5jDvzbxFoHUpYe15DhOLi9BGnH7LSOmZ6074QfXeZGp1macod0UetMtb4_y6Hu7fQaFetrVBdF4psMrTlnjGwcUBEmhklxkZnGX2YwJvHERGq4HQeu3GbJi0-HwBy0I3DA:1sA2EB:AbktRSEbzY-lJlZcswuydy2Wg7EMGKv7mX9YpnWpOTA",
+        "expire_date": "2024-06-06T06:47:03.192Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "473c6sy8ni2tt0wboef5vjls44dg3vfs",
+    "fields": {
+        "session_data": ".eJxVj8FuhDAMRP8l5ypaF-MQjr3vN0SObUpaGiQIvVT994K0Pex13syT5sexyHrUlr5tK1MxTfbFZXFjPZblxSU-2pyO3bZU1I0OyD2FmeXT6kX0g-v76mWtbSvZXxX_oLu_r2rL26P7JJh5n881YUYkBe4ZYoAOBCXmoJ3eUFgo0CQ4TDlS1w_5Bia9CpnCgMiY4yn9P3K5rbYi3M433NwIAQgxAIKP2L0i_f4Bqb1RmA:1sA2JJ:_8PBjwgk1IouQcXaw8aO9B2YKLT-ZGpIihzSjm_xc74",
+        "expire_date": "2024-06-06T06:52:21.944Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "48vtjkpdeor57cuvf2uvnepe8i44t56a",
+    "fields": {
+        "session_data": ".eJxVj0EOgyAQRe_CuiEiCOKy-56BDDNjpbWYKHbT9O7VxC7M7Ob9_5L_EYA4rbmEN8-pT0yBX5BG0eV1HC8iwFqGsC48h0SiE06cfhHwyXkH9IB8nyROucwpyj0iD7rI20Q8Xo_sSTDAMuxtBqrIIG_nwavolK4aC6iR0PdgDWoXSdeN2yCwQdLempra6Dhq3KT_Hbubc0kIZRsDRXTKKWuMrZSSvq6b1rffH0VOUuk:1sA215:6FcuQbHvnXu3_QIRZWhphc_1EDnw8LnzQsoxHevzUZI",
+        "expire_date": "2024-06-06T06:33:31.923Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4y5hnd1v8l5na8arw7mqceqlrml9buq7",
+    "fields": {
+        "session_data": ".eJxVjEsOAiEQBe_C2hB-Crh07xlI093IqIFkmFkZ766TzEK3r6reSyRYl5rWwXOaSJyFceLwO2bAB7eN0B3arUvsbZmnLDdF7nTIayd-Xnb376DCqN_aOa-LQsoeApcQlbcWPEGImcmiMtlTicfCmpSKBvXJKQzoIkdLwCzeHxxTONA:1sA2iE:nvVwOGTKTRV8ALGjPAsgVNwKRVxE2Rthyo4rjDaeBUI",
+        "expire_date": "2024-06-06T07:18:06.032Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5fc7hvbehmmcekwv8v7d29kpeciki60l",
+    "fields": {
+        "session_data": ".eJxVj80OgyAQhN-Fc0P8gQU89t5nIOuyVFqLiWIvTd-9mtiD15lvvmQ-AommNRf_5jnFxMHzC9MouryO40V4XMvg14Vnn4LoBIhT1iM9Oe9FeGC-T5KmXObUyx2RR7vI2xR4vB7sSTDgMmxrHSybFlvdcuUsgQPnKNa6N-iCCqSpgggcqQELpukRY1XVGw7cGKXUJv3_2N2cSyIs2xksoqtNDUppsK00ypnGqu8PskdRMw:1sA1vn:RXqT3OdXOKoLDbfCQ9uIMxdiYWpAZuqAe0wmz8Ic2sw",
+        "expire_date": "2024-06-06T06:28:03.750Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5v38ds27o7n5ev4fwn1k6f30acp8l30g",
+    "fields": {
+        "session_data": ".eJxVj70OgyAUhd-FuSGigODYvc9ArtxrpbWQKHRp-u7FxA4uZzg_X3I-DLxPJWb3pjVMgdDRC8LChliW5cIclDy7stHqArKBiY6dzBH8k-Ke4APiPXGfYl7DyPcKP9KN3xLScj26J8AM21zXnbXaNI2SjYGqtrW9HnvllbCoCS0qLRHN5JXptBrRSqHASiP0RB2CqND_kZ1NMQcPub6BzAbRCy2lNm3LTeWo7w_sulBC:1sA2EA:ICubyFcRagjv-591tvgyjDCOO1vfvYXwCde4sU6BMEM",
+        "expire_date": "2024-06-06T06:47:02.857Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6ejiyk0evf9z0oketsjpvkugv90ype4v",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSFswwIp0_sMaFmW4CQCyZ8qyt1jSy6S9s3Me4uA21rCtvAcpiSuAsTld4tIT64HSA-s9yap1XWeojwUedJFji3x63a6fwcFl7LXJjm2Aw5mYOUdgQfvKXcmWvRJJzKkIANn6sGB7SNiVqrbdeDeaq3F5wvkXzeM:1sA1vo:XkYmM-IpkIVF-B9OFl_bltqyKhPAHcGNHaBo2dLmE-Q",
+        "expire_date": "2024-06-06T06:28:04.083Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6hfyypdr9ii8wm6m2o0v130ayoriviv7",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQAP_C2RCgLC0evfcNZJddbNW0SWlPxr8bkh70OjOZt0p47FM6qmxpZnVVNqrLLyTMT1ma4Qcu91Xnddm3mXRL9GmrHleW1-1s_wYT1ql9i_MZetcRYzAE6COSlb7HYjhLlgFiFAbyFoLtrAtUOuPJZwmAA6vPFx1FOIw:1sA2OF:Aus--ueAxJ6-GUJIMJZkf6nHIKXAg8gfu51iTmMlSBk",
+        "expire_date": "2024-06-06T06:57:27.399Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "71zrbeorsofbrn28gdsvvsikyue5inji",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQBf-FsyFAoYBH7_0GsrCLVA0kpT0Z_9026UGvb2bemwXY1hK2TkuYkV2ZUuzyO0ZIT6oHwQfUe-Op1XWZIz8UftLOp4b0up3u30GBXvbaorAmoxPapjhABufIWyeSkGQUaJkEau93C0aP0iSvYBiyJ0sx5hHY5wsIyzhv:1sA2Uj:OUAW544pTc6KC2z0LkvAAoJ9Qn1NTpuK6UnPjg_oZqY",
+        "expire_date": "2024-06-06T07:04:09.660Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "72incyaemxmi9ffj1rht1sv0q4krefxa",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSGFOjxcuvcbyAwDUjU0Ke3K-O_SpAvd3nPOfYuA21rC1tISJhYXoUCcfkfC-Ex1J_zAep9lnOu6TCR3RR60ydvM6XU93L-Dgq30GtlZAGZlzECWDDibkc8uj0QDmMTReVDKZZd8J1qPMbJi7bMn2yvx-QIWXziD:1sA2H2:tdQCf1HJQUKeHs2I4nVxvEQbci5pNxXt1y75fdp7NKg",
+        "expire_date": "2024-06-06T06:50:00.197Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7sdqj8tl9jqnajke4sarnuexuqbd4kgn",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQAP_C2RC2ZQU8evcNZGFBqgaS0p6MfzckPeh1ZjJv4Wnfit97Wv3C4iJAi9MvDBSfqQ7DD6r3JmOr27oEORJ52C5vjdPrerR_g0K9jO_k8qyjZpoyIKEhawPTGTk4FS2gopgJ2RhgcJkNklUAswnostVZfL4R2Dg4:1sA2F5:SHxsSv4WLjingny98rYjUOkCFGGQc77AIjxutgN_eaM",
+        "expire_date": "2024-06-06T06:47:59.981Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "a2pzuhcnw91hxzff51uy6ueai6miqs1r",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pAZhEJduu8ZyBRmpGpoUtqV8e7apAvd_vfef6lI21ri1niJU1YXZdTpdxspPbjuIN-p3mad5rou06h3RR-06WHO_Lwe7t9BoVa-dUCEjAzeQifWBrGY3DkJ-CzOY6IQEiL1bDoW9JYZQPps0LJ4D069P8rPN28:1sA1UG:n-ctElfLRQYMws3rNP-vAgu0D_W4cxxBXmb1g7wcJE0",
+        "expire_date": "2024-06-06T05:59:36.214Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bb7c3bwsk57yu5fi605j83bhs6hbcqgd",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHMlELHpXu_gTA8pGogKe3K-O_apAvd3nPOfQnnt7W4rafFzVGcBShx-h3Zh0eqO4l3X29NhlbXZWa5K_KgXV5bTM_L4f4dFN_Lt9Z5AqWzZWNID3YishmAIkJgsmpgHQKMnDKnNGTkiBGVhxEtBTSI4v0B7083ow:1sA26w:8kmOkz_mGtAkz4cXUaFLNW5JVjGWL-x_W7Qz5K7jTrQ",
+        "expire_date": "2024-06-06T06:39:34.462Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "c75w6oa1ckjf2dpw86r7eecf22rnhdi9",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pCBDqR16d4zEIYZpGogKe3KeHdt0oVu_3vvv1SI21rC1mUJM6uzQnX63Simh9Qd8D3WW9Op1XWZSe-KPmjX18byvBzu30GJvXzr7IZs0GcGTMwjRwTjU8ZBEpBhE8m6yfrkwTPlSdA4JwgMZhQiC-r9AfthOEQ:1sA1di:XbCurEpyKR6wFdowmAlx2ac7pBWfy1GKqKBwevZmvAM",
+        "expire_date": "2024-06-06T06:09:22.180Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ckhsp3b874tnnm5yql50jv7a9nnqncia",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyFtl4J49N5vIMvuKlUDSWlPxn-3JD1o5jbvzbxVwG1NYauyhJnVRTl1-u0i0lNyA_zAfC-aSl6XOeqm6INWPRWW1_Vw_w4S1tTWgtyxIdnj0ffR9dCNFgmIyd_QGgIXGYbR7RDFEIO3ZuBzdBKB1OcLJzU5Tg:1sA216:lyScj03zw-7cACATAJShaLvQtw9m_SebmO2VX4WZVVI",
+        "expire_date": "2024-06-06T06:33:32.272Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "e8g86xpqdjgyoodpcoe2n5l90n4zfbzp",
+    "fields": {
+        "session_data": ".eJxVj7FuwzAMRP9FcyGIDqUoHrv3GwSKpGq1rgzYcpei_x4bSIas9-4ecH-GmJe99fSray1VJekP1dmMbZ_nN5No71PaN11TFTMaNC9ZJv7WdgL5ova5WF5aX2u2Z8U-6GY_FtH5_dF9EUy0Tce6-EsBDEUcskgUQgeBC16UXQYByoO_DYGDC5LLTRG8V3TiIGrOgzukzx-nW1uvTP04Q92McIWAiD6AjRjiEK__d-oXUec:1sA1dh:lfLESWV8_mLntPRf1RrA7l3OtwIGO7rIhRXaXabPJuo",
+        "expire_date": "2024-06-06T06:09:21.847Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fgfemx6ph0yg9dg66wqkp70tk7rcfbyo",
+    "fields": {
+        "session_data": ".eJxVj0EOgyAURO_CuiF8QRCX3fcM5MOHSmsxUeym6d2riV24nTfzkvkwDGFaS3XvOOeUI7n4wjyyvqzjeGEO1zq4dYmzy8R61rFT5jE8Y9kBPbDcJx6mUufs-V7hB134baI4Xo_uSTDgMmxrpdE0opVJGm3BkPAITVAIXqtgu5Q8tQa9EFYqSJ2xwnSKkiAbQJJtNun_x-6OpeaAdTuDlfVgQCulATQXrZUG2u8PjTdQ3g:1sA22m:d-q4mLHYOowASLfo6NO-lI3_ifdKXAv5_WSLL2byZNs",
+        "expire_date": "2024-06-06T06:35:16.060Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gccgwcgtrbfn6pyi2w233dcfo9mlr0na",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgQsGl-56BzDCDVA0kpV0Z765NutDtf-_9l4iwrSVunZc4k7gILU6_G0J6cN0B3aHemkytrsuMclfkQbucGvHzerh_BwV6-dY-cAZGF8hBMAN79sZbj1qppEfkgcikZHh0Ac-EbI3T2WlI2QBZBeL9Af9rOMI:1sA2et:wb-i58QUmI4hrgNUrJ2znrACOPXK3Ep6rVY-t4rhZkM",
+        "expire_date": "2024-06-06T07:14:39.976Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "h3wi9fggzt01e5z7vm5unpndr9q8llv1",
+    "fields": {
+        "session_data": ".eJxVjLsOgkAUBf9la7OB7NvS3m8g9ymoWRIWKuO_KwmFtmdmzssMsK3jsDVZhonN2QRz-t0Q6CF1B3yHepstzXVdJrS7Yg_a7HVmeV4O9-9ghDZ-6z71STM5r5k9drEHktBxcBCFSFS1OHQskCIUCYi5hOTVaccpZvLm_QEEHzjb:1sA1qO:iiZVTtdrPcvB_jp7C0IJOYcIFLPPG41RAL_OHIs1rjU",
+        "expire_date": "2024-06-06T06:22:28.927Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hhlofn6q0tk5foms996rw8d3q4kqrznd",
+    "fields": {
+        "session_data": ".eJxVjzsOwjAQRO_iGlmO_E1Kes5grddrYgiOlNg0iLuTSKFIO2_mSfNhgDi3Uv2blpwyRU8vyBMbSpumC_PQ6ujbSovPkQ1Ms1MWAJ9UdhAfUO4zx7nUJQe-V_hBV36bI03Xo3sSjLCO27qznU0OpUouqiBMB0haRC3BECKllHoZZCSwBnrSIbheW5VkEtEah2qT_n_sbio1I9TtDFQ2bHKjlJbKcd0LJ7T8_gAN6lJ1:1sA1qO:oD68eiyCPgEfGSy-S19rRMTn7qvfq9WR7rK7-pb1Zj8",
+        "expire_date": "2024-06-06T06:22:28.591Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hk2ghitwj5jhzpdveca3xv3eca38o6ui",
+    "fields": {
+        "session_data": ".eJxVjEsOAiEQBe_C2hB-Crh07xlI093IqIFkmFkZ766TzEK3r6reSyRYl5rWwXOaSJyFceLwO2bAB7eN0B3arUvsbZmnLDdF7nTIayd-Xnb376DCqN_aOa-LQsoeApcQlbcWPEGImcmiMtlTicfCmpSKBvXJKQzoIkdLwCzeHxxTONA:1sA2Xy:D9Sm5ELIEHt0RZKeIKQquC4PUONXI05khLu8xwmD2IM",
+        "expire_date": "2024-06-06T07:07:30.860Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "huoqcd4bp5203fssl02nvznrh5nk6pvx",
+    "fields": {
+        "session_data": ".eJxVjz2OwyAQhe9CvUIwZmcSl-lzBjTAEJM4WLJxmih3X1vyFmnfz_f03opjnNba_EvmkoskL08uo-rrOo4_yvPaBr8uMvuSVK_Aqi8xcHxI3Z1053qbdJxqm0vQe0Qf7qKvU5LxcmS_AAMvw9Ym_DU5WUyCkICIyZxAyFnMJgaQs4kRHIYsmQywkc4GRIOuOyVDsEP_j-xsqa1Ebtsbbqq3ZNE5Iuh0t-0g0ecP1K5RNA:1sA2Sh:qSxdTpM_oqMaHsJSk12SNHKUmF-RfHvxbNF9gJYUZ-Q",
+        "expire_date": "2024-06-06T07:02:03.366Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "iwcy71xg3w6n6i5skz1tdeok215y28sl",
+    "fields": {
+        "session_data": ".eJxVj8EOgjAQRP-lZ9N0obCFo3e_oVm2W6liSaB4Mf67kOjB67yZl8xLEfO85eKfsqSYJHh5UJpUn7dpOilPWxn9tsriU1C9qtRfNhDfJR8g3ChfZ81zLksa9FHRX7rqyxxkOn-7f4KR1nFfOwATQAxa00ZrXbTATc3RYIgNApNzDECdVK1EQCtiTOxCBVYioml26e_H4ZZcElPZz1BRPSC01tYdNtohdlBX7w-TmFEU:1sA1UF:o0wHL4n4IgnZ8HJBCtoixpubnr7QO4mbeXANqkzMGaw",
+        "expire_date": "2024-06-06T05:59:35.878Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "j3iscmsldpy55k6lp8meo6r123b8rjpd",
+    "fields": {
+        "session_data": ".eJxVj7GOwyAQRP-F-oQAY8O6TH_fgJZlOZM4WLLxNVH-PbaUFGln3jxpHgKJlr228M9ryYVT4DuWWYx1n-cfEXBvU9g3XkNJYhTGiK8wIt24nk26Yv1bJC21rSXKE5HvdpO_S-L58ma_BBNu07F2Sbk-J6-so9hhRu8ZnFekNPcGrSaVLMBB4QBJ9wQGuy4DO44xD3hIP0dON9dWCNvxBpsYtdODtc5bkJ0B6JV_vgAK_VIX:1sA2Uj:zx7W9x9xf9pBdINZ5pkA94YIsiIde3VBqltHPgqADmg",
+        "expire_date": "2024-06-06T07:04:09.331Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jge2nj3r0selu3nwbz6r4x3al5r8vuij",
+    "fields": {
+        "session_data": ".eJxVj8EOwiAQRP-FsyGU0gI9evcbyLK7WLTSpKVejP9um-jB68ybl8xLAOK8lRqevOSUmQI_IE9iKNs0nUSArY5hW3kJmcQgtBF_YQS8czkaukG5zhLnUpcc5YHIb7vKy0w8nb_sn2CEddzXxtgmKaRowXFyXtm2BUvgfGRqUeloKfkucUNKeY1NbxQ6NJ59S8C8S39HDjeXmhHq_gaqGBq748apTslOd1r3_fsDLyhSYQ:1sA2Xy:_BO90-e1G9i3CM7W5YIAUrYJ81yZANWsrS5xOoa0Elg",
+        "expire_date": "2024-06-06T07:07:30.526Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kn84dqmkf70d3su4e3srnav8eu60u7oq",
+    "fields": {
+        "session_data": ".eJxVjzsOwjAQRO_iGln4k7VJSc8ZrPV6TQzBkRKHBnF3EgkK2nkzT5qXQKJprS08eS65cAr8wDKKvq7jeBAB1zaEdeE5lCR6obz4CyPSnetO0g3rdZI01TaXKPeK_NJFXqbE4_nb_RMMuAzbOmM8WYNMOily4DvSymmDlMH6LsZ8VJRJZw_HBJh0NgDoPXkfozV82qS_I7ubayuEbXuDTfTKKbDWGQXSaGscmPcHPB1SYw:1sA2M8:IotgOQE52F6mdcHp9IZn73L2lsCNSUvH5-KwPBG9xPQ",
+        "expire_date": "2024-06-06T06:55:16.325Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mi5q85qridwqvbic700so3ki3tf5wxh5",
+    "fields": {
+        "session_data": ".eJxVj8EKgzAQRP8l5xKMbhL12Hu_IWw2a01rI2jspfTfa8AehDnNPB7MRyDRvKXs3rzEIXJw_MI4iT5t03QRDrc8um3lxcUgeqE6cSo90pNTWcID032WNKe8RC8LIo91lbc58HQ92JNgxHUs3qEG0rZufEBTeY3QoVdsLQ5VICZudddx0B6UNqpRtfFDU4EHYqOxLdL_keLmlCNh3t9gFr2yygDYPbLS0GiA7w8kLlIj:1sA2OF:AYI1e68ZD9uiePih9dsxciGpmcU4wELrbYR2SjYUa38",
+        "expire_date": "2024-06-06T06:57:27.054Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "nompvaixv7pu0sfol6ps1h0pq5mibp2u",
+    "fields": {
+        "session_data": ".eJxVj8EOwiAQRP-FsyGlbGnp0bvfQJZlsWilSUu9GP9dmujB68ybl8xLINGy5-KevKaYODh-YJrFmPd5PgmHe5ncvvHqUhCjaBvxF3qkO-ejCTfM10XSksuavDwQ-W03eVkCz-cv-yeYcJvqmhpNjY2KW2s8tCFC1J1nbSEEq0lZguA1EHuyYKBi2hrV-IjYYeWq9HfkcHMuibDUN1jEqHplAHqjB9kZY_Vg3h8nLlJp:1sA2RK:ZzGG395idNn5L1UQNpTBylf2XEwkJm43aw1pdp6h208",
+        "expire_date": "2024-06-06T07:00:38.568Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "oikuat3t7vnvdi9e44pbldy2fgljcalt",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAGWqEu3fcMZJgZpGpoUtqV8e7apAvd_vfef6mI21ri1mSJE6uLsk6dfseE9JC6E75jvc2a5rouU9K7og_a9DizPK-H-3dQsJVv7ZzN3gGwC-KFpe8DOzZhyLnzA2UkADKpM8SBAEMSyILeprM3AmjU-wMTUDi5:1sA2Vm:-lGw1yAsIdQFzU_kZVJgBTe4izxwy8C9DAJhlguXuKs",
+        "expire_date": "2024-06-06T07:05:14.775Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qa1uuu54jqmfkqyhrgm21h83bktlzbp4",
+    "fields": {
+        "session_data": ".eJxVj7FuhDAQRP_FdWSxxl5zlOnzDdZ6dwlOiJHApIny7wfSXXHtvJknzZ8h5vWoLf3qVqaikvSHymLGeizLm0l0tDkdu26piBkNgHkJM_G31ovIF9XP1fJa21ayvSr2QXf7sYou74_ui2CmfT7XIauASMedByDsIvEwQURy4DwMGERFMGdAzjD1N2WPblLvsA_R9XpKn0cut9ZWmNr5hpoZIQJ6jz4O9hb6Lg7h_w4EB1HA:1sA28c:JHrTML3D3Eb2xU0TFcoO0FPcFP1k2HrGMfBPe937p_4",
+        "expire_date": "2024-06-06T06:41:18.954Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rne4regm35fkzdzjr7pequvpjnf8p3qq",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCGwlBduu8ZyMAMUjVtUtqV8e7apAvd_vfef6lI21rj1mSJI6uLAlCn3zFRfsi0E77TdJt1nqd1GZPeFX3QpoeZ5Xk93L-DSq1-a5-Egdlk4wAITaDcFwhIFqyDHj0LM6YEmBOU7izZoS3iLHY-2E7U-wMRMzga:1sA28d:PkagPMMzX944fnxWDZU4OZiOTZl-L4YrNX2B_VqAK7U",
+        "expire_date": "2024-06-06T06:41:19.296Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "s9w2rfrd7jycddllriy5t7pu9lhsuqs9",
+    "fields": {
+        "session_data": ".eJxVj0EOgyAURO_CuiHw5Qu47L5nIAifSmsxUeym6d2riV24nXnzkvkwH8K0lureNOeUKTp6-TyyrqzjeGHOr3Vw60Kzy5F1TGp2CnsfnlT2Jj58uU88TKXOuec7wo924bcp0ng92JNg8MuwrRttg05GYxKqF30IjVFkwFjQCJCgBRCELSICqoRRbCwBgUkiWivaTfo_srup1Bx83d74yjqpZauUBmm4lLpBa78_mtBQdQ:1sA2KY:GccAOiRJAWBEd8Eu6O7UyWVUeuyR78AwwE9yfz1OHVg",
+        "expire_date": "2024-06-06T06:53:38.118Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ter63rjo5rbso7nbekmh40l1fgk9ee9v",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOG-zCyM4ZKid2aAG1UtNOiLtDpQ6w_vfef7lO1qXv1mpzN6g7Owzu8DsmyQ8bN6J3GW-Tz9O4zEPym-J3Wv11UntedvfvoJfaf2umIxQNpEaoyCwMLRrHQAVyQjtBzhgpFSsMKGBNSERAsWkVGNW9P_m8N5c:1sA2Sh:E6ZpU8xMTglgdUJUV6sEXEX18OaRkF59iSp5Qng1KBg",
+        "expire_date": "2024-06-06T07:02:03.697Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tuo94r1aaxgm35o1t2rw325y2lr1lu3s",
+    "fields": {
+        "session_data": ".eJxVjz0OwyAUg-_CXKE8IEAydu8Z0OOvoU1BSqBL1bs3kdIhqz_bsj8EnSstV_MOS4opeBNemGYy5jbPF2Kw1cm0NSwmeTKSgZw0i-4Z8g78A_O9UFdyXZKlu4UedKW34sN8PbynggnXaUuDBtDYRWm1U9si4XlkMCiwUgRU0nHlRR8l5yA4ZwLBR-S9i11vmYV91f_H3h1yTQ7rdgYrGUGBFEIyEFTrjvFefX-rhlEq:1sA24M:CIAzl2HM45dYH0iW46XV6LeWowUbrVL1z0deYx8pZ2o",
+        "expire_date": "2024-06-06T06:36:54.881Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "u1207b8dq6dcua7ycj0acmlh52y1cuac",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pAZhEJduu8ZyBRmpGpoUtqV8e7apAvd_vfef6lI21ri1niJU1YXZdTpdxspPbjuIN-p3mad5rou06h3RR-06WHO_Lwe7t9BoVa-dUCEjAzeQifWBrGY3DkJ-CzOY6IQEiL1bDoW9JYZQPps0LJ4D069P8rPN28:1sA2WX:JZRr4JR8gh2f4TvHpspOymqNpAfCiHFXWy1g73Y0IpM",
+        "expire_date": "2024-06-06T07:06:01.302Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "udk8hvvmqnn286jv4qgwm2j3ghv2frki",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQAP-FsyFbHgU9evcbyLIsUjWQlPZk_HdD0oNeZybzFgH3rYS98xqWJC5Ci9Mvi0hPrkOkB9Z7k9Tqti5RjkQetstbS_y6Hu3foGAvY2tzntxZO3LWzqhBe-NpsqQNuMje5KiIUaOCmZSyCI4TM6RoANCS-HwByZU3uQ:1sA1YW:WH6a1QRcCPHXRjg0MwXUYjRFLEfxemjCUfr0ZbCtPi4",
+        "expire_date": "2024-06-06T06:04:00.099Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vo0srhmf3somamxq23a23vssnrddh9lm",
+    "fields": {
+        "session_data": ".eJxVj8sOgjAQRf-la9P0MaXA0r3f0Eyng1SxJFDcGP9dSXTB9p6Tk9yXQKJ5KzU8eclD5hT4gXkSfdmm6SQCbnUM28pLyEn0worDFpHuXHaQblius6S51CVHuSvyR1d5mRNP5597CIy4jnvWDYP2nfXknWvQKttCS9qRBeUjtzBEQ4wWjWrIGIfKc2JWKYJS6Ogb_f_Y21xqJqzfM1hFr71uAMDYTnoAbXXz_gCfElFN:1sA1YV:BalTbF3h52H-3vwmZL1x3DRj4eqYIpl4yiIBWw1UC7o",
+        "expire_date": "2024-06-06T06:03:59.744Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "w2gj62rneganfu05kbpdxngbxlaa82s7",
+    "fields": {
+        "session_data": ".eJxVjzFuxCAQRe9CvUIem_GAy-1zBjQwsCbxYsnGaaLcPWtpU7j97-lJ_0dxjOtRm_9OW8kliU9PLoua6rEsN-X5aLM_9rT5ImpSYNRlDBy_Uj2JfHJ9rDqutW0l6FPRb7rrj1XScn-7l8DM-3x2e5cHE41wnwEZia0NwiNKcF20gB3HzChEIOCyELLtAAYK6LI1-RX9P3K2U20lcnu94aYmIBiNGS05PSJ21NPvHwowUd4:1sA2F5:_OhB7HpB9O4Sw55V2OkTnFmgnpUbY8TfHk1LvTCWr4k",
+        "expire_date": "2024-06-06T06:47:59.656Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "whaknzdeg2k9ucols5weekgfloa5tydg",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQAP-FsyFbHgU9evcbyLIsUjWQlPZk_HdD0oNeZybzFgH3rYS98xqWJC5Ci9Mvi0hPrkOkB9Z7k9Tqti5RjkQetstbS_y6Hu3foGAvY2tzntxZO3LWzqhBe-NpsqQNuMje5KiIUaOCmZSyCI4TM6RoANCS-HwByZU3uQ:1sA2X1:kk-Utab_wm_aR7-8w3VM5Vgwtnrnr1aV_Y0wY5ZWGl0",
+        "expire_date": "2024-06-06T07:06:31.630Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wm5guz9m9pmx3eqis3db8kxa4oobogga",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSG8CoxL934DGRiQqoGktCvjv2uTLnR7zzn3xQJuaw3byEuYiZ2ZZ6ffLWJ65LYDumO7dZ56W5c58l3hBx382ik_L4f7d1Bx1G9tLDolJl20syAdiYhSJYMyWpPAlxJpchiFAG1k8Q6E84aKIEhSEyj2_gDLzTdK:1sA22m:v3o_G8NvJG1nfH-m_cdELcXtnE4zJLqq_RI-edG9eaE",
+        "expire_date": "2024-06-06T06:35:16.385Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wtro0xxnctazr4c675vj8h9ig52ymfgo",
+    "fields": {
+        "session_data": ".eJxVj8EOgjAQRP-lZ9OwFUrL0bvf0Gx3F6liSaB4Mf67kODB67yZl8xbIdG05hJeMqc-CQd5YhpVl9dxPKmAaxnCusgcEqtOgfrLItJD8g74jvk2aZpymVPUe0UfdNHXiWW8HN0_wYDLsK2dlx4lWs8WvTmLE2dc4yJUFUEb5cxsiIy01seaozTGQm8BqTfITYWb9Pdjd0suibBsZ7CoDlqwdW1q8LoF76rm8wWyg1Io:1sA159:ILRyztE6zV8bY1naFd71hb544L6TfJC5t5053ffa8vo",
+        "expire_date": "2024-06-06T05:33:39.735Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wtyyp7rmozf9w1hns77n2vas69ij1isg",
+    "fields": {
+        "session_data": ".eJxVj7GOwyAQRP-FOkKswYG4TH_fgJbdJebOwZKNr4ny77GlpEg7b-ZJ81BING-1xX9ZSi7CUe5YJjXUbZpOKuLWxritssTCalCdVV9hQvqTehD-xXqbNc21LSXpo6LfdNU_M8t0fXe_BCOu4762tsveArAN4oWl7wNbNuGSs_MXykgAZJIzxIEAQxLIgr5LZ28E0OzSz5HDLbUVwra_waYG8HB2uwacdjb0xvbPFyJrUlI:1sA2Vm:y9ESlr4w4fPA2vrwlTi3E1KhWjbt8dB7dnY93wlhrEI",
+        "expire_date": "2024-06-06T07:05:14.439Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xr05u10uwqg7ts11efholjm9nvu67k3e",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgQsGl-56BzDCDVA0kpV0Z765NutDtf-_9l4iwrSVunZc4k7gILU6_G0J6cN0B3aHemkytrsuMclfkQbucGvHzerh_BwV6-dY-cAZGF8hBMAN79sZbj1qppEfkgcikZHh0Ac-EbI3T2WlI2QBZBeL9Af9rOMI:1sA1v1:GizBjmPPPuYVLsaZiyANkBwIWd1u6zsc4Xcie7WQtpM",
+        "expire_date": "2024-06-06T06:27:15.482Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xy76yrqzywgnmikkigzr81bwirx9kdey",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGllZr7-U9JzBWq9tHECJFCcV4u4QKQW0b2beS0Ta1ha3XpY4ZnEWQZx-t0T8KNMO8p2m2yx5ntZlTHJX5EG7vM65PC-H-3fQqLdvDR7A01Bt8uyIWWesCoKDZHUhZxld1qZaRNCIShPkSmi4DiapBEG8P9y-N5Q:1sA24N:8wWbPb3TActMOZ_1bY8-Ftv-A_0NyfEwBidbvAFWTWo",
+        "expire_date": "2024-06-06T06:36:55.208Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xy7kbm1snp4d9imu8p8lr0frpgotutp0",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnLxusPJT1nsPxZ4wBypDipEHcnkVJA-2bmvYUP61L92nn2YxYXcTbi9DvGkJ7cdpIfod0nmaa2zGOUuyIP2uVtyvy6Hu7fQQ29bvVgXDLFGiqgIsSUBqvYonVoCLGgRgQmTURIqlCGzWVktAWyc6DF5wviVzbY:1sA2KY:ExtiXeTvTRmD0Ol8nG3TQM3QMw9VwuD_Z78qvk4zYk0",
+        "expire_date": "2024-06-06T06:53:38.447Z"
+    }
+}
+]

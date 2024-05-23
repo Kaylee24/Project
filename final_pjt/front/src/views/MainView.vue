@@ -6,7 +6,7 @@
         <Gallery />
       </div>
       <!-- 추천 -->
-      <div class="recommendation-container">
+      <div class="recommendation-wrapper">
         <Recommendation />
       </div>
     </div>
@@ -19,12 +19,9 @@ import { useCounterStore } from '@/stores/counter';
 import Gallery from '@/components/MainView/Gallery.vue';
 import Recommendation from '@/components/MainView/Recommendation.vue';
 
-// 검색어
 const query = ref('');
-// 카운터 스토어
 const store = useCounterStore();
 
-// 검색 함수
 const search = async () => {
   try {
     const country = await store.searchCountry(query.value);
@@ -41,9 +38,8 @@ const search = async () => {
 </script>
 
 <style scoped>
-/* 메인 스타일 */
 .main {
-  background-color: #B3E5Fc;
+  background-color: #f0f8ff; /* 더 부드러운 배경색 */
   margin-top: 50px;
   min-height: 600px;
   display: flex;
@@ -51,45 +47,39 @@ const search = async () => {
   align-items: center;
 }
 
-/* 메인 콘텐츠 스타일 */
 .main-content {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1400px;
   padding: 20px;
   box-sizing: border-box;
   justify-content: space-between;
 }
 
-/* 갤러리 컨테이너 스타일 */
-.gallery-container, .recommendation-container {
-  padding: 5px;
+.gallery-container, .recommendation-wrapper {
+  padding: 20px;
   box-sizing: border-box;
 }
 
-/* 갤러리 컨테이너 스타일 */
 .gallery-container {
-  flex: 1 1 60%;
+  flex: 1 1 60%; /* 더 넓은 비율 할당 */
   max-width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* 추천 컨테이너 스타일 */
-.recommendation-container {
-  flex: 1 1 40%;
-  max-width: 40%;
+.recommendation-wrapper {
+  flex: 1 1 35%; /* 더 좁은 비율 할당 */
+  max-width: 35%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* 반응형 스타일 */
 @media (max-width: 1150px) {
-  .gallery-container, .recommendation-container {
+  .gallery-container, .recommendation-wrapper {
     margin: 0 auto;
     max-width: 100%;
     flex: 1 1 100%;
@@ -101,7 +91,7 @@ const search = async () => {
     flex-direction: column;
   }
 
-  .gallery-container, .recommendation-container {
+  .gallery-container, .recommendation-wrapper {
     flex: 1 1 100%;
     max-width: 100%;
   }

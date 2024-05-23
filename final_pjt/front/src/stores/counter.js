@@ -1,3 +1,4 @@
+// stores/counter.js
 import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 import axios from 'axios';
@@ -8,9 +9,8 @@ export const useCounterStore = defineStore('counter', () => {
   const user = ref('');
   const pictures = ref([]);
   const comparisonPageDatas = ref([]);
-  const detailCountryData = ref(null);
+  const detailCountryData = ref({});
   const profileData = ref([]);
-  const selectedCountries = ref([]);
 
   const getImageUrl = (imagePath) => {
     return `http://127.0.0.1:8000${imagePath}`;
@@ -112,6 +112,7 @@ export const useCounterStore = defineStore('counter', () => {
       const response = await axios.post(`${API_URL}/accounts/login/`, { username, password });
       token.value = response.data.key;
       user.value = username;
+      await profilePage(username);
     } catch (error) {
       console.error(error);
     }
@@ -145,6 +146,7 @@ export const useCounterStore = defineStore('counter', () => {
           Authorization: `Token ${token.value}`,
         },
       });
+      await profilePage(user.value); // Update profile data after changing visited countries
     } catch (error) {
       console.error(error);
     }
@@ -157,6 +159,7 @@ export const useCounterStore = defineStore('counter', () => {
           Authorization: `Token ${token.value}`,
         },
       });
+      await profilePage(user.value); // Update profile data after changing interested countries
     } catch (error) {
       console.error(error);
     }
@@ -171,7 +174,6 @@ export const useCounterStore = defineStore('counter', () => {
     comparisonPageDatas,
     detailCountryData,
     profileData,
-    selectedCountries,
     signUp,
     logIn,
     getMainCountryPictures,

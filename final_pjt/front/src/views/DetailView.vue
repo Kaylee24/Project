@@ -4,8 +4,12 @@
       <div>
         <DetailGallery :data="data" />
         <div class="button-container">
-          <button class="styled-button" @click="selectVisited(data.id)">Visited</button>
-          <button class="styled-button" @click="selectInterested(data.id)">Interested</button>
+          <button class="styled-button" @click="toggleVisited(data.id)">
+            {{ isVisited ? 'Unvisit' : 'Visited' }}
+          </button>
+          <button class="styled-button" @click="toggleInterested(data.id)">
+            {{ isInterested ? 'Uninterested' : 'Interested' }}
+          </button>
         </div>
       </div>
       <DetailGraph :data="data" />
@@ -26,31 +30,56 @@ import DetailGallery from '@/components/DetailView/DetailGallery.vue';
 const store = useCounterStore();
 const route = useRoute();
 const data = ref(null);
+const isVisited = ref(false);
+const isInterested = ref(false);
 
-const selectVisited = (countryId) => {
+const checkVisitedAndInterested = () => {
+  if (data.value) {
+    isVisited.value = store.profileData.visited.some(country => country.id === data.value.id);
+    isInterested.value = store.profileData.interested.some(country => country.id === data.value.id);
+  }
+};
+
+const toggleVisited = async (countryId) => {
   if (store.isLogin) {
-    store.updateVisitedCountries([countryId]);
+    await store.updateVisitedCountries([countryId]);
+    checkVisitedAndInterested();
   } else {
     alert('로그인이 필요합니다.');
   }
 };
 
-const selectInterested = (countryId) => {
+const toggleInterested = async (countryId) => {
   if (store.isLogin) {
-    store.updateInterestedCountries([countryId]);
+    await store.updateInterestedCountries([countryId]);
+    checkVisitedAndInterested();
   } else {
     alert('로그인이 필요합니다.');
   }
+};
+
+const fetchCountryData = async (countryId) => {
+  data.value = null; // 이전 데이터 초기화
+  await store.detailCountry(countryId);
+  data.value = store.detailCountryData;
+  checkVisitedAndInterested();
 };
 
 watch(
   () => route.params.countryId,
   async (newId) => {
-    await store.detailCountry(newId);
-    data.value = store.detailCountryData;
+    if (newId) {
+      await fetchCountryData(newId);
+    }
   },
   { immediate: true }
 );
+
+onMounted(async () => {
+  if (route.params.countryId) {
+    await fetchCountryData(route.params.countryId);
+  }
+});
 </script>
 
 <style scoped>

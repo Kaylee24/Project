@@ -66,13 +66,14 @@ const getImageUrl = (imagePath) => {
   return store.getImageUrl(imagePath);
 };
 
-const goToDetail = (countryId) => {
+const goToDetail = async (countryId) => {
+  await store.detailCountry(countryId);
   router.push({ name: 'DetailView', params: { countryId } });
 };
 
-const handleClick = (countryId) => {
-  goToDetail(countryId);
+const handleClick = async (countryId) => {
   closeModal();
+  await goToDetail(countryId);
 };
 
 onMounted(() => {

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap" style="margin-top: 2%;">
     <div class="detail-content">
       <img :src="imgUrl(data.graph)" alt="" class="resized-image" @click="showModal = true">
       <div class="icon-container">

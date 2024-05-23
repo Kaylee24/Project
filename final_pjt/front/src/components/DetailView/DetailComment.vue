@@ -3,10 +3,12 @@
     <h3>댓글</h3>
     <div v-if="comments.length">
       <div v-for="comment in comments" :key="comment.id" class="comment">
-        <p>username : {{ comment.user.name }}</p>
-        <p>{{ comment.content }}</p>
-        <small>{{ comment.created_at }}</small>
-        <button v-if="isLogin && comment.user.username === store.user" @click="deleteComment(comment.id)">삭제</button>
+        <div class="comment-content">
+          <p>username: {{ comment.user.name }}</p>
+          <p>{{ comment.content }}</p>
+          <small>{{ comment.created_at.slice(0, 10) }}</small> <!-- 댓글 작성 시간 10개까지만 slicing -->
+        </div>
+        <button v-if="isLogin && comment.user.username === store.user" @click="deleteComment(comment.id)" class="delete-button">삭제</button> <!-- 삭제 버튼 -->
       </div>
     </div>
     <div v-else>
@@ -62,9 +64,33 @@ onMounted(() => {
 <style scoped>
 .detail-comments {
   margin-top: 20px;
+  margin-right: 10%;
 }
+
 .comment {
+  display: flex;
+  align-items: flex-start;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px; /* 여백 추가 */
+  align-self: flex-end;
+}
+
+.delete-button:hover {
+  background-color: #bb2d3b;
 }
 </style>

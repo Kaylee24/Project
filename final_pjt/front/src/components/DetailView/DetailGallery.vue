@@ -1,5 +1,5 @@
 <template>
-  <div v-if="photos.length" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div v-if="photos.length" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top: 5%;">
     <div class="carousel-inner">
       <div 
         v-for="(photo, index) in photos" 

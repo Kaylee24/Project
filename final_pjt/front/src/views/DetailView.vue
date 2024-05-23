@@ -4,10 +4,10 @@
       <div>
         <DetailGallery :data="data" />
         <div class="button-container">
-          <button class="styled-button" @click="toggleVisited(data.id)">
+          <button class="styled-button" :class="{ 'visited': isVisited, 'unvisited': !isVisited }" @click="toggleVisited(data.id)">
             {{ isVisited ? 'Unvisit' : 'Visited' }}
           </button>
-          <button class="styled-button" @click="toggleInterested(data.id)">
+          <button class="styled-button" :class="{ 'interested': isInterested, 'uninterested': !isInterested }" @click="toggleInterested(data.id)">
             {{ isInterested ? 'Uninterested' : 'Interested' }}
           </button>
         </div>
@@ -110,15 +110,33 @@ onMounted(async () => {
 
 .styled-button {
   padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
+.visited {
+  background-color: #6c757d; /* Green */
+  color: white;
+}
+
+.unvisited {
+  background-color: #007bff; /* blue */
+  color: white;
+}
+
+.interested {
+  background-color: #6c757d; /* Yellow */
+  color: white;
+}
+
+.uninterested {
+  background-color: #28a745; /* Gray */
+  color: white;
+}
+
 .styled-button:hover {
-  background-color: #0056b3;
+  filter: brightness(90%);
 }
 </style>

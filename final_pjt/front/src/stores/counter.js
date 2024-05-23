@@ -1,59 +1,43 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
-import axios from 'axios'
-import { useRouter } from 'vue-router'
+import { ref, computed } from 'vue';
+import { defineStore } from 'pinia';
+import axios from 'axios';
 
 export const useCounterStore = defineStore('counter', () => {
-  const API_URL = 'http://127.0.0.1:8000'
-  const token = ref(null)
-  const user = ref('')
-  const pictures = ref([])
-  const comparisonPageDatas = ref([])
-  const detailContryData = ref([])
-  const profileData = ref([])
-  const selectedCountries = ref([]) // 추가된 부분, 초기화
+  const API_URL = 'http://127.0.0.1:8000';
+  const token = ref(null);
+  const user = ref('');
+  const pictures = ref([]);
+  const comparisonPageDatas = ref([]);
+  const detailCountryData = ref(null);
+  const profileData = ref([]);
+  const selectedCountries = ref([]);
 
-  // 이미지 URL 생성
   const getImageUrl = (imagePath) => {
-    return `http://127.0.0.1:8000${imagePath}`
-  }
+    return `http://127.0.0.1:8000${imagePath}`;
+  };
 
-  // 로그인 상태 확인
-  const isLogin = computed(() => {
-    return token.value !== null;
-  })
+  const isLogin = computed(() => token.value !== null);
 
-  const router = useRouter()
-
-  // 메인 국가 사진 가져오기
   const getMainCountryPictures = () => {
-    axios({
-      method: 'get',
-      url: `${API_URL}/countries/main_country_picture/`,
-    })
+    axios.get(`${API_URL}/countries/main_country_picture/`)
       .then(response => {
-        pictures.value = response.data
+        pictures.value = response.data;
       })
       .catch(error => {
-        console.log(error)
-      })
-  }
+        console.log(error);
+      });
+  };
 
-  // 비교 페이지 데이터 가져오기
   const comparisonPage = () => {
-    axios({
-      method: 'get',
-      url: `${API_URL}/countries/comparison_page/`,
-    })
+    axios.get(`${API_URL}/countries/comparison_page/`)
       .then(response => {
-        comparisonPageDatas.value = response.data
+        comparisonPageDatas.value = response.data;
       })
       .catch(error => {
-        console.log(error)
-      })
-  }
+        console.log(error);
+      });
+  };
 
-  // 여행 추천 데이터 가져오기
   const getTravelRecommendations = async ({ country, budget, days }) => {
     try {
       const response = await axios.post(`${API_URL}/countries/recommendations/`, {
@@ -68,112 +52,70 @@ export const useCounterStore = defineStore('counter', () => {
     }
   };
 
-  // detail의 나라 정보들
-  const detailCountry = (countryId) => {
-    axios({
-      method: 'get',
-      url: `${API_URL}/countries/detail_page/${countryId}`,
-    })
-      .then(response => {
-        detailContryData.value = response.data
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
+  const detailCountry = async (countryId) => {
+    try {
+      const response = await axios.get(`${API_URL}/countries/detail_page/${countryId}`);
+      detailCountryData.value = response.data;
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-  // 댓글 가져오기
-  const fetchComments = (countryId) => {
-    axios({
-      method: 'get',
-      url: `${API_URL}/countries/detail_page/${countryId}`,
-    })
-      .then(response => {
-        detailContryData.value.comment_set = response.data.comment_set
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
+  const fetchComments = async (countryId) => {
+    try {
+      const response = await axios.get(`${API_URL}/countries/detail_page/${countryId}`);
+      detailCountryData.value.comment_set = response.data.comment_set;
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-  // 댓글 추가하기
-  const addComment = (payload) => {
-    axios({
-      method: 'post',
-      url: `${API_URL}/countries/detail_page/${payload.countryId}`,
-      data: { content: payload.content },
-      headers: {
-        Authorization: `Token ${token.value}`
-      }
-    })
-      .then(response => {
-        fetchComments(payload.countryId)
-        // detailContryData.value.comment_set.push(response.data)
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
+  const addComment = async (payload) => {
+    try {
+      await axios.post(`${API_URL}/countries/detail_page/${payload.countryId}`, { content: payload.content }, {
+        headers: {
+          Authorization: `Token ${token.value}`,
+        },
+      });
+      fetchComments(payload.countryId);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-  // 댓글 삭제하기
   const deleteComment = async (commentId) => {
-    axios({
-      method: 'delete',
-      url: `${API_URL}/countries/detail_page/delete/${commentId}`,
-      headers: {
-        Authorization: `Token ${token.value}`
-      }
-    })
-      .then(response => {
-        // 댓글 삭제 후 다시 댓글을 가져옵니다.
-        fetchComments(detailContryData.value.id)
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
-  
-  // 회원가입
-  const signUp = function (payload) {
-    const { username, password1, password2, name, gender, age } = payload
+    try {
+      await axios.delete(`${API_URL}/countries/detail_page/delete/${commentId}`, {
+        headers: {
+          Authorization: `Token ${token.value}`,
+        },
+      });
+      fetchComments(detailCountryData.value.id);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-    axios({
-      method: 'post',
-      url: `${API_URL}/accounts/signup/`,
-      data: {
-        username, password1, password2, name, gender, age
-      }
-    })
-     .then((response) => {
-       console.log('회원가입 성공!')
-       console.log(payload)
-       const password = password1
-       logIn({ username, password })
-     })
-     .catch((error) => {
-        console.log('틀렸음 다시해')
-        console.log(error)
-     })
-  }
+  const signUp = async (payload) => {
+    try {
+      const { username, password1, password2, name, gender, age } = payload;
+      await axios.post(`${API_URL}/accounts/signup/`, { username, password1, password2, name, gender, age });
+      logIn({ username, password: password1 });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-  // 로그인
-  const logIn = function (payload) {
-    const { username, password } = payload
-    axios({
-      method: 'post',
-      url: `${API_URL}/accounts/login/`,
-      data: {
-        username, password
-      }
-    })
-      .then((response) => {
-        token.value = response.data.key
-        user.value = username
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-  }
+  const logIn = async (payload) => {
+    try {
+      const { username, password } = payload;
+      const response = await axios.post(`${API_URL}/accounts/login/`, { username, password });
+      token.value = response.data.key;
+      user.value = username;
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   const searchCountry = async (query) => {
     try {
@@ -187,119 +129,62 @@ export const useCounterStore = defineStore('counter', () => {
     }
   };
 
-  const profilePage = (username) => {
-    axios({
-      method: 'get',
-      url: `${API_URL}/countries/profile_page/${username}`,
-    })
-      .then(response => {
-        profileData.value = response.data
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
+  const profilePage = async (username) => {
+    try {
+      const response = await axios.get(`${API_URL}/countries/profile_page/${username}`);
+      profileData.value = response.data;
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
+  const updateVisitedCountries = async (countryIds) => {
+    try {
+      await axios.post(`${API_URL}/countries/update_visited_countries/`, { country_ids: countryIds }, {
+        headers: {
+          Authorization: `Token ${token.value}`,
+        },
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
+  const updateInterestedCountries = async (countryIds) => {
+    try {
+      await axios.post(`${API_URL}/countries/update_interested_countries/`, { country_ids: countryIds }, {
+        headers: {
+          Authorization: `Token ${token.value}`,
+        },
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-  // visited, interested
-
-  // const updateVisitedCountries = (countryIds) => {
-  //   axios({
-  //     method: 'post',
-  //     url: `${API_URL}/countries/update_visited_countries/`,
-  //     data: { country_ids: countryIds },
-  //     headers: {
-  //       Authorization: `Token ${token.value}`
-  //     }
-  //   })
-  //     .then(response => {
-  //       console.log('Visited countries updated!')
-  //     })
-  //     .catch(error => {
-  //       console.log(error)
-  //     })
-  // }
-
-  // const updateInterestedCountries = (countryIds) => {
-  //   axios({
-  //     method: 'post',
-  //     url: `${API_URL}/countries/update_interested_countries/`,
-  //     data: { country_ids: countryIds },
-  //     headers: {
-  //       Authorization: `Token ${token.value}`
-  //     }
-  //   })
-  //     .then(response => {
-  //       console.log('Interested countries updated!')
-  //     })
-  //     .catch(error => {
-  //       console.log(error)
-  //     })
-  // }
-
-
-  const updateVisitedCountries = (countryIds) => {
-    axios({
-      method: 'post',
-      url: `${API_URL}/countries/update_visited_countries/`,
-      data: { country_ids: countryIds },
-      headers: {
-        Authorization: `Token ${token.value}`
-      }
-    })
-      .then(response => {
-        console.log('Visited countries updated!')
-        // profilePage(user.value) // store 대신 profilePage 호출
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
-
-  const updateInterestedCountries = (countryIds) => {
-    axios({
-      method: 'post',
-      url: `${API_URL}/countries/update_interested_countries/`,
-      data: { country_ids: countryIds },
-      headers: {
-        Authorization: `Token ${token.value}`
-      }
-    })
-      .then(response => {
-        console.log('Interested countries updated!')
-        // profilePage(user.value) // store 대신 profilePage 호출
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
-  
-
-  return { 
+  return {
     API_URL,
     user,
-    token, 
-    isLogin, 
-    pictures, 
+    token,
+    isLogin,
+    pictures,
     comparisonPageDatas,
-    detailContryData,
+    detailCountryData,
     profileData,
-    selectedCountries, // 추가된 부분
-    signUp, 
-    logIn, 
-    getMainCountryPictures, 
-    comparisonPage, 
+    selectedCountries,
+    signUp,
+    logIn,
+    getMainCountryPictures,
+    comparisonPage,
     getImageUrl,
     getTravelRecommendations,
     searchCountry,
     detailCountry,
-    fetchComments, // 댓글 가져오기 메서드 추가
-    addComment,    // 댓글 추가하기 메서드 추가
+    fetchComments,
+    addComment,
     profilePage,
     updateVisitedCountries,
     updateInterestedCountries,
     deleteComment,
-
-  }
-}, { persist: true })
+  };
+}, { persist: true });

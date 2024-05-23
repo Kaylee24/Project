@@ -1,10 +1,4 @@
 <template>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-  </head>
-
   <div class="modal fade show" tabindex="-1" style="display: block;" aria-labelledby="profileModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -50,7 +44,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { useCounterStore } from '@/stores/counter';
 import { useRouter } from 'vue-router';
 
@@ -62,7 +56,7 @@ const emit = defineEmits(['close']);
 const store = useCounterStore();
 const router = useRouter();
 
-const profileData = store.profileData;
+const profileData = ref(null);
 
 const closeModal = () => {
   emit('close');
@@ -83,8 +77,15 @@ const handleClick = (countryId) => {
 
 onMounted(() => {
   store.profilePage(store.user);
-  console.log(profileData);
 });
+
+watch(
+  () => store.profileData,
+  (newData) => {
+    profileData.value = newData;
+  },
+  { immediate: true }
+);
 </script>
 
 <style scoped>

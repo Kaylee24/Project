@@ -1,13 +1,16 @@
 <template>
   <div class="detail-comments">
     <h3>댓글</h3>
-    <div>
+    <div v-if="comments.length">
       <div v-for="comment in comments" :key="comment.id" class="comment">
         <p>username : {{ comment.user.name }}</p>
         <p>{{ comment.content }}</p>
         <small>{{ comment.created_at }}</small>
         <button v-if="isLogin && comment.user.username === store.user" @click="deleteComment(comment.id)">삭제</button>
       </div>
+    </div>
+    <div v-else>
+      <p>댓글이 없습니다.</p>
     </div>
     <div v-if="isLogin">
       <form @submit.prevent="submitComment">
@@ -18,7 +21,7 @@
         <button type="submit" class="btn btn-primary">댓글 작성</button>
       </form>
     </div>
-    <div v-else-if="!comments.length">
+    <div v-else>
       <p>로그인한 사용자만 댓글을 작성할 수 있습니다.</p>
     </div>
   </div>
@@ -33,22 +36,16 @@ const router = useRouter()
 const store = useCounterStore()
 const newComment = ref('')
 const comments = computed(() => {
-  return store.detailContryData.comment_set
+  return store.detailCountryData?.comment_set || []
 })
 const isLogin = computed(() => store.isLogin)
 
-console.log('DetailComment의 store.detailCountryData', store.detailContryData)
-console.log('comments', comments)
-// console.log(comments)
-
 const submitComment = async () => {
   await store.addComment({
-    countryId: store.detailContryData.id,
+    countryId: store.detailCountryData.id,
     content: newComment.value,
-    // user: user
   })
   newComment.value = ''
-
 }
 
 const deleteComment = async (commentId) => {
@@ -56,9 +53,10 @@ const deleteComment = async (commentId) => {
 }
 
 onMounted(() => {
-  // 댓글을 가져오는 API 호출
-  store.fetchComments(store.detailContryData.id);
-});
+  if (store.detailCountryData && store.detailCountryData.id) {
+    store.fetchComments(store.detailCountryData.id)
+  }
+})
 </script>
 
 <style scoped>

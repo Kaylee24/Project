@@ -3,10 +3,20 @@
     <div class="detail-content">
       <img :src="imgUrl(data.graph)" alt="" class="resized-image" @click="showModal = true">
       <div class="icon-container">
-        <img src="/burger.png" alt="Burger" class="icon">
-        <p>{{ burger }}원</p>
-        <img src="/coffee.png" alt="Coffee" class="icon">
-        <p>{{ coffee }}원</p>
+        <div style="background-color: aquamarine; padding: 0px 10px;">
+          <p style="text-align: end;">{{ props.data.code }}</p>
+          <p style="font-size: 25px; text-align: end;">{{ props.data.rate }}</p>
+        </div>
+        <div style="align-items: center;">
+          <div style="align-items: center;">
+            <img src="/burger.png" alt="Burger" class="icon">
+            <p>{{ burger }}원</p>
+          </div>
+          <div style="align-items: center;">
+            <img src="/coffee.png" alt="Coffee" class="icon">
+            <p>{{ coffee }}원</p>
+          </div>
+        </div>
       </div>
     </div>
     <div>

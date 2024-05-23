@@ -1,16 +1,11 @@
 <template>
-  <div class="search-box">
-    <form class="d-flex" role="search" @submit.prevent="search">
-      <input class="form-control me-2" v-model="query" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-    
   <div class="main">
     <div class="main-content">
+      <!-- 갤러리 -->
       <div class="gallery-container">
         <Gallery />
       </div>
+      <!-- 추천 -->
       <div class="recommendation-container">
         <Recommendation />
       </div>
@@ -21,14 +16,15 @@
 <script setup>
 import { ref } from 'vue';
 import { useCounterStore } from '@/stores/counter';
-import { useRouter } from 'vue-router';
 import Gallery from '@/components/MainView/Gallery.vue';
 import Recommendation from '@/components/MainView/Recommendation.vue';
 
+// 검색어
 const query = ref('');
+// 카운터 스토어
 const store = useCounterStore();
-const router = useRouter();
 
+// 검색 함수
 const search = async () => {
   try {
     const country = await store.searchCountry(query.value);
@@ -44,13 +40,8 @@ const search = async () => {
 };
 </script>
 
-<style>
-.search-box {
-  margin: 20px auto;
-  max-width: 600px;
-  padding: 0 20px;
-}
-
+<style scoped>
+/* 메인 스타일 */
 .main {
   background-color: #B3E5Fc;
   margin-top: 50px;
@@ -60,6 +51,7 @@ const search = async () => {
   align-items: center;
 }
 
+/* 메인 콘텐츠 스타일 */
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -70,27 +62,32 @@ const search = async () => {
   justify-content: space-between;
 }
 
+/* 갤러리 컨테이너 스타일 */
 .gallery-container, .recommendation-container {
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
 }
 
+/* 갤러리 컨테이너 스타일 */
 .gallery-container {
-  flex: 1 1 70%;
-  max-width: 70%;
+  flex: 1 1 60%;
+  max-width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* 추천 컨테이너 스타일 */
 .recommendation-container {
-  flex: 1 1 30%;
-  max-width: 30%;
+  flex: 1 1 40%;
+  max-width: 40%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+/* 반응형 스타일 */
 @media (max-width: 1150px) {
   .gallery-container, .recommendation-container {
     margin: 0 auto;

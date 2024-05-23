@@ -34,4 +34,9 @@ urlpatterns = [
 
     path('update_visited_countries/', views.update_visited_countries, name='update_visited_countries'),
     path('update_interested_countries/', views.update_interested_countries, name='update_interested_countries'),
+
+
+    # App.vue > navbar > DetailView.vue
+    path('country_list/', views.country_list, name='country_list'),
+
 ]

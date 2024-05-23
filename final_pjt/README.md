@@ -3,7 +3,16 @@
 - 주제 : 환율 및 물가 지표를 알기 쉽게 제공하는 여행 정보 사이트
 - 서비스명 : Easy Travel
 
+## 😄 팀원 소개
+- 박재현 (팀장)
+   - Comparison Page, Detail Page 구현
+   - 로그인 관련 로직 구현
+   - CSS
 
+- 김송희
+   - Main Page, Profile Page 구현
+   - 로그인 관련 페이지 구현
+   - CSS
 
 ## 🌎 서비스 소개
 
@@ -17,8 +26,17 @@
 
 
 ## ❄ 서비스 화면
+#### Main Page
+![alt text](<Main Page.png>)
 
+#### Comparison Page
+![alt text](<Comparison Page.png>)
 
+#### Profile Page
+![alt text](<Profile Page.png>)
+
+#### Detail Page
+![alt text](<Detail Page.png>)
 
 ## ⛓ 주요 기능
 - 메인 페이지 | 예산을 기반으로 한 여행지 추천, 여행지 검색 및 해당 국가 상세 페이지로 이동 기능
@@ -86,7 +104,5 @@
 ### 5월 23일 (목)
 - 댓글 삭제 구현
 - Navbar의 Direct 메뉴 추가 (Detail Page로 가는 전체 나라 보드)
-
----
-
-## 😄 팀원 소개 및 소감
+- 추가 css 작업
+- dumpdata 제작

@@ -17,11 +17,11 @@
       <div class="right-info">
         <div class="image-container">
           <img src="/burger.png" alt="" class="hamburger-coffee-image">
-          <p>{{ burger }}</p>
+          <p>{{ burger }}원</p>
         </div>
         <div class="image-container">
           <img src="/coffee.png" alt="" class="hamburger-coffee-image">
-          <p>{{ coffee }}</p>
+          <p>{{ coffee }}원</p>
         </div>
       </div>
     </div>

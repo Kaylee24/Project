@@ -4,9 +4,9 @@
       <img :src="imgUrl(data.graph)" alt="" class="resized-image" @click="showModal = true">
       <div class="icon-container">
         <img src="/burger.png" alt="Burger" class="icon">
-        <p>{{ burger }}</p>
+        <p>{{ burger }}원</p>
         <img src="/coffee.png" alt="Coffee" class="icon">
-        <p>{{ coffee }}</p>
+        <p>{{ coffee }}원</p>
       </div>
     </div>
     <div>

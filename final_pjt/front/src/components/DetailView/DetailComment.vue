@@ -6,6 +6,7 @@
         <p>username : {{ comment.user.name }}</p>
         <p>{{ comment.content }}</p>
         <small>{{ comment.created_at }}</small>
+        <button v-if="isLogin && comment.user.username === store.user" @click="deleteComment(comment.user.id)">삭제</button>
       </div>
     </div>
     <div v-if="isLogin">
@@ -48,21 +49,12 @@ const submitComment = async () => {
   })
   newComment.value = ''
 
-  // // 새로운 댓글을 포함하여 모든 댓글을 다시 가져옴
-  // await store.fetchComments(store.detailContryData.id)
-  
-  // // 댓글 작성 후 DetailView로 이동
-  // goToDetailView(store.detailContryData.id)
-  // console.log('add는 됨')
-  // console.log(comments.value)
-
 }
 
-// const goToDetailView = (countryId) => {
-//   console.log('push되기 전')
-//   router.replace({ name: 'DetailView', params: { countryId } })
-//   console.log('push가 됨')
-// }
+const deleteComment = async (commentId) => {
+  await store.deleteComment(commentId)
+}
+
 onMounted(() => {
   // 댓글을 가져오는 API 호출
   store.fetchComments(store.detailContryData.id);

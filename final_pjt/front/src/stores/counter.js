@@ -115,6 +115,24 @@ export const useCounterStore = defineStore('counter', () => {
       })
   }
 
+  // 댓글 삭제하기
+  const deleteComment = async (commentId) => {
+    axios({
+      method: 'delete',
+      url: `${API_URL}/countries/detail_page/delete/${commentId}`,
+      headers: {
+        Authorization: `Token ${token.value}`
+      }
+    })
+      .then(response => {
+        // 댓글 삭제 후 다시 댓글을 가져옵니다.
+        fetchComments(detailContryData.value.id)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+  
   // 회원가입
   const signUp = function (payload) {
     const { username, password1, password2, name, gender, age } = payload
@@ -281,6 +299,7 @@ export const useCounterStore = defineStore('counter', () => {
     profilePage,
     updateVisitedCountries,
     updateInterestedCountries,
+    deleteComment,
 
   }
 }, { persist: true })

@@ -6,7 +6,6 @@
         <p>username : {{ comment.user.name }}</p>
         <p>{{ comment.content }}</p>
         <small>{{ comment.created_at }}</small>
-        <p>{{ comment.id }}</p>
         <button v-if="isLogin && comment.user.username === store.user" @click="deleteComment(comment.id)">삭제</button>
       </div>
     </div>

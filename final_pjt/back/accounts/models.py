@@ -7,7 +7,6 @@ class User(AbstractUser):
     name = models.CharField(max_length=50)
     gender = models.CharField(max_length=50)
     age = models.IntegerField(default=4)
-    email = models.CharField(max_length=50)
     visited = models.ManyToManyField(Country, related_name='visited_users', blank=True)
     interested = models.ManyToManyField(Country, related_name='interested_users', blank=True)
 

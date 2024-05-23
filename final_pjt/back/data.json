@@ -12,7 +12,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T05:33:39.393Z",
-        "name": "ÀçÇöÀçÇö",
+        "name": "ì¬í˜„ì¬í˜„",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -45,7 +45,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T05:59:35.559Z",
-        "name": "¼Û¼ÛÈñ¹ö¼¸",
+        "name": "ì†¡ì†¡í¬ë²„ì„¯",
         "gender": "female",
         "age": 27,
         "email": "",
@@ -76,7 +76,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:03:59.420Z",
-        "name": "±èÃßÅÂ",
+        "name": "ê¹€ì¶”íƒœ",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -117,7 +117,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:09:21.533Z",
-        "name": "±è±¸Çö¿ì",
+        "name": "ê¹€êµ¬í˜„ìš°",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -149,7 +149,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:22:28.277Z",
-        "name": "¿¬¾Ï ¹ÚÁö¿ø",
+        "name": "ì—°ì•” ë°•ì§€ì›",
         "gender": "male",
         "age": 27,
         "email": "",
@@ -184,7 +184,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:28:03.427Z",
-        "name": "½Â¹ÎÂ¯Â¯¸Ç",
+        "name": "ìŠ¹ë¯¼ì§±ì§±ë§¨",
         "gender": "male",
         "age": 31,
         "email": "",
@@ -214,7 +214,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:33:31.603Z",
-        "name": "¾îÁú¾îÁú¹Î",
+        "name": "ì–´ì§ˆì–´ì§ˆë¯¼",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -242,7 +242,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:35:15.752Z",
-        "name": "¿À Á¤ÈÆ ÀÚÀÌ¾ğÃ÷ Á¤ÈÆ",
+        "name": "ì˜¤ ì •í›ˆ ìì´ì–¸ì¸  ì •í›ˆ",
         "gender": "male",
         "age": 27,
         "email": "",
@@ -270,7 +270,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:36:54.560Z",
-        "name": "Å·°«´õÁ¦³Ê·²¿¥Æä·¯¸¶Á¦½ºÆ¼´ë°æÅÂ",
+        "name": "í‚¹ê°“ë”ì œë„ˆëŸ´ì— í˜ëŸ¬ë§ˆì œìŠ¤í‹°ëŒ€ê²½íƒœ",
         "gender": "male",
         "age": 27,
         "email": "",
@@ -297,7 +297,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:39:33.820Z",
-        "name": "¿©¸®¿¹¸®",
+        "name": "ì—¬ë¦¬ì˜ˆë¦¬",
         "gender": "female",
         "age": 27,
         "email": "",
@@ -320,7 +320,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:41:18.624Z",
-        "name": "¾Õ³¯ÀÌÃ¢Ã¢È£",
+        "name": "ì•ë‚ ì´ì°½ì°½í˜¸",
         "gender": "male",
         "age": 31,
         "email": "",
@@ -347,7 +347,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:42:41.775Z",
-        "name": "¼öºù¼ö",
+        "name": "ìˆ˜ë¹™ìˆ˜",
         "gender": "female",
         "age": 24,
         "email": "",
@@ -374,7 +374,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:47:02.535Z",
-        "name": "°­Çö¿í¼º",
+        "name": "ê°•í˜„ìš±ì„±",
         "gender": "male",
         "age": 27,
         "email": "",
@@ -397,7 +397,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:47:59.340Z",
-        "name": "±èÁ¾·¯¹ö´ö",
+        "name": "ê¹€ì¢…ëŸ¬ë²„ë•",
         "gender": "male",
         "age": 31,
         "email": "",
@@ -420,7 +420,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:49:59.555Z",
-        "name": "ÁÖ¸Ô±Ç¹Î",
+        "name": "ì£¼ë¨¹ê¶Œë¯¼",
         "gender": "male",
         "age": 27,
         "email": "",
@@ -448,7 +448,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:52:21.625Z",
-        "name": "¾Æ¾ß¾î¿©¿À¿ä¿ìÀ¯Á¤",
+        "name": "ì•„ì•¼ì–´ì—¬ì˜¤ìš”ìš°ìœ ì •",
         "gender": "female",
         "age": 30,
         "email": "",
@@ -473,7 +473,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:53:37.798Z",
-        "name": "¾Æ¾ß¾î¿©¿À¿ä¿ìÀ¯Âù",
+        "name": "ì•„ì•¼ì–´ì—¬ì˜¤ìš”ìš°ìœ ì°¬",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -500,7 +500,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:55:16.005Z",
-        "name": "³ª´Â¾ßÆ÷ÄÏ¸ó¸¶½ºÅÍÀÌ´Ù¼ØÀ» ÀÌÀ» Áö¿ì",
+        "name": "ë‚˜ëŠ”ì•¼í¬ì¼“ëª¬ë§ˆìŠ¤í„°ì´ë‹¤ì†œì„ ì´ì„ ì§€ìš°",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -523,7 +523,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T06:57:26.734Z",
-        "name": "±èµ¿È¯ÀåÇÏ°Ú³ß",
+        "name": "ê¹€ë™í™˜ì¥í•˜ê² ë„¹",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -550,7 +550,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T07:00:38.247Z",
-        "name": "½Â½ÂÁ¤±¸Áö",
+        "name": "ìŠ¹ìŠ¹ì •êµ¬ì§€",
         "gender": "female",
         "age": 25,
         "email": "",
@@ -573,7 +573,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T07:02:03.036Z",
-        "name": "Â÷¸¶ÀÎÂŞ",
+        "name": "ì°¨ë§ˆì¸ì­ˆ",
         "gender": "female",
         "age": 25,
         "email": "",
@@ -596,7 +596,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T07:04:09.008Z",
-        "name": "È¿½Â½ÂÁ¤±¸Áö",
+        "name": "íš¨ìŠ¹ìŠ¹ì •êµ¬ì§€",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -623,7 +623,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T07:05:14.127Z",
-        "name": "µ¿±×¸®µ¿µ¿Çö",
+        "name": "ë™ê·¸ë¦¬ë™ë™í˜„",
         "gender": "male",
         "age": 26,
         "email": "",
@@ -650,21 +650,25 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-05-23T07:07:30.217Z",
-        "name": "ÁøÂ¥±è±¸ÇöÀÓ",
+        "name": "ì§„ì§œê¹€êµ¬í˜„ì„",
         "gender": "male",
         "age": 20,
         "email": "",
         "groups": [],
         "user_permissions": [],
-        "visited": [],
-        "interested": []
+        "visited": [
+            1
+        ],
+        "interested": [
+            1
+        ]
     }
 },
 {
     "model": "countries.country",
     "pk": 1,
     "fields": {
-        "name": "ÀÏº»",
+        "name": "ì¼ë³¸",
         "burger": 5.8,
         "coffee": 4.45,
         "area": "East Asia",
@@ -680,7 +684,7 @@
     "model": "countries.country",
     "pk": 2,
     "fields": {
-        "name": "Áß±¹",
+        "name": "ì¤‘êµ­",
         "burger": 25.0,
         "coffee": 30.0,
         "area": "East Asia",
@@ -696,7 +700,7 @@
     "model": "countries.country",
     "pk": 3,
     "fields": {
-        "name": "¹Ì±¹",
+        "name": "ë¯¸êµ­",
         "burger": 5.69,
         "coffee": 4.45,
         "area": "America",
@@ -712,7 +716,7 @@
     "model": "countries.country",
     "pk": 4,
     "fields": {
-        "name": "´ë¸¸",
+        "name": "ëŒ€ë§Œ",
         "burger": 75.0,
         "coffee": 95.0,
         "area": "East Asia",
@@ -728,7 +732,7 @@
     "model": "countries.country",
     "pk": 5,
     "fields": {
-        "name": "È«Äá",
+        "name": "í™ì½©",
         "burger": 23.0,
         "coffee": 41.0,
         "area": "East Asia",
@@ -744,7 +748,7 @@
     "model": "countries.country",
     "pk": 6,
     "fields": {
-        "name": "À¯·´",
+        "name": "ìœ ëŸ½",
         "burger": 5.39,
         "coffee": 3.45,
         "area": "Europe",
@@ -760,7 +764,7 @@
     "model": "countries.country",
     "pk": 7,
     "fields": {
-        "name": "ÅÂ±¹",
+        "name": "íƒœêµ­",
         "burger": 135.0,
         "coffee": 120.0,
         "area": "Southeast Asia",
@@ -776,7 +780,7 @@
     "model": "countries.country",
     "pk": 8,
     "fields": {
-        "name": "º£Æ®³²",
+        "name": "ë² íŠ¸ë‚¨",
         "burger": 740.0,
         "coffee": 650.0,
         "area": "Southeast Asia",
@@ -792,7 +796,7 @@
     "model": "countries.country",
     "pk": 9,
     "fields": {
-        "name": "ÇÊ¸®ÇÉ",
+        "name": "í•„ë¦¬í•€",
         "burger": 161.0,
         "coffee": 150.0,
         "area": "Southeast Asia",
@@ -808,7 +812,7 @@
     "model": "countries.country",
     "pk": 10,
     "fields": {
-        "name": "¸»·¹ÀÌ½Ã¾Æ",
+        "name": "ë§ë ˆì´ì‹œì•„",
         "burger": 13.15,
         "coffee": 8.5,
         "area": "Southeast Asia",
@@ -824,7 +828,7 @@
     "model": "countries.country",
     "pk": 11,
     "fields": {
-        "name": "½Ì°¡Æ÷¸£",
+        "name": "ì‹±ê°€í¬ë¥´",
         "burger": 6.65,
         "coffee": 6.0,
         "area": "Southeast Asia",
@@ -840,7 +844,7 @@
     "model": "countries.country",
     "pk": 12,
     "fields": {
-        "name": "È£ÁÖ",
+        "name": "í˜¸ì£¼",
         "burger": 7.7,
         "coffee": 5.3,
         "area": "Oceania",
@@ -856,7 +860,7 @@
     "model": "countries.country",
     "pk": 13,
     "fields": {
-        "name": "¿µ±¹",
+        "name": "ì˜êµ­",
         "burger": 4.49,
         "coffee": 2.85,
         "area": "Europe",
@@ -872,7 +876,7 @@
     "model": "countries.country",
     "pk": 14,
     "fields": {
-        "name": "Ä³³ª´Ù",
+        "name": "ìºë‚˜ë‹¤",
         "burger": 7.47,
         "coffee": 4.25,
         "area": "America",
@@ -888,7 +892,7 @@
     "model": "countries.country",
     "pk": 15,
     "fields": {
-        "name": "ÀÎµµ³×½Ã¾Æ",
+        "name": "ì¸ë„ë„¤ì‹œì•„",
         "burger": 380.0,
         "coffee": 490.0,
         "area": "Southeast Asia",
@@ -904,7 +908,7 @@
     "model": "countries.country",
     "pk": 16,
     "fields": {
-        "name": "´ºÁú·£µå",
+        "name": "ë‰´ì§ˆëœë“œ",
         "burger": 8.2,
         "coffee": 5.0,
         "area": "Oceania",
@@ -920,7 +924,7 @@
     "model": "countries.country",
     "pk": 17,
     "fields": {
-        "name": "ÀÎµµ",
+        "name": "ì¸ë„",
         "burger": 215.0,
         "coffee": 250.0,
         "area": "Southeast Asia",
@@ -936,7 +940,7 @@
     "model": "countries.country",
     "pk": 18,
     "fields": {
-        "name": "½º¿şµ§",
+        "name": "ìŠ¤ì›¨ë´",
         "burger": 61.29,
         "coffee": 40.0,
         "area": "Europe",
@@ -952,7 +956,7 @@
     "model": "countries.country",
     "pk": 19,
     "fields": {
-        "name": "½ºÀ§½º",
+        "name": "ìŠ¤ìœ„ìŠ¤",
         "burger": 7.1,
         "coffee": 6.2,
         "area": "Europe",
@@ -968,7 +972,7 @@
     "model": "countries.country",
     "pk": 20,
     "fields": {
-        "name": "ºê¶óÁú",
+        "name": "ë¸Œë¼ì§ˆ",
         "burger": 23.9,
         "coffee": 10.0,
         "area": "America",
@@ -984,7 +988,7 @@
     "model": "countries.country",
     "pk": 21,
     "fields": {
-        "name": "»ç¿ìµğ¾Æ¶óºñ¾Æ",
+        "name": "ì‚¬ìš°ë””ì•„ë¼ë¹„ì•„",
         "burger": 19.0,
         "coffee": 15.0,
         "area": "West Asia",
@@ -1000,7 +1004,7 @@
     "model": "countries.country",
     "pk": 22,
     "fields": {
-        "name": "¾Æ¶ø¿¡¹Ì¸®Æ®",
+        "name": "ì•„ëì—ë¯¸ë¦¬íŠ¸",
         "burger": 18.0,
         "coffee": 18.0,
         "area": "West Asia",
@@ -1016,7 +1020,7 @@
     "model": "countries.country",
     "pk": 23,
     "fields": {
-        "name": "³²¾ÆÇÁ¸®Ä«°øÈ­±¹",
+        "name": "ë‚¨ì•„í”„ë¦¬ì¹´ê³µí™”êµ­",
         "burger": 51.9,
         "coffee": 40.0,
         "area": "Africa",
@@ -1032,7 +1036,7 @@
     "model": "countries.country",
     "pk": 24,
     "fields": {
-        "name": "¸ß½ÃÄÚ",
+        "name": "ë©•ì‹œì½”",
         "burger": 89.0,
         "coffee": 64.0,
         "area": "America",
@@ -1048,7 +1052,7 @@
     "model": "countries.country",
     "pk": 25,
     "fields": {
-        "name": "Æú¶õµå",
+        "name": "í´ë€ë“œ",
         "burger": 19.9,
         "coffee": 14.9,
         "area": "Europe",
@@ -1064,7 +1068,7 @@
     "model": "countries.country",
     "pk": 26,
     "fields": {
-        "name": "ÅÍÅ°",
+        "name": "í„°í‚¤",
         "burger": 120.0,
         "coffee": 58.0,
         "area": "West Asia",
@@ -1080,7 +1084,7 @@
     "model": "countries.country",
     "pk": 27,
     "fields": {
-        "name": "·¯½Ã¾Æ",
+        "name": "ëŸ¬ì‹œì•„",
         "burger": 420.0,
         "coffee": 270.0,
         "area": "East Asia",
@@ -1096,7 +1100,7 @@
     "model": "countries.country",
     "pk": 28,
     "fields": {
-        "name": "µ§¸¶Å©",
+        "name": "ë´ë§ˆí¬",
         "burger": 39.0,
         "coffee": 41.0,
         "area": "Europe",
@@ -1112,7 +1116,7 @@
     "model": "countries.country",
     "pk": 29,
     "fields": {
-        "name": "³ë¸£¿şÀÌ",
+        "name": "ë…¸ë¥´ì›¨ì´",
         "burger": 75.0,
         "coffee": 48.0,
         "area": "Europe",
@@ -1128,7 +1132,7 @@
     "model": "countries.country",
     "pk": 30,
     "fields": {
-        "name": "ÀÌÁıÆ®",
+        "name": "ì´ì§‘íŠ¸",
         "burger": 85.0,
         "coffee": 40.0,
         "area": "Africa",
@@ -1146,7 +1150,7 @@
     "fields": {
         "user": 1,
         "country_c": 1,
-        "content": "Àú¹ø¿¡ ÀÏº» ´Ù³à¿ÔÀ» ¶§ ³Ê¹« Àç¹Ì ÀÖ¾ú¾î¿ä!! ÀÌ¹ø¿¡ ¿£È­ ¶³¾îÁø ±è¿¡ ´Ù½ÃÇÑ¹ø °¡º¸·Á±¸¿ä ¤¾¤¾",
+        "content": "ì €ë²ˆì— ì¼ë³¸ ë‹¤ë…€ì™”ì„ ë•Œ ë„ˆë¬´ ì¬ë¯¸ ìˆì—ˆì–´ìš”!! ì´ë²ˆì— ì—”í™” ë–¨ì–´ì§„ ê¹€ì— ë‹¤ì‹œí•œë²ˆ ê°€ë³´ë ¤êµ¬ìš” ã…ã…",
         "created_at": "2024-05-23T05:34:40.135Z",
         "updated_at": "2024-05-23T05:34:40.135Z"
     }
@@ -1157,7 +1161,7 @@
     "fields": {
         "user": 1,
         "country_c": 8,
-        "content": "º£Æ®³²Àº Àú¹ø¿¡ °¬´Ù¿Ô´Âµ¥ Áö±İ °¡¸é ³Ê¹« ´õ¿ï°Å °°¾Æ¿ä ¤Ì¤Ì",
+        "content": "ë² íŠ¸ë‚¨ì€ ì €ë²ˆì— ê°”ë‹¤ì™”ëŠ”ë° ì§€ê¸ˆ ê°€ë©´ ë„ˆë¬´ ë”ìš¸ê±° ê°™ì•„ìš” ã…œã…œ",
         "created_at": "2024-05-23T05:39:40.954Z",
         "updated_at": "2024-05-23T05:39:40.954Z"
     }
@@ -1168,7 +1172,7 @@
     "fields": {
         "user": 1,
         "country_c": 5,
-        "content": "Á¦°¡ ÀÏº»À» ÁÁ¾ÆÇÏ°í 5ÀÏ ½Ã°£ÀÌ ³²¾Æ °æºñ¿¡ 60¸¸¿ø±îÁö ¾µ »ı°¢ÀÌ¾ú´Âµ¥ Easy TravelÀÌ È«Äá ÃßÃµ ÇØÁÖ´õ¶ó±¸¿ä! ´ÙÀ½¿¡´Â È«Äáµµ °¡ºÁ¾ß°Ú¾î¿ë!!",
+        "content": "ì œê°€ ì¼ë³¸ì„ ì¢‹ì•„í•˜ê³  5ì¼ ì‹œê°„ì´ ë‚¨ì•„ ê²½ë¹„ì— 60ë§Œì›ê¹Œì§€ ì“¸ ìƒê°ì´ì—ˆëŠ”ë° Easy Travelì´ í™ì½© ì¶”ì²œ í•´ì£¼ë”ë¼êµ¬ìš”! ë‹¤ìŒì—ëŠ” í™ì½©ë„ ê°€ë´ì•¼ê² ì–´ìš©!!",
         "created_at": "2024-05-23T05:43:04.007Z",
         "updated_at": "2024-05-23T05:43:04.007Z"
     }
@@ -1179,7 +1183,7 @@
     "fields": {
         "user": 1,
         "country_c": 13,
-        "content": "ÁøÂ¥ ¿µ±¹¿£ Ãà±¸º¸·¯ ÇÔ °¡¾ßÇÏ´Âµ¥ ¾ğÁ¦°¡Áö",
+        "content": "ì§„ì§œ ì˜êµ­ì—” ì¶•êµ¬ë³´ëŸ¬ í•¨ ê°€ì•¼í•˜ëŠ”ë° ì–¸ì œê°€ì§€",
         "created_at": "2024-05-23T05:56:08.868Z",
         "updated_at": "2024-05-23T05:56:08.868Z"
     }
@@ -1190,7 +1194,7 @@
     "fields": {
         "user": 1,
         "country_c": 14,
-        "content": "¿©±â°¡ ±× ¼Ò¹®À¸·Î¸¸ µè´ø ´ÜÇ³±¹ÀÔ´Ï±î..",
+        "content": "ì—¬ê¸°ê°€ ê·¸ ì†Œë¬¸ìœ¼ë¡œë§Œ ë“£ë˜ ë‹¨í’êµ­ì…ë‹ˆê¹Œ..",
         "created_at": "2024-05-23T05:57:34.062Z",
         "updated_at": "2024-05-23T05:57:34.062Z"
     }
@@ -1201,7 +1205,7 @@
     "fields": {
         "user": 2,
         "country_c": 30,
-        "content": "¾Æ´Ï È¯À²¸Ó¾ß °³²ÜÀÌ³× ¹Ù·Î°£´Ù",
+        "content": "ì•„ë‹ˆ í™˜ìœ¨ë¨¸ì•¼ ê°œê¿€ì´ë„¤ ë°”ë¡œê°„ë‹¤",
         "created_at": "2024-05-23T06:01:22.851Z",
         "updated_at": "2024-05-23T06:01:22.851Z"
     }
@@ -1212,7 +1216,7 @@
     "fields": {
         "user": 2,
         "country_c": 12,
-        "content": "¿©±â°¡ ÁøÂ¥ ÀÌ»Ú±ä ÇßÁö..",
+        "content": "ì—¬ê¸°ê°€ ì§„ì§œ ì´ì˜ê¸´ í–ˆì§€..",
         "created_at": "2024-05-23T06:01:49.473Z",
         "updated_at": "2024-05-23T06:01:49.473Z"
     }
@@ -1223,7 +1227,7 @@
     "fields": {
         "user": 2,
         "country_c": 3,
-        "content": "´Ş·¯ È¯À² ¶³¾îÁö¸é ´Ù½Ã °¡º¼·¨´Âµ¥ ÀÌ¹ø»ı¿£ ¸ø°¡°Ú´Ù... ¤Ğ",
+        "content": "ë‹¬ëŸ¬ í™˜ìœ¨ ë–¨ì–´ì§€ë©´ ë‹¤ì‹œ ê°€ë³¼ë¬ëŠ”ë° ì´ë²ˆìƒì—” ëª»ê°€ê² ë‹¤... ã… ",
         "created_at": "2024-05-23T06:02:13.716Z",
         "updated_at": "2024-05-23T06:02:13.716Z"
     }
@@ -1234,7 +1238,7 @@
     "fields": {
         "user": 2,
         "country_c": 5,
-        "content": "¿©±â °¡ºÃ´Âµ¥ ÁøÂ¥ º¼°Å ¸¹À½!! ÃßÃµÇÕ´Ï´Ù",
+        "content": "ì—¬ê¸° ê°€ë´¤ëŠ”ë° ì§„ì§œ ë³¼ê±° ë§ìŒ!! ì¶”ì²œí•©ë‹ˆë‹¤",
         "created_at": "2024-05-23T06:02:51.449Z",
         "updated_at": "2024-05-23T06:02:51.449Z"
     }
@@ -1245,7 +1249,7 @@
     "fields": {
         "user": 3,
         "country_c": 13,
-        "content": "´ã¿¡ È¯À² ¶³¾îÁö´Â°Å º¸°í ¤¡¤¡",
+        "content": "ë‹´ì— í™˜ìœ¨ ë–¨ì–´ì§€ëŠ”ê±° ë³´ê³  ã„±ã„±",
         "created_at": "2024-05-23T06:05:27.119Z",
         "updated_at": "2024-05-23T06:05:27.119Z"
     }
@@ -1256,7 +1260,7 @@
     "fields": {
         "user": 3,
         "country_c": 11,
-        "content": "¾Æ Àú¹ø¿¡ °¬´Ù¿Ô´Âµ¥ ÀÌ¹ø¿¡ È¯À²¿Ã¶ú³× ¤»¤»  ³ªÀÌ½º~~",
+        "content": "ì•„ ì €ë²ˆì— ê°”ë‹¤ì™”ëŠ”ë° ì´ë²ˆì— í™˜ìœ¨ì˜¬ëë„¤ ã…‹ã…‹  ë‚˜ì´ìŠ¤~~",
         "created_at": "2024-05-23T06:06:17.425Z",
         "updated_at": "2024-05-23T06:06:17.425Z"
     }
@@ -1267,7 +1271,7 @@
     "fields": {
         "user": 3,
         "country_c": 14,
-        "content": "¾Æ ¿©±â ÀÌ»ÚÁö È¯À²¶³¾îÁö¸é ¹Ù·Î ´Ù½Ã °£´Ù",
+        "content": "ì•„ ì—¬ê¸° ì´ì˜ì§€ í™˜ìœ¨ë–¨ì–´ì§€ë©´ ë°”ë¡œ ë‹¤ì‹œ ê°„ë‹¤",
         "created_at": "2024-05-23T06:06:46.193Z",
         "updated_at": "2024-05-23T06:06:46.193Z"
     }
@@ -1278,7 +1282,7 @@
     "fields": {
         "user": 3,
         "country_c": 25,
-        "content": "¿©±ä »ı°¢º¸´Ù È¯À² ½ê³× ¤§¤§ ´ã¿¡ °¢º¸°í °¡¾ß°Ú´Ù",
+        "content": "ì—¬ê¸´ ìƒê°ë³´ë‹¤ í™˜ìœ¨ ì„ë„¤ ã„·ã„· ë‹´ì— ê°ë³´ê³  ê°€ì•¼ê² ë‹¤",
         "created_at": "2024-05-23T06:07:44.218Z",
         "updated_at": "2024-05-23T06:07:44.218Z"
     }
@@ -1289,7 +1293,7 @@
     "fields": {
         "user": 4,
         "country_c": 1,
-        "content": "¾Æ´Ï ±Ùµ¥ Áö±İ ¿£È­ ¾öÃ» ½Î³× ¤§¤§ ÄÚÀÎ Å¸¾ßÇÏ³ª..",
+        "content": "ì•„ë‹ˆ ê·¼ë° ì§€ê¸ˆ ì—”í™” ì—„ì²­ ì‹¸ë„¤ ã„·ã„· ì½”ì¸ íƒ€ì•¼í•˜ë‚˜..",
         "created_at": "2024-05-23T06:11:53.904Z",
         "updated_at": "2024-05-23T06:11:53.904Z"
     }
@@ -1300,7 +1304,7 @@
     "fields": {
         "user": 4,
         "country_c": 5,
-        "content": "¿©±ä ´ÙÀ½¿¡ ÇÔ °¡¾ß°Ú´Ù",
+        "content": "ì—¬ê¸´ ë‹¤ìŒì— í•¨ ê°€ì•¼ê² ë‹¤",
         "created_at": "2024-05-23T06:12:59.358Z",
         "updated_at": "2024-05-23T06:12:59.358Z"
     }
@@ -1311,7 +1315,7 @@
     "fields": {
         "user": 4,
         "country_c": 11,
-        "content": "¾Æ ³ªµµ Àú¹ø¿¡ °¥²¬.. Áö±İ °¥¶ó´Ï±ñ È¯À² ¸¹ÀÌ ¿Ã¶ú³×..",
+        "content": "ì•„ ë‚˜ë„ ì €ë²ˆì— ê°ˆê»„.. ì§€ê¸ˆ ê°ˆë¼ë‹ˆê¹ í™˜ìœ¨ ë§ì´ ì˜¬ëë„¤..",
         "created_at": "2024-05-23T06:13:40.468Z",
         "updated_at": "2024-05-23T06:13:40.468Z"
     }
@@ -1322,7 +1326,7 @@
     "fields": {
         "user": 4,
         "country_c": 26,
-        "content": "Æ¢¸£Å°¿¡ ¾ÆÀÌ½ºÅ©¸²",
+        "content": "íŠ€ë¥´í‚¤ì— ì•„ì´ìŠ¤í¬ë¦¼",
         "created_at": "2024-05-23T06:14:23.589Z",
         "updated_at": "2024-05-23T06:14:23.589Z"
     }
@@ -1333,7 +1337,7 @@
     "fields": {
         "user": 4,
         "country_c": 9,
-        "content": "¿©±â Áö±İ È¯À² ¸¹ÀÌ ¶³¾îÁ³³× Áö±İ °¡¾ß°Ú´Ù.",
+        "content": "ì—¬ê¸° ì§€ê¸ˆ í™˜ìœ¨ ë§ì´ ë–¨ì–´ì¡Œë„¤ ì§€ê¸ˆ ê°€ì•¼ê² ë‹¤.",
         "created_at": "2024-05-23T06:17:29.272Z",
         "updated_at": "2024-05-23T06:17:29.272Z"
     }
@@ -1344,7 +1348,7 @@
     "fields": {
         "user": 4,
         "country_c": 7,
-        "content": "ÅÂ±¹ ²ÜÆÁ ÀÔ´Ï´Ù! \n»ç¿ø ¹æ¹® ½Ã º¹ÀåÀ» ÁÖÀÇÇÏ¼¼¿ä. ¾î±ú¿Í ¹«¸­À» °¡¸®´Â ¿ÊÀ» ÀÔ¾î¾ß ÇÕ´Ï´Ù. ±×¸®°í ÅÃ½Ã Å» ¶§´Â ¹ÌÅÍ±â¸¦ ÄÑ´Ş¶ó°í ÇÏ¼¼¿ä",
+        "content": "íƒœêµ­ ê¿€íŒ ì…ë‹ˆë‹¤! \nì‚¬ì› ë°©ë¬¸ ì‹œ ë³µì¥ì„ ì£¼ì˜í•˜ì„¸ìš”. ì–´ê¹¨ì™€ ë¬´ë¦ì„ ê°€ë¦¬ëŠ” ì˜·ì„ ì…ì–´ì•¼ í•©ë‹ˆë‹¤. ê·¸ë¦¬ê³  íƒì‹œ íƒˆ ë•ŒëŠ” ë¯¸í„°ê¸°ë¥¼ ì¼œë‹¬ë¼ê³  í•˜ì„¸ìš”",
         "created_at": "2024-05-23T06:20:20.877Z",
         "updated_at": "2024-05-23T06:20:20.877Z"
     }
@@ -1355,7 +1359,7 @@
     "fields": {
         "user": 5,
         "country_c": 1,
-        "content": "6¿ù´Ş¿¡ ¹Ù·Î °£´Ù",
+        "content": "6ì›”ë‹¬ì— ë°”ë¡œ ê°„ë‹¤",
         "created_at": "2024-05-23T06:22:55.597Z",
         "updated_at": "2024-05-23T06:22:55.597Z"
     }
@@ -1366,7 +1370,7 @@
     "fields": {
         "user": 5,
         "country_c": 12,
-        "content": "Ä»°Å·ç ÇÔ º¸·¯ °¡¾ß°Ú´Ù",
+        "content": "ìº¥ê±°ë£¨ í•¨ ë³´ëŸ¬ ê°€ì•¼ê² ë‹¤",
         "created_at": "2024-05-23T06:25:59.764Z",
         "updated_at": "2024-05-23T06:25:59.764Z"
     }
@@ -1377,7 +1381,7 @@
     "fields": {
         "user": 5,
         "country_c": 19,
-        "content": "¾Æ´Ï ¿©±ä ÍÄ³ ºñ½Ó??",
+        "content": "ì•„ë‹ˆ ì—¬ê¸´ ì™¤ìº ë¹„ìŒˆ??",
         "created_at": "2024-05-23T06:26:51.085Z",
         "updated_at": "2024-05-23T06:26:51.086Z"
     }
@@ -1388,7 +1392,7 @@
     "fields": {
         "user": 6,
         "country_c": 1,
-        "content": "ÀÏº» ¹«Á¶°Ç °¡¾ßÁö",
+        "content": "ì¼ë³¸ ë¬´ì¡°ê±´ ê°€ì•¼ì§€",
         "created_at": "2024-05-23T06:30:33.217Z",
         "updated_at": "2024-05-23T06:30:33.217Z"
     }
@@ -1399,7 +1403,7 @@
     "fields": {
         "user": 6,
         "country_c": 18,
-        "content": "¿©±âµµ ÇÔ °¡°í ½Í´Ù",
+        "content": "ì—¬ê¸°ë„ í•¨ ê°€ê³  ì‹¶ë‹¤",
         "created_at": "2024-05-23T06:32:14.145Z",
         "updated_at": "2024-05-23T06:32:14.145Z"
     }
@@ -1410,7 +1414,7 @@
     "fields": {
         "user": 6,
         "country_c": 5,
-        "content": "¾ğÁ¦ °¡º¸³ë",
+        "content": "ì–¸ì œ ê°€ë³´ë…¸",
         "created_at": "2024-05-23T06:32:30.687Z",
         "updated_at": "2024-05-23T06:32:30.687Z"
     }
@@ -1421,7 +1425,7 @@
     "fields": {
         "user": 7,
         "country_c": 1,
-        "content": "¿£È­ ¾îÁú¾îÁúÇÏ´Ù ÁøÂ¥..",
+        "content": "ì—”í™” ì–´ì§ˆì–´ì§ˆí•˜ë‹¤ ì§„ì§œ..",
         "created_at": "2024-05-23T06:33:50.219Z",
         "updated_at": "2024-05-23T06:33:50.219Z"
     }
@@ -1432,7 +1436,7 @@
     "fields": {
         "user": 7,
         "country_c": 21,
-        "content": "¿©±â Àç¹Ô°Ú´ç",
+        "content": "ì—¬ê¸° ì¬ë°‹ê² ë‹¹",
         "created_at": "2024-05-23T06:34:02.598Z",
         "updated_at": "2024-05-23T06:34:02.598Z"
     }
@@ -1443,7 +1447,7 @@
     "fields": {
         "user": 8,
         "country_c": 1,
-        "content": "ÀÏº» ¹«Á¶°Ç °¡¾ßÁö",
+        "content": "ì¼ë³¸ ë¬´ì¡°ê±´ ê°€ì•¼ì§€",
         "created_at": "2024-05-23T06:35:31.452Z",
         "updated_at": "2024-05-23T06:35:31.452Z"
     }
@@ -1454,7 +1458,7 @@
     "fields": {
         "user": 8,
         "country_c": 7,
-        "content": "¿©±â Àº±Ù Àç¹ÔÀ½",
+        "content": "ì—¬ê¸° ì€ê·¼ ì¬ë°‹ìŒ",
         "created_at": "2024-05-23T06:35:47.359Z",
         "updated_at": "2024-05-23T06:35:47.359Z"
     }
@@ -1465,7 +1469,7 @@
     "fields": {
         "user": 9,
         "country_c": 1,
-        "content": "ÀÏº»..? »¡¸®°¡°í½Í´Ù..",
+        "content": "ì¼ë³¸..? ë¹¨ë¦¬ê°€ê³ ì‹¶ë‹¤..",
         "created_at": "2024-05-23T06:37:09.753Z",
         "updated_at": "2024-05-23T06:37:09.753Z"
     }
@@ -1476,7 +1480,7 @@
     "fields": {
         "user": 9,
         "country_c": 2,
-        "content": "Àº±Ù È¯À² ±¦Âú³× ´ã¿¡ ÇÔ °¡¾ß°Ú´Ù",
+        "content": "ì€ê·¼ í™˜ìœ¨ ê´œì°®ë„¤ ë‹´ì— í•¨ ê°€ì•¼ê² ë‹¤",
         "created_at": "2024-05-23T06:38:07.896Z",
         "updated_at": "2024-05-23T06:38:07.896Z"
     }
@@ -1487,7 +1491,7 @@
     "fields": {
         "user": 10,
         "country_c": 1,
-        "content": "³ªµµ ÀÏº» °¡°í½Í´Ù..",
+        "content": "ë‚˜ë„ ì¼ë³¸ ê°€ê³ ì‹¶ë‹¤..",
         "created_at": "2024-05-23T06:39:44.168Z",
         "updated_at": "2024-05-23T06:39:44.168Z"
     }
@@ -1498,7 +1502,7 @@
     "fields": {
         "user": 10,
         "country_c": 4,
-        "content": "´ë~¸¸",
+        "content": "ëŒ€~ë§Œ",
         "created_at": "2024-05-23T06:39:59.115Z",
         "updated_at": "2024-05-23T06:39:59.115Z"
     }
@@ -1509,7 +1513,7 @@
     "fields": {
         "user": 10,
         "country_c": 12,
-        "content": "ÄõÄ« º¸·¯ °¥·¡¿ë~!",
+        "content": "ì¿¼ì¹´ ë³´ëŸ¬ ê°ˆë˜ìš©~!",
         "created_at": "2024-05-23T06:40:32.068Z",
         "updated_at": "2024-05-23T06:40:32.068Z"
     }
@@ -1520,7 +1524,7 @@
     "fields": {
         "user": 11,
         "country_c": 1,
-        "content": "ÀÏº»? ¶Ç °¡¾ßÁö",
+        "content": "ì¼ë³¸? ë˜ ê°€ì•¼ì§€",
         "created_at": "2024-05-23T06:41:38.772Z",
         "updated_at": "2024-05-23T06:41:38.772Z"
     }
@@ -1531,7 +1535,7 @@
     "fields": {
         "user": 11,
         "country_c": 27,
-        "content": "¿©±äÁ».. ¹«¼·±äÇØ",
+        "content": "ì—¬ê¸´ì¢€.. ë¬´ì„­ê¸´í•´",
         "created_at": "2024-05-23T06:41:54.605Z",
         "updated_at": "2024-05-23T06:41:54.605Z"
     }
@@ -1542,7 +1546,7 @@
     "fields": {
         "user": 12,
         "country_c": 1,
-        "content": "¾Æ->´Ï^¿¡^¿ä-",
+        "content": "ì•„->ë‹ˆ^ì—^ìš”-",
         "created_at": "2024-05-23T06:43:17.802Z",
         "updated_at": "2024-05-23T06:43:17.802Z"
     }
@@ -1553,7 +1557,7 @@
     "fields": {
         "user": 12,
         "country_c": 20,
-        "content": "¿©±ä ³Ê¹« ¹«¼­¿ò",
+        "content": "ì—¬ê¸´ ë„ˆë¬´ ë¬´ì„œì›€",
         "created_at": "2024-05-23T06:43:35.702Z",
         "updated_at": "2024-05-23T06:43:35.702Z"
     }
@@ -1564,7 +1568,7 @@
     "fields": {
         "user": 13,
         "country_c": 1,
-        "content": "ÀÏº»¿¡ ´Ùµé °ü½ÉÀÌ ¸¹³×",
+        "content": "ì¼ë³¸ì— ë‹¤ë“¤ ê´€ì‹¬ì´ ë§ë„¤",
         "created_at": "2024-05-23T06:47:17.995Z",
         "updated_at": "2024-05-23T06:47:17.995Z"
     }
@@ -1575,7 +1579,7 @@
     "fields": {
         "user": 13,
         "country_c": 24,
-        "content": "»çÁø Àß³ª¿Ô³×",
+        "content": "ì‚¬ì§„ ì˜ë‚˜ì™”ë„¤",
         "created_at": "2024-05-23T06:47:31.884Z",
         "updated_at": "2024-05-23T06:47:31.884Z"
     }
@@ -1586,7 +1590,7 @@
     "fields": {
         "user": 14,
         "country_c": 1,
-        "content": "±×¸¸Å­ ÀÎ±â°¡ ¸¹Àİ¾Æ~",
+        "content": "ê·¸ë§Œí¼ ì¸ê¸°ê°€ ë§ì–ì•„~",
         "created_at": "2024-05-23T06:48:11.921Z",
         "updated_at": "2024-05-23T06:48:11.921Z"
     }
@@ -1597,7 +1601,7 @@
     "fields": {
         "user": 14,
         "country_c": 28,
-        "content": "ºê¸®¾È ¶ó¿ìµå·çÇÁ",
+        "content": "ë¸Œë¦¬ì•ˆ ë¼ìš°ë“œë£¨í”„",
         "created_at": "2024-05-23T06:49:00.413Z",
         "updated_at": "2024-05-23T06:49:00.413Z"
     }
@@ -1608,7 +1612,7 @@
     "fields": {
         "user": 15,
         "country_c": 1,
-        "content": "½ºÄíÅÍ Å¸°í °¡´É?",
+        "content": "ìŠ¤ì¿ í„° íƒ€ê³  ê°€ëŠ¥?",
         "created_at": "2024-05-23T06:50:52.730Z",
         "updated_at": "2024-05-23T06:50:52.730Z"
     }
@@ -1619,7 +1623,7 @@
     "fields": {
         "user": 15,
         "country_c": 29,
-        "content": "È¦¶õ½º·´³×..",
+        "content": "í™€ë€ìŠ¤ëŸ½ë„¤..",
         "created_at": "2024-05-23T06:51:16.071Z",
         "updated_at": "2024-05-23T06:51:16.071Z"
     }
@@ -1630,7 +1634,7 @@
     "fields": {
         "user": 16,
         "country_c": 1,
-        "content": "ºÒ°¡´É..",
+        "content": "ë¶ˆê°€ëŠ¥..",
         "created_at": "2024-05-23T06:52:31.270Z",
         "updated_at": "2024-05-23T06:52:31.270Z"
     }
@@ -1641,7 +1645,7 @@
     "fields": {
         "user": 16,
         "country_c": 10,
-        "content": "¸»¸®Áö¸¶",
+        "content": "ë§ë¦¬ì§€ë§ˆ",
         "created_at": "2024-05-23T06:52:55.215Z",
         "updated_at": "2024-05-23T06:52:55.216Z"
     }
@@ -1652,7 +1656,7 @@
     "fields": {
         "user": 17,
         "country_c": 1,
-        "content": "ºñÇà±â Å¸°í °¡¿ä¿À",
+        "content": "ë¹„í–‰ê¸° íƒ€ê³  ê°€ìš”ì˜¤",
         "created_at": "2024-05-23T06:53:55.937Z",
         "updated_at": "2024-05-23T06:53:55.937Z"
     }
@@ -1663,7 +1667,7 @@
     "fields": {
         "user": 17,
         "country_c": 15,
-        "content": "ÀÎµµÂ¬ÀÓ?",
+        "content": "ì¸ë„ì§­ì„?",
         "created_at": "2024-05-23T06:54:15.144Z",
         "updated_at": "2024-05-23T06:54:15.144Z"
     }
@@ -1674,7 +1678,7 @@
     "fields": {
         "user": 18,
         "country_c": 1,
-        "content": "°¡¶ù ÇÇÄ«Ãò",
+        "content": "ê°€ë í”¼ì¹´ì¸„",
         "created_at": "2024-05-23T06:55:23.987Z",
         "updated_at": "2024-05-23T06:55:23.987Z"
     }
@@ -1685,7 +1689,7 @@
     "fields": {
         "user": 18,
         "country_c": 17,
-        "content": "ÇÇÄ«ÇÇÄ«",
+        "content": "í”¼ì¹´í”¼ì¹´",
         "created_at": "2024-05-23T06:55:34.638Z",
         "updated_at": "2024-05-23T06:55:34.638Z"
     }
@@ -1696,7 +1700,7 @@
     "fields": {
         "user": 19,
         "country_c": 1,
-        "content": "ÀÏº» °¡¼­ ÀÌ»Û Ä«Æä °¡º¸°í ½Í´Ù..",
+        "content": "ì¼ë³¸ ê°€ì„œ ì´ìœ ì¹´í˜ ê°€ë³´ê³  ì‹¶ë‹¤..",
         "created_at": "2024-05-23T06:57:54.862Z",
         "updated_at": "2024-05-23T06:57:54.862Z"
     }
@@ -1707,7 +1711,7 @@
     "fields": {
         "user": 19,
         "country_c": 16,
-        "content": "´ºÁø½º´Ô",
+        "content": "ë‰´ì§„ìŠ¤ë‹˜",
         "created_at": "2024-05-23T06:59:18.568Z",
         "updated_at": "2024-05-23T06:59:18.568Z"
     }
@@ -1718,7 +1722,7 @@
     "fields": {
         "user": 20,
         "country_c": 1,
-        "content": "ÀÏº» ±¦Âú´Ù!",
+        "content": "ì¼ë³¸ ê´œì°®ë‹¤!",
         "created_at": "2024-05-23T07:00:58.336Z",
         "updated_at": "2024-05-23T07:00:58.336Z"
     }
@@ -1729,7 +1733,7 @@
     "fields": {
         "user": 20,
         "country_c": 22,
-        "content": "¾Æ½Î¶óºñ¾Æ",
+        "content": "ì•„ì‹¸ë¼ë¹„ì•„",
         "created_at": "2024-05-23T07:01:19.586Z",
         "updated_at": "2024-05-23T07:01:19.586Z"
     }
@@ -1740,7 +1744,7 @@
     "fields": {
         "user": 21,
         "country_c": 1,
-        "content": "¸î¸í ³²¾ÒÁö?",
+        "content": "ëª‡ëª… ë‚¨ì•˜ì§€?",
         "created_at": "2024-05-23T07:02:38.453Z",
         "updated_at": "2024-05-23T07:02:38.453Z"
     }
@@ -1751,7 +1755,7 @@
     "fields": {
         "user": 21,
         "country_c": 23,
-        "content": "¿©±âµµ Æë±ÏÀÌ »ç³Ä?? ½Å±âÇà",
+        "content": "ì—¬ê¸°ë„ í­ê·„ì´ ì‚¬ëƒ?? ì‹ ê¸°í–‰",
         "created_at": "2024-05-23T07:02:58.340Z",
         "updated_at": "2024-05-23T07:02:58.340Z"
     }
@@ -1762,7 +1766,7 @@
     "fields": {
         "user": 22,
         "country_c": 1,
-        "content": "¶ó½ºÆ® ÇÏ³ª",
+        "content": "ë¼ìŠ¤íŠ¸ í•˜ë‚˜",
         "created_at": "2024-05-23T07:04:36.569Z",
         "updated_at": "2024-05-23T07:04:36.569Z"
     }
@@ -1773,7 +1777,7 @@
     "fields": {
         "user": 23,
         "country_c": 1,
-        "content": "³¡ÀÌÁö·Õ~",
+        "content": "ëì´ì§€ë¡±~",
         "created_at": "2024-05-23T07:05:24.127Z",
         "updated_at": "2024-05-23T07:05:24.127Z"
     }
@@ -1784,7 +1788,7 @@
     "fields": {
         "user": 2,
         "country_c": 1,
-        "content": "¾Æ µÎ¸í ¿©±â ´ñ±Û ¾È½è³ß",
+        "content": "ì•„ ë‘ëª… ì—¬ê¸° ëŒ“ê¸€ ì•ˆì¼ë„¹",
         "created_at": "2024-05-23T07:06:24.416Z",
         "updated_at": "2024-05-23T07:06:24.416Z"
     }
@@ -1795,7 +1799,7 @@
     "fields": {
         "user": 3,
         "country_c": 1,
-        "content": "ÁøÂ¥ ³¡!!!!!111",
+        "content": "ì§„ì§œ ë!!!!!111",
         "created_at": "2024-05-23T07:06:45.363Z",
         "updated_at": "2024-05-23T07:06:45.363Z"
     }
@@ -1806,7 +1810,7 @@
     "fields": {
         "user": 24,
         "country_c": 1,
-        "content": "¿©·¯ºĞ ´ñ±Û ´Ù½Ã´À¶ó ¼ö°í ¸¹À¸¼Ì½À´Ï´Ù~ !",
+        "content": "ì—¬ëŸ¬ë¶„ ëŒ“ê¸€ ë‹¤ì‹œëŠë¼ ìˆ˜ê³  ë§ìœ¼ì…¨ìŠµë‹ˆë‹¤~ !",
         "created_at": "2024-05-23T07:18:14.944Z",
         "updated_at": "2024-05-23T07:18:14.944Z"
     }
